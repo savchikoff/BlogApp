@@ -1,7 +1,16 @@
-import { Inter } from 'next/font/google';
-import './globals.css';
+import { Metadata } from "next";
+import { Sen } from "next/font/google";
+import '@/styles/globals.scss';
 
-const inter = Inter({ subsets: ['latin'] });
+import { Header, Footer } from "@/widgets";
+
+const sen = Sen({ subsets: ['latin'], weight: ["400", "500", "700"] });
+
+export const metadata: Metadata = {
+	title: "Blog App",
+	description: "Blog App built with the use of NextJS"
+}
+
 
 export default function RootLayout({
 	children,
@@ -12,7 +21,11 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang={locale}>
-			<body className={inter.className}>{children}</body>
+			<body className={sen.className}>
+				<Header />
+				{children}
+				<Footer />
+			</body>
 		</html>
 	);
 }

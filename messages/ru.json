@@ -2,6 +2,13 @@
     "Index": {
         "title": "Привет мир!"
     },
+    "Navigation": {
+        "Home": "Главная",
+        "Blog": "Блог",
+        "About": "О Нас",
+        "Contacts": "Контакты",
+        "Privacy": "Политика конфиденциальности"
+    },
     "LocaleSwitcher": {
         "label": "Russian"
     }

@@ -1,0 +1,31 @@
+@mixin button {
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 16px 48px;
+    height: 56px;
+    border: none;
+    transition: all 0.3s ease;
+    color: #232536;
+}
+
+.buttonPrimary {
+    @include button;
+
+    background-color: #FFD050;
+
+    &:hover {
+        background-color: #FFFFFF;
+    }
+}
+
+.buttonSecondary {
+    @include button;
+
+    background-color: #FFFFFF;
+
+    &:hover {
+        background-color: #FFD050;
+    }
+}

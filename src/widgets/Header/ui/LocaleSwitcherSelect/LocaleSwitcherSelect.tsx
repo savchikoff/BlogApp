@@ -3,6 +3,8 @@
 import { useParams } from 'next/navigation';
 import { ChangeEvent, ReactNode, useTransition } from 'react';
 import { useRouter, usePathname } from '@/navigation';
+import styles from './LocaleSwitcherSelect.module.scss';
+
 
 type Props = {
     children: ReactNode;
@@ -32,8 +34,7 @@ export default function LocaleSwitcherSelect({
     }
 
     return (
-        <label
-        >
+        <div className={styles.localeSwitcher}>
             <select
                 defaultValue={defaultValue}
                 disabled={isPending}
@@ -41,6 +42,6 @@ export default function LocaleSwitcherSelect({
             >
                 {children}
             </select>
-        </label>
+        </div>
     );
 }

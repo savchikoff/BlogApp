@@ -1,0 +1,21 @@
+.header {
+    background-color: #232536;
+}
+
+.headerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+
+.companyName {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.actionsWrapper {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}

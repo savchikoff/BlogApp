@@ -1,0 +1,16 @@
+.footer {
+    background-color: #232536;
+}
+
+.navigationWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 56px 0;
+}
