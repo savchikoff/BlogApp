@@ -1,0 +1,34 @@
+.categoryContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px;
+    border: 1px solid #6D6E76;
+    transition: all 0.3s ease;
+    max-width: 296px;
+
+    &:hover {
+        background-color: #FFD050;
+        border: 1px solid transparent;
+    }
+}
+
+.textContent {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.imgContainer {
+    width: 949px;
+    height: 705px;
+}
+
+.categoryHeader {
+    color: inherit;
+    font-size: 28px;
+}
+
+.categoryDescription {
+    color: #6D6E76;
+}

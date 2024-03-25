@@ -1,5 +1,7 @@
-export default function Privacy() {
+import { Privacy } from "@/widgets/Privacy";
+
+export default function PrivacyPage() {
     return (
-        <h1>Privacy</h1>
+        <Privacy />
     );
 }

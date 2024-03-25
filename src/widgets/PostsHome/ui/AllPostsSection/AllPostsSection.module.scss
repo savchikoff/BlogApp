@@ -1,0 +1,25 @@
+.postsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sectionHeader {
+    font-size: 36px;
+    color: #232536;
+}
+
+.viewAllLink {
+    color: #592EA9;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+}

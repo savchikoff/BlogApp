@@ -2,9 +2,13 @@ import { Metadata } from "next";
 import { Sen } from "next/font/google";
 import '@/styles/globals.scss';
 
-import { Header, Footer } from "@/widgets";
+import { Header } from "@/widgets/Header";
+import { Footer } from "@/widgets/Footer";
+import { NextIntlClientProvider } from "next-intl";
+import { useMessages } from "next-intl";
 
-const sen = Sen({ subsets: ['latin'], weight: ["400", "500", "700"] });
+
+const sen = Sen({ subsets: ['latin'], weight: ["400", "500", "600", "700"] });
 
 export const metadata: Metadata = {
 	title: "Blog App",
@@ -19,12 +23,15 @@ export default function RootLayout({
 	children: React.ReactNode;
 	params: { locale: string };
 }) {
+	const messages = useMessages();
 	return (
 		<html lang={locale}>
 			<body className={sen.className}>
-				<Header />
-				{children}
-				<Footer />
+				<NextIntlClientProvider locale={locale} messages={messages}>
+					<Header />
+					{children}
+					<Footer />
+				</NextIntlClientProvider>
 			</body>
 		</html>
 	);

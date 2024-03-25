@@ -1,0 +1,36 @@
+.testimonialsContainer {
+    background-color: #FBF6EA;
+    padding: 92px 112px;
+}
+
+.testimonialsWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonialsInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.line {
+    width: 1px;
+    min-height: 100%;
+    background-color: #6D6E76;
+}
+
+.testimonialsSubheader {
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.testimonialsHeader {
+    font-size: 36px;
+    color: inherit;
+    max-width: 345px;
+}
+
+.testimonialsDescription {
+    max-width: 349px;
+}

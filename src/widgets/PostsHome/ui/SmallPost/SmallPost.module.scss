@@ -1,0 +1,24 @@
+.postWrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 8px;
+    padding: 32px;
+    transition: all 0.3s ease;
+    width: 517px;
+    height: 181px;
+
+    &:hover {
+        background-color: #FBF6EA;
+    }
+}
+
+.authorInfo {
+    color: #592EA9;
+}
+
+.postHeader {
+    color: #232536;
+    width: 369px;
+    font-size: 24px;
+}

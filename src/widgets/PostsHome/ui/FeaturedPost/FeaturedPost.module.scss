@@ -1,0 +1,35 @@
+.postContainer {
+    padding: 32px;
+    border: 1px solid #6D6E76;
+    max-width: 733px;
+    height: 100%;
+}
+
+.postWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.articleTextWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.articleInfo {}
+
+.authorInfo {
+    color: #592EA9;
+}
+
+.articleHeader {
+    color: inherit;
+    font-size: 28px;
+    letter-spacing: -1px;
+}
+
+.articleDescription {
+    color: #6D6E76;
+}

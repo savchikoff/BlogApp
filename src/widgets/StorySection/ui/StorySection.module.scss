@@ -1,0 +1,48 @@
+.storyWrapper {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.storyContentWrapper {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    margin-left: -24px;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #FFFFFF;
+    width: 50%;
+    padding: 80px;
+}
+
+.storyImg {
+    width: 80%;
+    object-fit: cover;
+}
+
+.storySubHeader {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 24px;
+}
+
+.storyInfoWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.storyHeader {
+    color: inherit;
+    font-size: 48px;
+    max-width: 446px;
+}
+
+.storyDescription {
+    max-width: 546px;
+    color: #6D6E76;
+}

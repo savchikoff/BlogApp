@@ -1,11 +1,28 @@
-import { useTranslations } from 'next-intl';
-import styles from './page.module.scss';
+import { Hero } from '@/widgets/Hero';
+import { PostsHome } from '@/widgets/PostsHome';
+import { AboutSection } from '@/widgets/AbouSection';
+import container from "@/styles/container.module.scss";
+import { Categories } from '@/widgets/Categories';
+import { Authors } from '@/widgets/Authors';
+import { StorySection } from '@/widgets/StorySection';
+import { JoinTeam } from '@/widgets/JoinTeam';
+import { Partners } from '@/widgets/Partners';
+import { Testimonials } from '@/widgets/Testimonials';
 
 export default function Home() {
-	const t = useTranslations('Index');
 	return (
-		<main className={styles.main}>
-			<h1>{t('title')}</h1>
-		</main>
+		<>
+			<Hero />
+			<div className={container.container}>
+				<PostsHome />
+				<AboutSection />
+				<Categories />
+				<StorySection />
+				<Authors />
+				<Partners />
+				<Testimonials />
+				<JoinTeam />
+			</div>
+		</>
 	);
 }

@@ -1,0 +1,45 @@
+.headerContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 720px;
+    background: url('../assets/background.jpg') no-repeat center center;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+.infoWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.subHeader {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+.mainHeader {
+    font-size: 56px;
+    letter-spacing: -2px;
+    max-width: 803px;
+    line-height: 64px;
+}
+
+.description {
+    max-width: 599px;
+}
+
+.articleInfo {}
+
+.authorInfo {
+    color: #FFD050;
+}

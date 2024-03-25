@@ -1,0 +1,18 @@
+.formWrapper {
+    display: flex;
+    gap: 24px;
+}
+
+.emailInput {
+    font-family: inherit;
+    height: 56px;
+    background: none;
+    border: 1px solid #4C4C4C;
+    padding: 0 24px;
+    width: 323px;
+    color: #FFFFFF;
+
+    &::placeholder {
+        color: #6D6E76;
+    }
+}

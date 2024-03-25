@@ -1,0 +1,120 @@
+.valuesWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutUsContainer {
+    z-index: 1;
+    padding-left: 160px;
+    padding-right: 40px;
+}
+
+.aboutUsWrapper {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.aboutUsHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 64px;
+    background-color: #FFFFFF;
+}
+
+.aboutUsSubHeading {
+    letter-spacing: 3px;
+}
+
+.aboutUsHeading {
+    max-width: 496px;
+    color: inherit;
+    font-size: 48px;
+}
+
+.aboutUsDescription {
+    max-width: 477px;
+    color: #4C4C4C;
+}
+
+.imgWrapper {
+    position: relative;
+    margin-top: -64px;
+}
+
+.companyStatsContainer {
+    position: absolute;
+    bottom: 0;
+    left: 108px;
+}
+
+.companyStatsWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 630px;
+    padding: 32px 48px;
+    background-color: #FFD050;
+}
+
+.companyNumberWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.companyNumberValue {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.lines {
+    display: flex;
+    height: 24px;
+    width: 100vh;
+}
+
+.purpleLine {
+    background-color: #592EA9;
+    max-width: 300px;
+    width: 100%;
+}
+
+.yellowLine {
+    background-color: #FFD050;
+    max-width: 550px;
+    width: 100%;
+}
+
+.keyValuesContainer {
+    padding: 128px 108px 64px 108px;
+    background-color: #F4F0F8;
+}
+
+.keyValuesWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.keyValueWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.keyValueSubheader {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.keyValueHeader {
+    color: inherit;
+    font-size: 28px;
+    max-width: 481px;
+}
+
+.keyValueDescription {
+    color: #6D6E76;
+    max-width: 516px;
+}

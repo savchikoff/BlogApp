@@ -1,0 +1,27 @@
+.privacyContentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 128px;
+}
+
+.privacyContentWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 768px;
+}
+
+.privacyContentHeading {
+    color: inherit;
+    font-size: 48px;
+}
+
+.privacyContentSubHeading {
+    color: inherit;
+    font-size: 36px;
+}
+
+.privacyContentText {
+    color: #4C4C4C;
+}

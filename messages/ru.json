@@ -9,6 +9,12 @@
         "Contacts": "Контакты",
         "Privacy": "Политика конфиденциальности"
     },
+    "Categories": {
+        "Business": "Бизнес",
+        "Startup": "Стартапы",
+        "Economy": "Экономика",
+        "Technology": "Технологии"
+    },
     "LocaleSwitcher": {
         "label": "Russian"
     }

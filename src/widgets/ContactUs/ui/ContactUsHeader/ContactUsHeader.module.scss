@@ -1,0 +1,30 @@
+.contactUsHeaderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactUsHeaderWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactUsSubheading {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.contactUsHeading {
+    text-align: center;
+    color: inherit;
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+
+.contactUsDescription {
+    text-align: center;
+    color: #6D6E76;
+}

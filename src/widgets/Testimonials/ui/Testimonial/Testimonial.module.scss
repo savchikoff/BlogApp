@@ -1,0 +1,30 @@
+.testimonialWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 121px;
+}
+
+.testimonialText {
+    font-weight: 700;
+    font-size: 24px;
+    max-width: 469px;
+}
+
+.testimonialAuthor {
+    display: flex;
+    gap: 16px;
+}
+
+.testimonialsInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonialAuthorName {
+    color: inherit;
+    font-size: 24px;
+}
+
+.testimonialAuthorLocation {
+    color: #6D6E76;
+}

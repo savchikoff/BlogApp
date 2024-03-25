@@ -1,0 +1,39 @@
+.authorWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    background-color: #F4F4F4;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #FBF6EA;
+    }
+}
+
+.textContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.authorName {
+    text-align: center;
+    color: inherit;
+    font-size: 28px;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: #592EA9;
+    }
+}
+
+.position {
+    color: #6D6E76;
+}
+
+.socialsLinks {
+    display: flex;
+    gap: 16px;
+}

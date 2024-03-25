@@ -1,0 +1,21 @@
+.authorsContainer {
+    padding-top: 128px;
+}
+
+.authorsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+}
+
+.authorsHeader {
+    color: inherit;
+    font-size: 36px;
+}
+
+.authors {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}

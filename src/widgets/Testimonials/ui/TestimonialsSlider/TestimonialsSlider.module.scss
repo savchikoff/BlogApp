@@ -1,0 +1,35 @@
+.testimonialsContainer {
+    position: relative;
+}
+
+.testimonialsWrapper {
+    display: flex;
+}
+
+.testimonialsSliderWrapper {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    gap: 24px;
+}
+
+.testimonialsSlider {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+        background-color: #232536;
+
+        img {
+            filter: brightness(0) invert(1);
+        }
+    }
+}

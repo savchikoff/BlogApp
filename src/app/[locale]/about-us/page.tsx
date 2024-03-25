@@ -1,5 +1,12 @@
-export default function AboutUs() {
+import { JoinTeam } from "@/widgets/JoinTeam";
+import { AboutUs } from "@/widgets/AboutUs/ui/AboutUs";
+import container from "@/styles/container.module.scss";
+
+export default function AboutUsPage() {
     return (
-        <h1>About Us</h1>
+        <div className={container.container}>
+            <AboutUs />
+            <JoinTeam />
+        </div>
     );
 }

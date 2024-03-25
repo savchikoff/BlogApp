@@ -9,6 +9,12 @@
         "Contacts": "Contacts",
         "Privacy": "Privacy Policy"
     },
+    "Categories": {
+        "Business": "Business",
+        "Startup": "Startup",
+        "Economy": "Economy",
+        "Technology": "Technology"
+    },
     "LocaleSwitcher": {
         "label": "English"
     }

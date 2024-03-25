@@ -1,0 +1,22 @@
+.contactUsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 128px;
+    padding-bottom: 70px;
+}
+
+.contactUsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    width: 100%;
+    max-width: 816px;
+    padding: 0 24px;
+}
+
+.contactUsFormWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}

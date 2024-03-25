@@ -1,0 +1,47 @@
+.contactInfoContainer {
+    padding: 48px 64px;
+    background-color: #592EA9;
+}
+
+.contactInfoWrapper {
+    display: flex;
+    gap: 40px;
+}
+
+.contactInfoSection {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 50%
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: #FFFFFF;
+    opacity: 10%;
+}
+
+.contactInfoHeading {
+    font-size: 14px;
+    color: #FFFFFF;
+    opacity: 60%;
+}
+
+
+.contactInfoDataWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contactInfoData {
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.contactInfoMessage {
+    color: #FFFFFF;
+    opacity: 60%;
+}

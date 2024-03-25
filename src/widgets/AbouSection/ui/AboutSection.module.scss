@@ -1,0 +1,72 @@
+.sectionWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.lines {
+    display: flex;
+    height: 24px;
+}
+
+.yellowLine {
+    background-color: #FFD050;
+    width: 780px;
+    height: 100%;
+}
+
+.purpleLine {
+    background-color: #592EA9;
+    width: 280px;
+    height: 100%;
+}
+
+.infoWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 96px 80px;
+    background-color: #F4F0F8;
+}
+
+.subHeader {
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.aboutHeader {
+    color: inherit;
+    font-size: 36px;
+    letter-spacing: -2px;
+    max-width: 494px;
+}
+
+.aboutUsWrapper,
+.missionWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.description {
+    color: #6D6E76;
+    max-width: 515px;
+}
+
+.aboutUsLink {
+    color: #592EA9;
+    font-weight: 600;
+}
+
+.missionHeader {
+    color: inherit;
+    font-size: 28px;
+    letter-spacing: -1px;
+    max-width: 481px;
+}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { routes } from "../consts/routes";
+import { routes } from "../../../shared/consts/routes";
 import { useTranslations } from "next-intl";
 import styles from "./Navigation.module.scss";
 import { INavigationProps } from "./interfaces";
@@ -16,7 +16,7 @@ export function Navigation({ isWithPrivacy = false }: INavigationProps) {
         <nav>
             <ul className={styles.linksContainer}>
                 {Object.entries(navigationRoutes).map((route) => (
-                    <li>
+                    <li key={route[0]}>
                         <Link href={route[1]}>{t(route[0])}</Link>
                     </li>
                 ))}

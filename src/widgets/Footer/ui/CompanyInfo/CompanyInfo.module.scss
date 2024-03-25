@@ -1,0 +1,16 @@
+.companyInfoWrapper {
+    display: flex;
+    justify-content: space-between;
+    color: #BDBDC2;
+}
+
+.companyContactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.socialsLinks {
+    display: flex;
+    gap: 32px;
+}

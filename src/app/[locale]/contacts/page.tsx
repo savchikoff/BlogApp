@@ -1,5 +1,11 @@
+import { Map } from "@/widgets/Map";
+import { ContactUs } from "@/widgets/ContactUs";
+
 export default function Contacts() {
     return (
-        <h1>Contacts</h1>
+        <>
+            <ContactUs />
+            <Map />
+        </>
     );
 }
