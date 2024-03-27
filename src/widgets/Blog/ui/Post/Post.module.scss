@@ -1,0 +1,27 @@
+.postWrapper {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.postTextWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.postCategory {
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #592EA9;
+    margin-bottom: 20px;
+}
+
+.postHeading {
+    color: inherit;
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.postDescription {
+    color: #6D6E76;
+}

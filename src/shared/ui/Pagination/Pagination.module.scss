@@ -1,0 +1,43 @@
+.paginationWrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.page {
+    display: block;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    line-height: 1.8;
+    color: #6D6E76;
+    border: 2px solid #6D6E76;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    ;
+
+    &:hover {
+        border: 2px solid #592EA9;
+        color: #592EA9;
+    }
+}
+
+.pageControl {
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: #6D6E76;
+    }
+}
+
+.activeLink {
+    border: 2px solid #592EA9;
+    color: #592EA9;
+}

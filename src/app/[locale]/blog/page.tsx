@@ -1,5 +1,16 @@
-export default function Blog() {
+import container from "@/styles/container.module.scss";
+import { JoinTeam } from "@/widgets/JoinTeam";
+import { Categories } from "@/widgets/Categories";
+import { Blog } from "@/widgets/Blog";
+
+export default function BlogPage() {
     return (
-        <h1>Blog</h1>
+        <>
+            <Blog />
+            <div className={container.container}>
+                <Categories />
+                <JoinTeam />
+            </div>
+        </>
     );
 }

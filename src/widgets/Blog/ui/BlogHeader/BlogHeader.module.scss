@@ -1,0 +1,48 @@
+.blogHeaderContainer {
+    background-color: #F4F0F8;
+    padding: 94px 0;
+}
+
+.blogHeaderTextWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.blogHeaderText {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.blogHeaderWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 141px;
+}
+
+.blogHeaderSubheading {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.blogHeaderHeading {
+    color: inherit;
+    font-size: 36px;
+}
+
+.authorInfo {
+    font-size: 14px;
+}
+
+.authorName {
+    color: #592EA9;
+}
+
+.blogHeaderDescription {
+    color: #6D6E76;
+    margin-bottom: 32px;
+}
