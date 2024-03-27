@@ -22,3 +22,12 @@ export const categories = {
     },
 
 }
+
+export enum Categories {
+    BUSINESS = "Business",
+    STARTUP = "Startup",
+    ECONOMY = "Economy",
+    TECHNOLOGY = "Technology"
+}
+
+export type CategoryType = keyof typeof categories;

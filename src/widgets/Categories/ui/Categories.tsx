@@ -1,6 +1,6 @@
 import styles from "./Categories.module.scss";
 import Category from "./Category/Category";
-import { categories } from "../consts/categories";
+import { categories } from "../../../shared/consts/categories";
 import { useTranslations } from "next-intl";
 
 export function Categories() {
@@ -13,7 +13,7 @@ export function Categories() {
                     const categoryName = item[0];
                     const { img, link } = item[1];
                     return (
-                        <Category category={t(categoryName)} img={img} link={link} />
+                        <Category key={link} category={t(categoryName)} img={img} link={link} />
                     )
                 })}
             </div>

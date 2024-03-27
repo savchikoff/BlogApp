@@ -1,56 +1,10 @@
 "use client";
 
 import { useState } from 'react';
-import Post from '../Post/Post';
+import Post from '../../../Post/Post';
 import styles from './AllPosts.module.scss';
-import postImg from '../../assets/postImg.jpg';
 import { Pagination } from '@/shared';
-
-
-const posts = [
-    {
-        img: postImg,
-        alt: 'postImg',
-        category: "Business",
-        header: "Design tips for designers that cover everything you need",
-        description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
-    },
-    {
-        img: postImg,
-        alt: 'postImg',
-        category: "Business",
-        header: "Design tips for designers that cover everything you need",
-        description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
-    },
-    {
-        img: postImg,
-        alt: 'postImg',
-        category: "Business",
-        header: "Design tips for designers that cover everything you need",
-        description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
-    },
-    {
-        img: postImg,
-        alt: 'postImg',
-        category: "Business",
-        header: "Design tips for designers that cover everything you need",
-        description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
-    },
-    {
-        img: postImg,
-        alt: 'postImg',
-        category: "Business",
-        header: "Design tips for designers that cover everything you need",
-        description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
-    },
-    {
-        img: postImg,
-        alt: 'postImg',
-        category: "Business",
-        header: "Design tips for designers that cover everything you need",
-        description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
-    },
-]
+import { blogPosts } from '@/shared/consts/blogPosts';
 
 function AllPosts() {
 
@@ -59,7 +13,7 @@ function AllPosts() {
 
     const indexOfLastPost = currentPage * postsPerPage;
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
-    const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+    const currentPosts = blogPosts.slice(indexOfFirstPost, indexOfLastPost);
 
     const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
@@ -70,10 +24,10 @@ function AllPosts() {
                     <h1 className={styles.allPostsHeading}>All Posts</h1>
                     <div className={styles.line}></div>
                 </div>
-                {currentPosts.map(({ img, alt, category, header, description }) => (
-                    <Post img={img} alt={alt} category={category} header={header} description={description} />
+                {currentPosts.map(({ id, img, category, title, text }) => (
+                    <Post key={id} id={id} img={img} alt={title} category={category} header={title} description={text} />
                 ))}
-                <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} />
+                <Pagination postsPerPage={postsPerPage} totalPosts={blogPosts.length} paginate={paginate} />
             </div>
         </div>
     )

@@ -1,0 +1,38 @@
+.categoryHeaderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F0F8;
+    padding: 80px 32px;
+}
+
+.categoryHeaderWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.categoryHeaderHeading {
+    text-align: center;
+    color: inherit;
+    font-size: 56px;
+    text-transform: capitalize;
+}
+
+.categoryHeaderDescription {
+    text-align: center;
+    max-width: 515px;
+    color: #6D6E76;
+    margin-bottom: 16px;
+}
+
+.categoryHeaderBreadCrumbs {
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+
+    & a:hover {
+        color: #592EA9;
+    }
+}

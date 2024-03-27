@@ -1,6 +1,7 @@
 import { StaticImageData } from "next/image";
 
 export interface IPostProps {
+    id: number,
     img: StaticImageData;
     alt: string;
     category: string;

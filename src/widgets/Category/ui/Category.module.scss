@@ -1,0 +1,12 @@
+.categoryContentWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 128px 0;
+}
+
+.categoryPostsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}

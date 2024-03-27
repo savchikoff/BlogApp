@@ -3,13 +3,15 @@ import Image from 'next/image';
 import styles from './Post.module.scss';
 import { IPostProps } from './interfaces';
 
-function Post({ img, alt, category, header, description }: IPostProps) {
+function Post({ id, img, alt, category, header, description }: IPostProps) {
     return (
         <div className={styles.postWrapper}>
-            <Image src={img} alt={alt} />
+            <div className={styles.imgWrapper}>
+                <Image className={styles.postImg} src={img} alt={alt} />
+            </div>
             <div className={styles.postTextWrapper}>
                 <Link href={`/category/${category.toLowerCase()}`} className={styles.postCategory}>{category}</Link>
-                <h2 className={styles.postHeading}>{header}</h2>
+                <Link href={`/posts/${id}`}><h2 className={styles.postHeading}>{header}</h2></Link>
                 <p className={styles.postDescription}>{description}</p>
             </div>
         </div >

@@ -1,0 +1,32 @@
+.allTagsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.allTagsHeader {
+    color: inherit;
+}
+
+.categoriesWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.categoryButton {
+    cursor: pointer;
+    font-weight: 700;
+    color: #6D6E76;
+    display: inline-block;
+    border-radius: 28px;
+    padding: 8px 38px;
+    border: 1px solid #6D6E76;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #FFD050;
+        color: #232536;
+        border: 1px solid transparent;
+    }
+}
