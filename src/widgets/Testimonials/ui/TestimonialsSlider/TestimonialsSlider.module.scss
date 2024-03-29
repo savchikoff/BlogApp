@@ -1,9 +1,15 @@
 .testimonialsContainer {
     position: relative;
+    max-width: 532px;
+    overflow: hidden;
+    width: 100%;
 }
 
 .testimonialsWrapper {
     display: flex;
+    gap: 64px;
+    width: 1000px;
+    transition: all 0.3s ease-in-out;
 }
 
 .testimonialsSliderWrapper {

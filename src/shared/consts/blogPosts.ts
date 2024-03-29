@@ -153,3 +153,5 @@ export const blogPosts = [
         rocketIcon
     },
 ];
+
+export type PostType = typeof blogPosts[0];

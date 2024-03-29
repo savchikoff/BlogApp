@@ -2,7 +2,6 @@
     padding: 32px;
     border: 1px solid #6D6E76;
     max-width: 733px;
-    height: 100%;
 }
 
 .postWrapper {
@@ -10,6 +9,15 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
+}
+
+.postImgWrapper {
+    width: 100%;
+}
+
+.postImg {
+    width: 100%;
+    object-fit: cover;
 }
 
 .articleTextWrapper {

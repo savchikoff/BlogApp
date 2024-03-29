@@ -1,3 +1,6 @@
+"use client"
+
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Categories.module.scss';
@@ -7,6 +10,7 @@ import { CategoryType } from '@/shared/consts/categories';
 
 
 function Categories() {
+    const t = useTranslations("Categories");
     return (
         <div className={styles.allCategoriesWrapper}>
             <h2 className={styles.allCategoriesHeader}>Categories</h2>
@@ -18,7 +22,7 @@ function Categories() {
                         <Link key={category} href={link}>
                             <div className={styles.categoryWrapper}>
                                 <Image src={img} alt={category} />
-                                <h4 className={styles.categoryName}>{category}</h4>
+                                <h4 className={styles.categoryName}>{t(category)}</h4>
                             </div>
                         </Link>
                     )

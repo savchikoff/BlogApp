@@ -7,11 +7,11 @@ export const tags = [
     "Life"
 ]
 
-export enum Tags {
-    BUSINESS = "Business",
-    EXPERIENCE = "Experience",
-    SCREEN = "Screen",
-    TECHNOLOGY = "Technology",
-    MARKETING = "Marketing",
-    LIFE = "Life"
+export const Tags = {
+    BUSINESS: "Business",
+    EXPERIENCE: "Experience",
+    SCREEN: "Screen",
+    TECHNOLOGY: "Technology",
+    MARKETING: "Marketing",
+    LIFE: "Life"
 }

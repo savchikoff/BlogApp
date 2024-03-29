@@ -1,19 +1,22 @@
-import Image from "next/image";
+"use client"
 
+import { useTranslations } from "next-intl";
+import Image from "next/image";
 import styles from "./CompanyValues.module.scss";
 import overview from '@/widgets/AboutUs/assets/overview.jpg';
 
 function CompanyValues() {
+    const t = useTranslations("AboutUs.CompanyValues");
     return (
         <div className={styles.valuesWrapper}>
             <div className={styles.aboutUsContainer}>
                 <div className={styles.aboutUsWrapper}>
                     <div className={styles.aboutUsHeader}>
                         <div className={styles.aboutUsSubHeading}>
-                            ABOUT US
+                            {t("subHeading")}
                         </div>
                         <h1 className={styles.aboutUsHeading}>
-                            We are a team of content writers who share their learnings
+                            {t("heading")}
                         </h1>
                     </div>
                     <div className={styles.aboutUsDescription}>
@@ -29,15 +32,15 @@ function CompanyValues() {
                     <div className={styles.companyStatsWrapper}>
                         <div className={styles.companyNumberWrapper}>
                             <div className={styles.companyNumberValue}>12+</div>
-                            <div className={styles.companyNumberDescription}>Blogs Published</div>
+                            <div className={styles.companyNumberDescription}>{t("blogsSubHeading")}</div>
                         </div>
                         <div className={styles.companyNumberWrapper}>
                             <div className={styles.companyNumberValue}>18K+</div>
-                            <div className={styles.companyNumberDescription}>Views on Finsweet</div>
+                            <div className={styles.companyNumberDescription}>{t("viewsSubHeading")}</div>
                         </div>
                         <div className={styles.companyNumberWrapper}>
                             <div className={styles.companyNumberValue}>30K+</div>
-                            <div className={styles.companyNumberDescription}>Total active Users</div>
+                            <div className={styles.companyNumberDescription}>{t("usersSubHeading")}</div>
                         </div>
                     </div>
                     <div className={styles.lines}>
@@ -49,13 +52,13 @@ function CompanyValues() {
             <div className={styles.keyValuesContainer}>
                 <div className={styles.keyValuesWrapper}>
                     <div className={styles.keyValueWrapper}>
-                        <div className={styles.keyValueSubheader}>Our mision</div>
-                        <h4 className={styles.keyValueHeader}>Creating valuable content for creatives all around the world</h4>
+                        <div className={styles.keyValueSubheader}>{t("missionSubHeading")}</div>
+                        <h4 className={styles.keyValueHeader}>{t("missionHeading")}</h4>
                         <div className={styles.keyValueDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</div>
                     </div>
                     <div className={styles.keyValueWrapper}>
-                        <div className={styles.keyValueSubheader}>Our Vision</div>
-                        <h4 className={styles.keyValueHeader}>A platform that empowers individuals to improve</h4>
+                        <div className={styles.keyValueSubheader}>{t("visionSubHeading")}</div>
+                        <h4 className={styles.keyValueHeader}>{t("visionHeading")}</h4>
                         <div className={styles.keyValueDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</div>
                     </div>
                 </div>

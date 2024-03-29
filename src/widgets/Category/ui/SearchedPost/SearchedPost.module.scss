@@ -1,0 +1,25 @@
+.searchedPostContainer {
+    border: 1px solid #C1C1C3;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #FBF6EA;
+    }
+}
+
+.searchedPostTitle {
+    font-size: 18px;
+    color: inherit;
+}
+
+.searchedPostTags {
+    font-size: 14px;
+    color: #C1C1C3;
+}

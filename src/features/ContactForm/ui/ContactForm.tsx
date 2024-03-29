@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 import { Formik, Field, ErrorMessage, FormikValues, FormikHelpers } from 'formik';
 import emailjs from '@emailjs/browser';
 import styles from './ContactForm.module.scss';
@@ -9,6 +10,8 @@ import { schema } from "../consts/schema";
 import { Button } from '@/shared';
 
 export function ContactForm() {
+
+    const t = useTranslations("ContactUs.ContactForm");
 
     const initialValues: FormValues = {
         userName: '',
@@ -52,11 +55,11 @@ export function ContactForm() {
             {({ isSubmitting, errors, handleSubmit }) => (
                 <form className={styles.contactForm} onSubmit={handleSubmit}>
                     <label htmlFor="userName">
-                        <Field placeholder="Full Name" name="userName" type="text" />
+                        <Field placeholder={`${t("fullName")}`} name="userName" type="text" />
                         <ErrorMessage className={styles.error} name="userName" component="div" />
                     </label>
                     <label htmlFor="email">
-                        <Field placeholder="Email" name="email" type="email" />
+                        <Field placeholder={`${t("email")}`} name="email" type="email" />
                         <ErrorMessage className={styles.error} name="email" component="div" />
                     </label>
                     <label htmlFor="query">
@@ -69,10 +72,10 @@ export function ContactForm() {
                         <ErrorMessage className={styles.error} name="query" component="div" />
                     </label>
                     <label htmlFor="message">
-                        <Field placeholder="Message" name="message" as="textarea" />
+                        <Field placeholder={`${t("message")}`} name="message" as="textarea" />
                         <ErrorMessage className={styles.error} name="message" component="div" />
                     </label>
-                    <Button isPrimary type='submit' disabled={isSubmitting}>Submit</Button>
+                    <Button isPrimary type='submit' disabled={isSubmitting}>{t("label")}</Button>
                 </form>
             )}
         </Formik>

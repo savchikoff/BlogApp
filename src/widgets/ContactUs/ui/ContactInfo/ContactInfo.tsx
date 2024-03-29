@@ -1,20 +1,24 @@
+"use client"
+
+import { useTranslations } from 'next-intl';
 import styles from './ContactInfo.module.scss';
 
 function ContactInfo() {
+    const t = useTranslations("ContactUs.ContactInfo")
     return (
         <div className={styles.contactInfoContainer}>
             <div className={styles.contactInfoWrapper}>
                 <div className={styles.contactInfoSection}>
-                    <div className={styles.contactInfoHeading}>Working hours</div>
+                    <div className={styles.contactInfoHeading}>{t("hoursHeading")}</div>
                     <div className={styles.line}></div>
                     <div className={styles.contactInfoDataWrapper}>
-                        <p className={styles.contactInfoData}>Monday To Friday</p>
-                        <p className={styles.contactInfoData}>9:00 AM to 8:00 PM </p>
-                        <p className={styles.contactInfoMessage}>Our Support Team is available 24/7</p>
+                        <p className={styles.contactInfoData}>{t("workingDays")}</p>
+                        <p className={styles.contactInfoData}>{t("workingHours")} </p>
+                        <p className={styles.contactInfoMessage}>{t("supportMessage")}</p>
                     </div>
                 </div>
                 <div className={styles.contactInfoSection}>
-                    <div className={styles.contactInfoHeading}>Contact Us</div>
+                    <div className={styles.contactInfoHeading}>{t("contactHeading")}</div>
                     <div className={styles.line}></div>
                     <div className={styles.contactInfoDataWrapper}>
                         <p className={styles.contactInfoData}>

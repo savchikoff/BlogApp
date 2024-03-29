@@ -18,7 +18,12 @@
 }
 
 .postHeader {
-    color: #232536;
+    color: inherit;
     width: 369px;
     font-size: 24px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: #592EA9;
+    }
 }

@@ -1,18 +1,20 @@
 import styles from "./SmallPost.module.scss";
 import Link from "next/link";
+import { routes } from "@/shared/consts/routes";
+import { ISmallPostProps } from "./interfaces";
 
-function SmallPost() {
+function SmallPost({ id, author, createdAt, title }: ISmallPostProps) {
     return (
-        <Link href={"/blog"}>
-            <div className={styles.postWrapper}>
-                <div className={styles.postInfo}>
-                    By <span className={styles.authorInfo}>John Deo </span>  l   Aug 23, 2021
-                </div>
+        <div className={styles.postWrapper}>
+            <span className={styles.postInfo}>
+                By <span className={styles.authorInfo}>{author}</span>  l   {createdAt}
+            </span>
+            <Link href={`/posts/${id}`}>
                 <h4 className={styles.postHeader}>
-                    8 Figma design systems that you can download for free today.
+                    {title}
                 </h4>
-            </div>
-        </Link>
+            </Link>
+        </div>
     )
 }
 

@@ -1,29 +1,38 @@
+"use client"
+
+import { useTranslations } from "next-intl";
 import styles from "./Hero.module.scss";
 import container from "@/styles/container.module.scss";
 import Link from "next/link";
 import { Button } from "@/shared";
-import { routes } from "@/shared/consts/routes";
+import { blogPosts } from "@/shared/consts/blogPosts";
+import { getRandomPosts } from "@/shared/utils/getRandomPosts";
 
 export function Hero() {
+    const t = useTranslations("FeaturedPost");
+
+    const featuredPost = getRandomPosts(blogPosts, 1)[0];
+    const { category, title, author, createdAt, text, id } = featuredPost;
+    console.log(featuredPost);
     return (
         <div className={styles.headerContainer}>
             <div className={container.container}>
                 <div className={styles.contentWrapper}>
                     <div className={styles.infoWrapper}>
                         <p className={styles.subHeader}>
-                            Posted on <strong>startup</strong>
+                            Posted on <strong>{category}</strong>
                         </p>
                         <h1 className={styles.mainHeader}>
-                            Step-by-step guide to choosing great font pairs
+                            {title}
                         </h1>
                         <div className={styles.articleInfo}>
-                            By <span className={styles.authorInfo}>James West</span>  |  May 23, 2022
+                            By <span className={styles.authorInfo}>{author}</span>  |  {createdAt}
                         </div>
                         <p className={styles.description}>
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                            {text}
                         </p>
                     </div>
-                    <Button isPrimary><Link href={routes.Blog}>Read More &gt;</Link></Button>
+                    <Button isPrimary><Link href={`/posts/${id}`}>{t("link")} &gt;</Link></Button>
                 </div>
             </div>
         </div>

@@ -1,6 +1,30 @@
 {
-    "Index": {
-        "title": "Привет мир!"
+    "Home": {
+        "About": {
+            "heading": "О нас",
+            "main": "Мы - сообщество авторов контента, которые делятся своими знаниями",
+            "link": "Подробнее",
+            "missionHeading": "Наша миссия",
+            "missionMain": "Создание ценного контента для креативщиков по всему миру"
+        },
+        "Why": {
+            "subHeading": "Как мы начинали",
+            "heading": "Это началось с простой идеи и превратилось в нашу страсть",
+            "link": "Узнать нашу историю"
+        },
+        "PostsHome": {
+            "featuredHeading": "Избранный Пост",
+            "allPostsHeading": "Все Посты",
+            "link": "Смотреть Все"
+        },
+        "Partners": {
+            "subHeading": "Мы",
+            "heading": "сотрудничаем с"
+        },
+        "Testimonials": {
+            "subHeading": "Отзывы",
+            "heading": "Что люди говорят о нашем блоге"
+        }
     },
     "Navigation": {
         "Home": "Главная",
@@ -9,11 +33,79 @@
         "Contacts": "Контакты",
         "Privacy": "Политика конфиденциальности"
     },
+    "VideoButton": {
+        "label": "Видео о нас"
+    },
     "Categories": {
+        "Header": "Выберите категорию",
         "Business": "Бизнес",
         "Startup": "Стартапы",
         "Economy": "Экономика",
         "Technology": "Технологии"
+    },
+    "Author": {
+        "heading": "Список авторов"
+    },
+    "JoinUs": {
+        "heading": "Присоединяйтесь к нашей команде, чтобы быть частью нашей истории",
+        "link": "Присоединиться Сейчас"
+    },
+    "Footer": {
+        "formHeading": "Подпишитесь на нашу рассылку, чтобы получать последние обновления и новости",
+        "placeholder": "Введите Свою Почту",
+        "link": "Подписаться"
+    },
+    "Blog": {
+        "heading": "Все Посты",
+        "prevPage": "Пред",
+        "nextPage": "След"
+    },
+    "FeaturedPost": {
+        "subHeading": "Избранный пост",
+        "link": "Подробнее"
+    },
+    "AboutUs": {
+        "CompanyValues": {
+            "subHeading": "О нас",
+            "heading": "Мы команда авторов контента, которые делятся своими знаниями",
+            "blogsSubHeading": "Статей Опубликовано",
+            "viewsSubHeading": "Просмотров на Finsweet",
+            "usersSubHeading": "Общее кол-во пользователей",
+            "visionSubHeading": "Наше видение",
+            "missionSubHeading": "Наша миссия",
+            "visionHeading": "Платформа, вдохновляющая на совершенствование",
+            "missionHeading": "Создание ценного контента для творческих людей по всему миру"
+        },
+        "OurTeam": {
+            "heading": "Наша команда создателей контента"
+        },
+        "WhyWeStarted": {
+            "heading": "Почему мы начали вести этот Блог"
+        }
+    },
+    "ContactUs": {
+        "ContactHeader": {
+            "subHeading": "Свяжитесь с нами",
+            "heading": "Давайте пообщаемся"
+        },
+        "ContactInfo": {
+            "hoursHeading": "Рабочее время",
+            "contactHeading": "Свяжитесь с нами",
+            "workingDays": "С понедельника по пятницу",
+            "workingHours": "С 9:00 до 18:00",
+            "supportMessage": "Наша команда поддержки доступна 24/7"
+        },
+        "ContactForm": {
+            "fullName": "Имя",
+            "email": "Почта",
+            "message": "Сообщение",
+            "label": "Подтвердить"
+        }
+    },
+    "BlogPost": {
+        "NextPosts": {
+            "heading": "Что читать дальше"
+        }
     },
     "LocaleSwitcher": {
         "label": "Russian"

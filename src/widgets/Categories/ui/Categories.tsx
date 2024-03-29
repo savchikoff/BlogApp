@@ -7,7 +7,7 @@ export function Categories() {
     const t = useTranslations("Categories");
     return (
         <div className={styles.categoriesContainer}>
-            <h2 className={styles.categoriesHeader}>Choose A Category</h2>
+            <h2 className={styles.categoriesHeader}>{t("Header")}</h2>
             <div className={styles.categoriesWrapper}>
                 {Object.entries(categories).map(item => {
                     const categoryName = item[0];

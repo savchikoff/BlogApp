@@ -1,11 +1,14 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useTranslations } from "next-intl";
 import styles from "./NewsLetterForm.module.scss";
 import { Button } from "@/shared";
 import emailjs from '@emailjs/browser';
 
 function NewsLetterForm() {
+    const t = useTranslations("Footer");
+
     const emailInput = useRef<HTMLInputElement>(null);
 
     useEffect(() => emailjs.init("priXHB1AcvH4UCtfU"), []);
@@ -32,8 +35,8 @@ function NewsLetterForm() {
 
     return (
         <form className={styles.formWrapper} onSubmit={sendEmail}>
-            <input ref={emailInput} placeholder="Enter Your Email" className={styles.emailInput} type="email" />
-            <Button isPrimary type="submit">Subscribe</Button>
+            <input ref={emailInput} placeholder={`${t("placeholder")}`} className={styles.emailInput} type="email" />
+            <Button isPrimary type="submit">{t("link")}</Button>
         </form>
     )
 }

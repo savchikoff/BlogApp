@@ -1,10 +1,13 @@
 "use client"
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import styles from './Pagination.module.scss';
 import { IPaginationProps } from './interfaces';
 
 export function Pagination({ postsPerPage, totalPosts, paginate }: IPaginationProps) {
+    const t = useTranslations("Blog");
+
     const pageNumbers = [];
 
     for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
@@ -30,7 +33,7 @@ export function Pagination({ postsPerPage, totalPosts, paginate }: IPaginationPr
                     <a
                         className={styles.pageLink}
                     >
-                        &lt; Prev
+                        &lt; {t("prevPage")}
                     </a>
                 </li>
                 {
@@ -57,7 +60,7 @@ export function Pagination({ postsPerPage, totalPosts, paginate }: IPaginationPr
                     <a
                         className={styles.pageLink}
                     >
-                        Next &gt;
+                        {t("nextPage")} &gt;
                     </a>
                 </li>
             </ul>

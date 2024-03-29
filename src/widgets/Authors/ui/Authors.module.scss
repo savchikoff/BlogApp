@@ -16,6 +16,8 @@
 
 .authors {
     display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
 }

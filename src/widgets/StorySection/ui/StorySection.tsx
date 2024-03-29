@@ -1,23 +1,27 @@
+"use client"
+
 import Image from "next/image";
 import styles from "./StorySection.module.scss";
 import storyImg from '../assets/storyImg.jpg';
 import { Button } from "@/shared";
+import { useTranslations } from "next-intl";
 
 export function StorySection() {
+    const t = useTranslations("Home.Why")
     return (
         <div className={styles.storyWrapper}>
             <Image
                 className={styles.storyImg}
-                src={storyImg}// You should set the height as well for better responsiveness
+                src={storyImg}
                 alt="story-img"
             />
             <div className={styles.storyContentWrapper}>
                 <div className={styles.storySubHeader}>
-                    Why we started
+                    {t("subHeading")}
                 </div>
                 <div className={styles.storyInfoWrapper}>
                     <h2 className={styles.storyHeader}>
-                        It started out as a simple idea and evolved into our passion
+                        {t("heading")}
                     </h2>
                     <p className={styles.storyDescription}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -25,7 +29,7 @@ export function StorySection() {
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
                     </p>
                 </div>
-                <Button isPrimary>Discover our story &gt;</Button>
+                <Button isPrimary>{t("link")} &gt;</Button>
             </div>
         </div>
     )

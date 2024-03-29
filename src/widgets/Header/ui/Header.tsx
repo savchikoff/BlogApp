@@ -8,8 +8,11 @@ import LocaleSwitcher from './LocaleSwitcher';
 import { Button } from '@/shared';
 import { CompanyName } from '@/shared';
 import { Modal } from '@/shared';
+import { useTranslations } from 'next-intl';
 
 export function Header() {
+
+    const t = useTranslations("VideoButton");
 
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -29,7 +32,7 @@ export function Header() {
                     <div className={styles.actionsWrapper}>
                         <Navigation />
                         <Button onClick={handleModalOpen}>
-                            Video about us
+                            {t("label")}
                         </Button>
                         <LocaleSwitcher />
                     </div>

@@ -2,12 +2,12 @@
     display: flex;
     flex-direction: column;
     gap: 121px;
+    width: 100%;
 }
 
 .testimonialText {
     font-weight: 700;
     font-size: 24px;
-    max-width: 469px;
 }
 
 .testimonialAuthor {

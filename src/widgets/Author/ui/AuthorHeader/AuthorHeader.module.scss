@@ -1,0 +1,54 @@
+.authorHeaderContainer {
+    padding-top: 128px;
+    background-color: #F4F0F8;
+}
+
+.authorHeaderWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 104px;
+}
+
+.authorInfoWrapper {
+    display: flex;
+    gap: 32px;
+}
+
+.authorTextInfoWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 669px;
+}
+
+.authorWelcomeMessage {
+    font-size: 48px;
+    color: inherit;
+}
+
+.authorDescription {
+    color: #6D6E76;
+}
+
+.socialsLinks {
+    display: flex;
+    gap: 16px;
+}
+
+.authorHeaderLines {
+    display: flex;
+    height: 24px;
+    width: 100%;
+}
+
+.authorHeaderYellowLine {
+    background-color: #FFD050;
+    height: 100%;
+    width: 60%;
+}
+
+.authorHeaderPurpleLine {
+    background-color: #592EA9;
+    height: 100%;
+    width: 40%;
+}

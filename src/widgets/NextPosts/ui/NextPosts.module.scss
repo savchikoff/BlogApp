@@ -1,0 +1,22 @@
+.nextPostsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.nextPosts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.nextPostsHeading {
+    color: inherit;
+}
+
+.line {
+    background-color: #6D6E76;
+    height: 1px;
+    width: 100%;
+}

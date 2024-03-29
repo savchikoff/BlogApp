@@ -1,0 +1,94 @@
+.blogPostContainer {
+    display: flex;
+    justify-content: center;
+    padding: 128px 0;
+}
+
+.blogPostWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    max-width: 843px;
+    width: 100%;
+}
+
+.blogPostHeaderWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.authorInfoWrapper {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.authorName {
+    font-weight: 700;
+    font-size: 28px;
+    color: #592EA9;
+}
+
+.postDate {
+    color: #6D6E76;
+}
+
+.blogPostHeading {
+    color: inherit;
+    font-size: 48px;
+}
+
+.blogPostCategoryWrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.categoryName {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.blogPostImgWrapper {
+    width: 100%;
+}
+
+.blogPostImg {
+    object-fit: cover;
+    width: 100%;
+}
+
+.blogPostTextContentWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.blogPostTextPartHeading {
+    color: inherit;
+    margin-bottom: 16px;
+}
+
+.blogPostTextPartText {
+    color: #6D6E76;
+}
+
+.blogPostTextPartTextWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.bulletPointsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: #494A52;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.bulletPoint {
+    list-style: disc inside;
+}
