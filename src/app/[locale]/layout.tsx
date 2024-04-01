@@ -1,11 +1,13 @@
 import { Metadata } from "next";
 import { Sen } from "next/font/google";
-import '@/styles/globals.scss';
+import '@/shared/styles/globals.scss';
 
 import { Header } from "@/widgets/Header";
 import { Footer } from "@/widgets/Footer";
 import { NextIntlClientProvider } from "next-intl";
 import { useMessages } from "next-intl";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const sen = Sen({ subsets: ['latin'], weight: ["400", "500", "600", "700"] });
@@ -32,6 +34,7 @@ export default function RootLayout({
 					{children}
 					<Footer />
 				</NextIntlClientProvider>
+				<ToastContainer />
 			</body>
 		</html>
 	);

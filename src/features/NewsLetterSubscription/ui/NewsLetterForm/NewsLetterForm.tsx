@@ -2,42 +2,62 @@
 
 import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
+import { Formik, Field, ErrorMessage, FormikValues, FormikHelpers } from "formik";
+import { toast } from "react-toastify";
+import emailjs from '@emailjs/browser';
 import styles from "./NewsLetterForm.module.scss";
 import { Button } from "@/shared";
-import emailjs from '@emailjs/browser';
+import { FormValues } from "./interfaces";
+import { schema } from '@/features/NewsLetterSubscription/consts/schema';
 
 function NewsLetterForm() {
     const t = useTranslations("Footer");
 
-    const emailInput = useRef<HTMLInputElement>(null);
+    const initialValues: FormValues = {
+        email: ''
+    }
 
-    useEffect(() => emailjs.init("priXHB1AcvH4UCtfU"), []);
+    useEffect(() => emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string), []);
 
-    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-        if (emailInput.current) {
-            e.preventDefault();
-
+    const handleSubmit = (values: FormikValues, { setSubmitting, resetForm }: FormikHelpers<FormValues>) => {
+        setTimeout(() => {
             emailjs
-                .send('service_4k0wryn', 'template_bt9ysdk', {
+                .send(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE1_ID as string, {
                     to_name: "Daniil Sauchyk",
-                    email: emailInput.current.value
+                    email: values.email
                 })
                 .then(
                     () => {
-                        console.log('SUCCESS!');
+                        toast.success("You form was send to our edition!");
                     },
                     (error) => {
-                        console.log('FAILED...', error.text);
+                        toast.error(`Something went wrong :(`);
                     },
                 );
-        }
+            setSubmitting(false);
+            resetForm();
+        }, 700);
     };
 
     return (
-        <form className={styles.formWrapper} onSubmit={sendEmail}>
-            <input ref={emailInput} placeholder={`${t("placeholder")}`} className={styles.emailInput} type="email" />
-            <Button isPrimary type="submit">{t("link")}</Button>
-        </form>
+        <>
+
+            <Formik
+                initialValues={initialValues}
+                validationSchema={schema}
+                onSubmit={handleSubmit}
+            >
+                {({ isSubmitting, handleSubmit }) => (
+                    <form className={styles.formWrapper} onSubmit={handleSubmit}>
+                        <label htmlFor="email">
+                            <Field placeholder={`${t("placeholder")}`} className={styles.emailInput} name="email" type="email" />
+                            <ErrorMessage className={styles.error} name="email" component="div" />
+                        </label>
+                        <Button isPrimary type="submit" disabled={isSubmitting}>{t("link")}</Button>
+                    </form>
+                )}
+            </Formik>
+        </>
     )
 }
 

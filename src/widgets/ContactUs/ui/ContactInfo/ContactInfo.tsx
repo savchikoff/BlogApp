@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import styles from './ContactInfo.module.scss';
 
+
 function ContactInfo() {
     const t = useTranslations("ContactUs.ContactInfo")
     return (

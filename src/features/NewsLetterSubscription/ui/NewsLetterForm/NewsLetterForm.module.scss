@@ -1,6 +1,11 @@
 .formWrapper {
     display: flex;
     gap: 24px;
+
+    @include breakpoint(lg) {
+        flex-direction: column;
+        gap: 0;
+    }
 }
 
 .emailInput {
@@ -11,8 +16,18 @@
     padding: 0 24px;
     width: 323px;
     color: #FFFFFF;
+    margin-bottom: 8px;
 
     &::placeholder {
         color: #6D6E76;
     }
+
+    @include breakpoint(lg) {
+        width: 100%;
+        padding: 16px;
+    }
+}
+
+.error {
+    color: #FF0000;
 }

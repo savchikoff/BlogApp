@@ -1,4 +1,4 @@
-import container from '@/styles/container.module.scss';
+import container from '@/shared/styles/container.module.scss';
 import { IPostPageProps } from './interfaces';
 import { BlogPost } from '@/widgets/BlogPost';
 import { JoinTeam } from '@/widgets/JoinTeam';

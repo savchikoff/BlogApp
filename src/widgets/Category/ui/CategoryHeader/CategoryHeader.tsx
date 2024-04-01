@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
-import container from '@/styles/container.module.scss';
+import container from '@/shared/styles/container.module.scss';
 import styles from './CategoryHeader.module.scss';
 import { ICategoryHeaderProps } from './interfaces';
 import { routes } from '@/shared/consts/routes';

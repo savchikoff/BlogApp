@@ -38,6 +38,7 @@
     },
     "Categories": {
         "Header": "Выберите категорию",
+        "additionalHeader": "Категории",
         "Business": "Бизнес",
         "Startup": "Стартапы",
         "Economy": "Экономика",
@@ -58,11 +59,13 @@
     "Blog": {
         "heading": "Все Посты",
         "prevPage": "Пред",
-        "nextPage": "След"
+        "nextPage": "След",
+        "noPosts": "Посты не были найдены"
     },
     "FeaturedPost": {
         "subHeading": "Избранный пост",
-        "link": "Подробнее"
+        "link": "Подробнее",
+        "postedOn": "Опубликовано в"
     },
     "AboutUs": {
         "CompanyValues": {
@@ -109,5 +112,36 @@
     },
     "LocaleSwitcher": {
         "label": "Russian"
+    },
+    "Category": {
+        "Tags": {
+            "tagsHeader": "Все Теги",
+            "Business": "Бизнес",
+            "Experience": "Опыт",
+            "Screen": "Проверка",
+            "Technology": "Технологии",
+            "Marketing": "Маркетинг",
+            "Life": "Жизнь",
+            "clearLabel": "Очистить Все"
+        },
+        "SearchInput": {
+            "placeholder": "Поиск по тегу...",
+            "btnLabel": "Искать"
+        },
+        "Posts": {
+            "noPosts": "Посты не были найдены"
+        },
+        "NoCategory": {
+            "label": "Такой категории не существует!"
+        }
+    },
+    "AuthorPage": {
+        "authorHeading": "Привет, это {name} и добро пожаловать в мой блог",
+        "postsHeading": "Мои Посты",
+        "noAuthor": "Автор с id {id} не был найден"
+    },
+    "PrivacyPolicy": {
+        "heading": "Политика Конфиденциальности",
+        "updateInfo": "Обновлена 27 января 2024 года"
     }
 }

@@ -11,6 +11,10 @@
     &:hover {
         background-color: #FBF6EA;
     }
+
+    @include breakpoint(md) {
+        width: 100%;
+    }
 }
 
 .textContent {
@@ -27,6 +31,10 @@
 
     &:hover {
         color: #592EA9;
+    }
+
+    @include breakpoint(xxl) {
+        font-size: 24px;
     }
 }
 

@@ -13,7 +13,7 @@ function Categories() {
     const t = useTranslations("Categories");
     return (
         <div className={styles.allCategoriesWrapper}>
-            <h2 className={styles.allCategoriesHeader}>Categories</h2>
+            <h2 className={styles.allCategoriesHeader}>{t("additionalHeader")}</h2>
             <div className={styles.allCategories}>
                 {Object.keys(categories).map((category => {
                     const typedCategory = category as CategoryType;

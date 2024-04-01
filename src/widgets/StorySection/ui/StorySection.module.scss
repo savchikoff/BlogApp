@@ -3,6 +3,10 @@
     display: flex;
     align-items: flex-end;
     position: relative;
+
+    @include breakpoint(lg) {
+        flex-direction: column;
+    }
 }
 
 .storyContentWrapper {
@@ -16,11 +20,22 @@
     background: #FFFFFF;
     width: 50%;
     padding: 80px;
+
+    @include breakpoint(lg) {
+        position: static;
+        padding: 40px;
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
 .storyImg {
     width: 80%;
     object-fit: cover;
+
+    @include breakpoint(lg) {
+        width: 100%;
+    }
 }
 
 .storySubHeader {

@@ -2,6 +2,10 @@
     padding: 32px;
     border: 1px solid #6D6E76;
     max-width: 733px;
+
+    @include breakpoint (lg) {
+        max-width: 100%;
+    }
 }
 
 .postWrapper {

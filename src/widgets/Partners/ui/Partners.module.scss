@@ -1,11 +1,17 @@
 .partnersContainer {
-    padding: 128px 0;
+    padding: countSize(64) 0;
 }
 
 .partnersWrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: countSize(8);
+
+    @include breakpoint(xl) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .partnersTextContent {

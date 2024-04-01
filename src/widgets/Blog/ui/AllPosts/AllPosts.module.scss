@@ -1,25 +1,35 @@
 .allPostsContainer {
-    padding: 64px;
+    padding: countSize(32);
 }
 
 .allPostsWrapper {
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: countSize(32);
 }
 
 .allPostsHeadingWrapper {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: countSize(8);
 }
 
 .allPostsHeading {
     color: inherit;
-    font-size: 48px;
+    font-size: countSize(24);
+
+    @include breakpoint(xxl) {
+        font-size: 12px;
+    }
 }
 
 .line {
     height: 1px;
     background-color: #6D6E76;
+}
+
+.noPosts {
+    margin: 64px 0;
+    font-weight: 600;
+    font-size: 28px;
 }

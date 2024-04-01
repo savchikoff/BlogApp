@@ -1,11 +1,23 @@
 .formWrapper {
     display: flex;
     justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
     padding: 64px 80px;
     background-color: #2E3040;
+
+    @include breakpoint(lg) {
+        flex-direction: column;
+        gap: 24px;
+    }
 }
 
 .footerFormHeader {
     font-size: 36px;
     max-width: 600px;
+
+    @include breakpoint(md) {
+        font-size: 24px;
+        align-items: center;
+    }
 }

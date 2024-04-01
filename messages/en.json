@@ -28,6 +28,7 @@
     },
     "Categories": {
         "Header": "Choose A Category",
+        "additionalHeader": "Categories",
         "Business": "Business",
         "Startup": "Startup",
         "Economy": "Economy",
@@ -58,11 +59,13 @@
     "Blog": {
         "heading": "All Posts",
         "prevPage": "Prev",
-        "nextPage": "Next"
+        "nextPage": "Next",
+        "noPosts": "No posts were found"
     },
     "FeaturedPost": {
         "subHeading": "Featured post",
-        "link": "Read More"
+        "link": "Read More",
+        "postedOn": "Posted on"
     },
     "AboutUs": {
         "CompanyValues": {
@@ -109,5 +112,36 @@
     },
     "LocaleSwitcher": {
         "label": "English"
+    },
+    "Category": {
+        "Tags": {
+            "tagsHeader": "All Tags",
+            "Business": "Business",
+            "Experience": "Experience",
+            "Screen": "Screen",
+            "Technology": "Technology",
+            "Marketing": "Marketing",
+            "Life": "Life",
+            "clearLabel": "Clear All"
+        },
+        "SearchInput": {
+            "placeholder": "Search by tag...",
+            "btnLabel": "Search"
+        },
+        "Posts": {
+            "noPosts": "No posts were found"
+        },
+        "NoCategory": {
+            "label": "Such a category doesn't exist!"
+        }
+    },
+    "AuthorPage": {
+        "authorHeading": "Hey there, I'm {name} and welcome to my blog",
+        "postsHeading": "My Posts",
+        "noAuthor": "Author with id {id} wasn't found"
+    },
+    "PrivacyPolicy": {
+        "heading": "Privacy Policy",
+        "updateInfo": "Last Updated on 27th January 2024"
     }
 }

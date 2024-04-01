@@ -1,12 +1,15 @@
 "use client";
 
 import { ChangeEvent, useState } from 'react';
+import { useTranslations } from 'next-intl';
 import styles from './Search.module.scss';
 import { blogPosts } from '@/shared/consts/blogPosts';
 import SearchedPost from '../SearchedPost/SearchedPost';
 import useDebounce from '@/shared/hooks/useDebounce';
 
 function Search() {
+
+    const t = useTranslations("Category.SearchInput");
 
     const [searchTerm, setSearchTerm] = useState("");
     const debounceSearchTerm = useDebounce(searchTerm, 200);
@@ -25,10 +28,10 @@ function Search() {
             <div className={styles.searchWrapper}>
                 <input
                     className={styles.searchInput}
-                    placeholder='Search for tag...'
+                    placeholder={`${t('placeholder')}`}
                     type="text"
                     onChange={handleSearchChange} />
-                <button className={styles.searchButton}> Search</button>
+                <button className={styles.searchButton}>{t('btnLabel')}</button>
                 {debounceSearchTerm &&
                     <div className={styles.searchedPostsWrapper}>
                         {filteredPosts.map(({ id, title, tags }) => (

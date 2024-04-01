@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import styles from './Header.module.scss';
-import container from '@/styles/container.module.scss';
+import container from '@/shared/styles/container.module.scss';
 import { Navigation } from '../../Navigation/ui/Navigation';
 import LocaleSwitcher from './LocaleSwitcher';
 import { Button } from '@/shared';
@@ -42,7 +42,7 @@ export function Header() {
                 <iframe width="600" height="315"
                     allowFullScreen
                     frameBorder="0"
-                    src="https://www.youtube.com/embed/z3PepN_qRA0">
+                    src="https://www.youtube.com/embed/zRp4NS_eeGc">
                 </iframe>
             </Modal>
         </header>

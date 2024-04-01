@@ -1,12 +1,19 @@
+"use client"
+
+import { useTranslations } from 'next-intl';
+import { Zoom } from 'react-awesome-reveal';
 import styles from './PrivacyHeader.module.scss';
 
 function PrivacyHeader() {
+    const t = useTranslations("PrivacyPolicy")
     return (
         <div className={styles.privacyHeaderContainer}>
-            <div className={styles.privacyHeaderWrapper}>
-                <h2 className={styles.privacyHeading}>Privacy Policy</h2>
-                <p className={styles.updateTime}>Last Updated  on 27th January 2024</p>
-            </div>
+            <Zoom>
+                <div className={styles.privacyHeaderWrapper}>
+                    <h2 className={styles.privacyHeading}>{t("heading")}</h2>
+                    <p className={styles.updateTime}>{t("updateInfo")}</p>
+                </div>
+            </Zoom>
         </div>
     )
 }

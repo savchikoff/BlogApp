@@ -8,11 +8,13 @@
 .lines {
     display: flex;
     height: 24px;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .yellowLine {
     background-color: #FFD050;
-    width: 780px;
+    width: 500px;
     height: 100%;
 }
 
@@ -25,9 +27,17 @@
 .infoWrapper {
     display: flex;
     justify-content: space-between;
+    gap: 32px;
     width: 100%;
     padding: 96px 80px;
     background-color: #F4F0F8;
+
+    @include breakpoint(lg) {
+        flex-direction: column;
+        gap: 40px;
+        align-items: stretch;
+        justify-content: center;
+    }
 }
 
 .subHeader {
@@ -41,6 +51,10 @@
     font-size: 36px;
     letter-spacing: -2px;
     max-width: 494px;
+
+    @include breakpoint(lg) {
+        max-width: 100%;
+    }
 }
 
 .aboutUsWrapper,
@@ -59,6 +73,10 @@
 .description {
     color: #6D6E76;
     max-width: 515px;
+
+    @include breakpoint(lg) {
+        max-width: 100%;
+    }
 }
 
 .aboutUsLink {
@@ -71,4 +89,8 @@
     font-size: 28px;
     letter-spacing: -1px;
     max-width: 481px;
+
+    @include breakpoint(lg) {
+        max-width: 100%;
+    }
 }

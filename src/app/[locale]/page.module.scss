@@ -5,16 +5,18 @@
 	align-items: center;
 }
 
-.fade-in {
-	animation: fadeIn ease 1s;
+@keyframes slideInRight {
+	from {
+		opacity: 0;
+		transform: translateX(100%);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
-@keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
+.slideInRight {
+	animation: slideInRight 0.5s ease forwards;
 }

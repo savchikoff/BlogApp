@@ -12,17 +12,16 @@
         background-color: #FFD050;
         border: 1px solid transparent;
     }
+
+    @include breakpoint(lg) {
+        max-width: 100%;
+    }
 }
 
 .textContent {
     display: flex;
     flex-direction: column;
     gap: 4px;
-}
-
-.imgContainer {
-    width: 949px;
-    height: 705px;
 }
 
 .categoryHeader {

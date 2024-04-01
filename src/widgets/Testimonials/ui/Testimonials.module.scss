@@ -6,6 +6,12 @@
 .testimonialsWrapper {
     display: flex;
     justify-content: space-between;
+
+    @include breakpoint(md) {
+        flex-direction: column;
+        gap: 32px;
+        align-items: flex-start;
+    }
 }
 
 .testimonialsInfo {

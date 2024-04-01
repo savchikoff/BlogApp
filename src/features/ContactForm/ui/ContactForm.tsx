@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { Formik, Field, ErrorMessage, FormikValues, FormikHelpers } from 'formik';
 import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
 import styles from './ContactForm.module.scss';
 import { FormValues } from './interfaces';
 import { schema } from "../consts/schema";
@@ -20,14 +21,13 @@ export function ContactForm() {
         message: ''
     }
 
-    useEffect(() => emailjs.init("priXHB1AcvH4UCtfU"), []);
+    useEffect(() => emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string), []);
 
     const handleSubmit = (values: FormikValues,
-        { setSubmitting }: FormikHelpers<FormValues>) => {
+        { resetForm, setSubmitting }: FormikHelpers<FormValues>) => {
         setTimeout(() => {
-            console.log(values);
             emailjs
-                .send('service_4k0wryn', 'template_goymrwf', {
+                .send(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE2_ID as string, {
                     to_name: "Daniil Sauchyk",
                     user_name: values.userName,
                     user_email: values.email,
@@ -36,14 +36,15 @@ export function ContactForm() {
                 })
                 .then(
                     () => {
-                        console.log('SUCCESS!');
+                        toast.success("You were successfully subscribed!");
                     },
                     (error) => {
-                        console.log('FAILED...', error.text);
+                        toast.error(`Something went wrong :(`);
                     },
                 );
             setSubmitting(false);
-        }, 500);
+            resetForm();
+        }, 700);
     }
 
     return (
@@ -52,7 +53,7 @@ export function ContactForm() {
             validationSchema={schema}
             onSubmit={handleSubmit}
         >
-            {({ isSubmitting, errors, handleSubmit }) => (
+            {({ isSubmitting, handleSubmit }) => (
                 <form className={styles.contactForm} onSubmit={handleSubmit}>
                     <label htmlFor="userName">
                         <Field placeholder={`${t("fullName")}`} name="userName" type="text" />

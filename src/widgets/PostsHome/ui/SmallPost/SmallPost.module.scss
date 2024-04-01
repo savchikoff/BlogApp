@@ -11,6 +11,10 @@
     &:hover {
         background-color: #FBF6EA;
     }
+
+    @include breakpoint(lg) {
+        width: 100%;
+    }
 }
 
 .authorInfo {

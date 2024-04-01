@@ -1,4 +1,4 @@
-import container from "@/styles/container.module.scss";
+import container from "@/shared/styles/container.module.scss";
 import { JoinTeam } from "@/widgets/JoinTeam";
 import { Categories } from "@/widgets/Categories";
 import { Blog } from "@/widgets/Blog";
