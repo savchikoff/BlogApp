@@ -7,7 +7,7 @@ import { NewsLetterSubscription } from "@/features/NewsLetterSubscription";
 
 export function Footer() {
     return (
-        <footer className={styles.footer}>
+        <footer data-cy="footer" className={styles.footer}>
             <div className={container.container}>
                 <div className={styles.footerWrapper}>
                     <div className={styles.navigationWrapper}>

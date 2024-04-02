@@ -1,23 +1,23 @@
 .categoryContentWrapper {
     display: flex;
     justify-content: space-between;
-    gap: 24px;
-    padding: 128px 0;
+    gap: countSize(12);
+    padding: countSize(64) 0;
 }
 
 .categoryPostsWrapper {
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: countSize(32);
 }
 
 .noPostsLabel {
-    font-weight: 600;
-    font-size: 28px;
+    font-weight: $semibold;
+    font-size: countSize(14);
 }
 
 .noCategory {
-    margin: 64px 0;
-    font-size: 28px;
-    font-weight: 600;
+    margin: countSize(32) 0;
+    font-size: countSize(14);
+    font-weight: $semibold;
 }

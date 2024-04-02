@@ -7,7 +7,7 @@ import { IFeaturedPostProps } from "./interfaces";
 
 function FeaturedPost({ id, authorName, createdAt, title, text, img }: IFeaturedPostProps) {
     return (
-        <div className={styles.postContainer}>
+        <article className={styles.postContainer}>
             <div className={styles.postWrapper}>
                 <div className={styles.postImgWrapper}>
                     <Image className={styles.postImg} src={img} alt="post-img" />
@@ -25,7 +25,7 @@ function FeaturedPost({ id, authorName, createdAt, title, text, img }: IFeatured
                 </div>
                 <Button isPrimary><Link href={`/posts/${id}`}>Read More &gt;</Link></Button>
             </div>
-        </div>
+        </article>
     )
 }
 

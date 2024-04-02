@@ -1,14 +1,14 @@
 .nextPostsWrapper {
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: countSize(32);
 }
 
 .nextPosts {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: countSize(16);
 }
 
 .nextPostsHeading {
@@ -16,7 +16,7 @@
 }
 
 .line {
-    background-color: #6D6E76;
+    background-color: $daveGray;
     height: 1px;
     width: 100%;
 }

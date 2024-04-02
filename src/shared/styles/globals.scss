@@ -42,4 +42,8 @@ h6 {
 
 h2 {
     font-size: 36px;
+
+    @include breakpoint(lg) {
+        font-size: 32px;
+    }
 }

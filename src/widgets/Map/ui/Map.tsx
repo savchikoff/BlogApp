@@ -12,7 +12,7 @@ export function Map() {
 
         if (mapContainer.current) {
             const map = new mapboxgl.Map({
-                accessToken: "pk.eyJ1IjoieHllcm1pa3giLCJhIjoiY2xyYXBrZ3lmMGhlbjJxcGp0eTFjYmc5NSJ9.MeXZnYQp9VmvxUdozvOtlA",
+                accessToken: process.env.NEXT_PUBLIC_MAPBOX_TOKEN as string,
                 container: mapContainer.current,
                 style: "mapbox://styles/mapbox/light-v11",
                 center: [27.567444, 53.893009],

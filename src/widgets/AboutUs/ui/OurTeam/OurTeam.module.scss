@@ -3,11 +3,18 @@
     align-items: center;
     justify-content: space-between;
     gap: 137px;
-    padding-top: 128px;
+    padding-top: countSize(64);
+
+    @include breakpoint(md) {
+        flex-direction: column;
+        align-items: stretch;
+        gap: countSize(32);
+    }
 }
 
 .handShakeWrapper {
     position: relative;
+    order: -1;
 
     &::after {
         content: "";
@@ -17,8 +24,18 @@
         left: -50px;
         width: 100px;
         height: 116px;
-        background-color: #ffd050;
+        background-color: $golden;
         border-top-left-radius: 50%;
         z-index: 5;
+    }
+
+    @include breakpoint(md) {
+        &::after {
+            content: "";
+            top: 30%;
+            left: -countSize(10);
+            width: 100px;
+            height: 116px;
+        }
     }
 }

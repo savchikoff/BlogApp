@@ -7,4 +7,5 @@ export interface IPostProps {
     category: string;
     header: string;
     description: string;
+    dataCy?: string;
 }

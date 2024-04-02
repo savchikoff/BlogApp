@@ -1,6 +1,6 @@
 .postContainer {
-    padding: 32px;
-    border: 1px solid #6D6E76;
+    padding: countSize(16);
+    border: countSize(1, 1) solid $daveGray;
     max-width: 733px;
 
     @include breakpoint (lg) {
@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 32px;
+    gap: countSize(16);
 }
 
 .postImgWrapper {
@@ -27,21 +27,19 @@
 .articleTextWrapper {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: countSize(8);
 }
 
-.articleInfo {}
-
 .authorInfo {
-    color: #592EA9;
+    color: $purple;
 }
 
 .articleHeader {
     color: inherit;
-    font-size: 28px;
+    font-size: countSize(14);
     letter-spacing: -1px;
 }
 
 .articleDescription {
-    color: #6D6E76;
+    color: $daveGray;
 }

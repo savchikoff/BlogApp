@@ -13,11 +13,11 @@ export function Navigation({ isWithPrivacy = false }: INavigationProps) {
 
 
     return (
-        <nav>
+        <nav data-cy='navigation'>
             <ul className={styles.linksContainer}>
                 {Object.entries(navigationRoutes).map((route) => (
                     <li key={route[0]}>
-                        <Link href={route[1]}>{t(route[0])}</Link>
+                        <Link data-cy={`route-${route[0]}`} href={route[1]}>{t(route[0])}</Link>
                     </li>
                 ))}
             </ul>

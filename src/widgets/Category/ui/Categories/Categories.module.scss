@@ -1,7 +1,7 @@
 .allCategoriesWrapper {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: countSize(20);
 }
 
 .allCategoriesHeader {
@@ -11,24 +11,24 @@
 .allCategories {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: countSize(12);
 }
 
 .categoryWrapper {
     display: flex;
     align-items: center;
-    gap: 16px;
-    padding: 24px;
-    border-color: #FFFFFF;
-    border: 1px solid #C1C1C3;
+    gap: countSize(8);
+    padding: countSize(12);
+    border-color: $white;
+    border: countSize(1, 1) solid $silverSand;
     transition: all 0.3s ease;
 
     &:hover {
-        background-color: #FFD050;
+        background-color: $golden;
     }
 }
 
 .categoryName {
-    font-size: 28px;
+    font-size: countSize(14);
     color: inherit;
 }

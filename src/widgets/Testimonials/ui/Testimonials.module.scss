@@ -1,6 +1,6 @@
 .testimonialsContainer {
-    background-color: #FBF6EA;
-    padding: 92px 112px;
+    background-color: $floralWhite;
+    padding: countSize(46) countSize(56);
 }
 
 .testimonialsWrapper {
@@ -9,7 +9,7 @@
 
     @include breakpoint(md) {
         flex-direction: column;
-        gap: 32px;
+        gap: countSize(16);
         align-items: flex-start;
     }
 }
@@ -17,23 +17,23 @@
 .testimonialsInfo {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: countSize(8);
 }
 
 .line {
     width: 1px;
     min-height: 100%;
-    background-color: #6D6E76;
+    background-color: $daveGray;
 }
 
 .testimonialsSubheader {
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-weight: 600;
+    font-weight: $semibold;
 }
 
 .testimonialsHeader {
-    font-size: 36px;
+    font-size: countSize(18);
     color: inherit;
     max-width: 345px;
 }

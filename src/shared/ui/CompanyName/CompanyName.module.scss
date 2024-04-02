@@ -1,5 +1,5 @@
 .companyName {
-    font-weight: 700;
-    color: #FFFFFF;
-    font-size: 24px;
+    font-weight: $bold;
+    color: $white;
+    font-size: countSize(12);
 }

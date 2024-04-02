@@ -50,10 +50,10 @@ function NewsLetterForm() {
                 {({ isSubmitting, handleSubmit }) => (
                     <form className={styles.formWrapper} onSubmit={handleSubmit}>
                         <label htmlFor="email">
-                            <Field placeholder={`${t("placeholder")}`} className={styles.emailInput} name="email" type="email" />
+                            <Field data-cy="footer-input" placeholder={`${t("placeholder")}`} className={styles.emailInput} name="email" type="email" />
                             <ErrorMessage className={styles.error} name="email" component="div" />
                         </label>
-                        <Button isPrimary type="submit" disabled={isSubmitting}>{t("link")}</Button>
+                        <Button dataCy="subs-button" isPrimary type="submit" disabled={isSubmitting}>{t("link")}</Button>
                     </form>
                 )}
             </Formik>

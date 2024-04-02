@@ -5,7 +5,7 @@ import styles from './PrivacyContent.module.scss';
 
 function PrivacyContent() {
     return (
-        <div className={styles.privacyContentContainer}>
+        <article data-cy="privacy-content" className={styles.privacyContentContainer}>
             <div className={styles.privacyContentWrapper}>
                 <Slide>
                     <h2 className={styles.privacyContentHeading}>Lorem ipsum dolor sit amet</h2>
@@ -18,7 +18,7 @@ function PrivacyContent() {
 
                 </Slide>
             </div>
-        </div >
+        </article >
     )
 }
 

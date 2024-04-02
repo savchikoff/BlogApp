@@ -7,7 +7,7 @@ import { socials } from '@/shared/consts/socials';
 function Author({ authorName, position, img, alt, link }: IAuthorProps) {
     return (
 
-        <div className={styles.authorWrapper}>
+        <article className={styles.authorWrapper}>
             <Image src={img} alt={alt} />
             <div className={styles.textContent}>
                 <Link href={link}>
@@ -24,7 +24,7 @@ function Author({ authorName, position, img, alt, link }: IAuthorProps) {
                     </li>
                 ))}
             </ul>
-        </div>
+        </article>
     )
 }
 

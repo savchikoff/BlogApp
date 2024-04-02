@@ -1,17 +1,17 @@
 .authorPostsContainer {
-    padding: 128px 0;
+    padding: countSize(64) 0;
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: countSize(32);
 }
 
 .authorPostsWrapper {
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: countSize(32);
 }
 
 .authorPostsHeading {
     color: inherit;
-    font-size: 48px;
+    font-size: countSize(24);
 }

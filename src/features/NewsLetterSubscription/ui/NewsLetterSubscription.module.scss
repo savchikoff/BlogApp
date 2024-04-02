@@ -1,23 +1,24 @@
 .formWrapper {
     display: flex;
     justify-content: space-between;
-    gap: 16px;
+    gap: countSize(8);
     flex-wrap: wrap;
-    padding: 64px 80px;
-    background-color: #2E3040;
+    padding: countSize(32) countSize(40);
+    background-color: $gunMetal;
 
     @include breakpoint(lg) {
         flex-direction: column;
-        gap: 24px;
+        gap: countSize(12);
     }
 }
 
 .footerFormHeader {
-    font-size: 36px;
+    font-size: countSize(18);
     max-width: 600px;
 
     @include breakpoint(md) {
-        font-size: 24px;
+        font-size: countSize(12);
         align-items: center;
+        text-align: center;
     }
 }

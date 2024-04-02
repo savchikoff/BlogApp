@@ -56,15 +56,15 @@ export function ContactForm() {
             {({ isSubmitting, handleSubmit }) => (
                 <form className={styles.contactForm} onSubmit={handleSubmit}>
                     <label htmlFor="userName">
-                        <Field placeholder={`${t("fullName")}`} name="userName" type="text" />
+                        <Field data-cy="name-input" placeholder={`${t("fullName")}`} name="userName" type="text" />
                         <ErrorMessage className={styles.error} name="userName" component="div" />
                     </label>
                     <label htmlFor="email">
-                        <Field placeholder={`${t("email")}`} name="email" type="email" />
+                        <Field data-cy="email-input" placeholder={`${t("email")}`} name="email" type="email" />
                         <ErrorMessage className={styles.error} name="email" component="div" />
                     </label>
                     <label htmlFor="query">
-                        <Field name="query" as="select">
+                        <Field data-cy="query-select" name="query" as="select">
                             <option value="Business">Business</option>
                             <option value="Startup">Startup</option>
                             <option value="Economy">Economy</option>
@@ -73,10 +73,10 @@ export function ContactForm() {
                         <ErrorMessage className={styles.error} name="query" component="div" />
                     </label>
                     <label htmlFor="message">
-                        <Field placeholder={`${t("message")}`} name="message" as="textarea" />
+                        <Field data-cy="text-area" placeholder={`${t("message")}`} name="message" as="textarea" />
                         <ErrorMessage className={styles.error} name="message" component="div" />
                     </label>
-                    <Button isPrimary type='submit' disabled={isSubmitting}>{t("label")}</Button>
+                    <Button dataCy='contact-button' isPrimary type='submit' disabled={isSubmitting}>{t("label")}</Button>
                 </form>
             )}
         </Formik>

@@ -9,7 +9,7 @@ export function Testimonials() {
     const t = useTranslations("Home.Testimonials")
     return (
         <Zoom>
-            <div className={styles.testimonialsContainer}>
+            <section className={styles.testimonialsContainer}>
                 <div className={styles.testimonialsWrapper}>
                     <div className={styles.testimonialsInfo}>
                         <div className={styles.testimonialsSubheader}>{t("subHeading")}</div>
@@ -20,7 +20,7 @@ export function Testimonials() {
                     </div>
                     <TestimonialsSlider />
                 </div>
-            </div>
+            </section>
         </Zoom>
     )
 }

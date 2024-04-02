@@ -6,17 +6,17 @@
 }
 
 .testimonialText {
-    font-weight: 700;
-    font-size: 24px;
+    font-weight: $bold;
+    font-size: countSize(12);
 
     @include breakpoint(md) {
-        font-size: 20px;
+        font-size: countSize(10);
     }
 }
 
 .testimonialAuthor {
     display: flex;
-    gap: 16px;
+    gap: countSize(8);
 }
 
 .testimonialsInfo {
@@ -26,9 +26,9 @@
 
 .testimonialAuthorName {
     color: inherit;
-    font-size: 24px;
+    font-size: countSize(12);
 }
 
 .testimonialAuthorLocation {
-    color: #6D6E76;
+    color: $daveGray;
 }

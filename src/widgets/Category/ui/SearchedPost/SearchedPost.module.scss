@@ -1,25 +1,25 @@
 .searchedPostContainer {
-    border: 1px solid #C1C1C3;
-    padding: 8px;
+    border: countSize(1, 1) solid $daveGray;
+    padding: countSize(4);
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: countSize(4);
     max-width: 100%;
-    background-color: #FFFFFF;
-    border-radius: 6px;
+    background-color: $white;
+    border-radius: countSize(3);
     transition: all 0.3s ease;
 
     &:hover {
-        background-color: #FBF6EA;
+        background-color: $floralWhite;
     }
 }
 
 .searchedPostTitle {
-    font-size: 18px;
+    font-size: countSize(9);
     color: inherit;
 }
 
 .searchedPostTags {
-    font-size: 14px;
-    color: #C1C1C3;
+    font-size: countSize(7);
+    color: $daveGray;
 }

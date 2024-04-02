@@ -1,5 +1,5 @@
 .linksContainer {
     display: flex;
-    gap: 24px;
-    color: #FFFFFF;
+    gap: countSize(12);
+    color: $white;
 }

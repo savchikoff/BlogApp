@@ -2,12 +2,12 @@
     cursor: pointer;
     font-family: inherit;
     font-weight: 700;
-    font-size: 18px;
-    padding: 16px 48px;
+    font-size: countSize(9);
+    padding: countSize(8) countSize(24);
     height: 56px;
     border: none;
     transition: all 0.3s ease;
-    border: 1px solid transparent;
+    border: countSize(1, 1) solid transparent;
 
     &:disabled {
         cursor: not-allowed;
@@ -17,21 +17,21 @@
 .buttonPrimary {
     @include button;
 
-    background-color: #FFD050;
+    background-color: $golden;
 
     &:hover {
-        background-color: #FFFFFF;
+        background-color: $white;
     }
 
-    border: 1px solid #d1d0d0;
+    border: countSize(1, 1) solid $silver;
 }
 
 .buttonSecondary {
     @include button;
 
-    background-color: #FFFFFF;
+    background-color: $white;
 
     &:hover {
-        background-color: #FFD050;
+        background-color: $golden;
     }
 }

@@ -12,7 +12,7 @@ import Link from 'next/link';
 function AuthorHeader({ img, name }: IAuthorHeaderProps) {
     const t = useTranslations("AuthorPage");
     return (
-        <div className={styles.authorHeaderContainer}>
+        <section className={styles.authorHeaderContainer}>
             <div className={classNames(container.container, styles.authorHeaderWrapper)}>
                 <div className={styles.authorInfoWrapper}>
                     <Image width={200} height={200} src={img} alt={name} />
@@ -35,7 +35,7 @@ function AuthorHeader({ img, name }: IAuthorHeaderProps) {
                     <div className={styles.authorHeaderPurpleLine}></div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

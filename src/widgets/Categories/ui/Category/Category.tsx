@@ -3,10 +3,10 @@ import Image from 'next/image';
 import styles from './Category.module.scss';
 import { ICategoryProps } from './interfaces';
 
-function Category({ category, img, link = "" }: ICategoryProps) {
+function Category({ category, img, link = "", dataCy }: ICategoryProps) {
     return (
-        <Link href={link}>
-            <div className={styles.categoryContainer}>
+        <Link data-cy={dataCy} href={link}>
+            <article className={styles.categoryContainer}>
                 <Image src={img} alt={`${category}-icon`} />
                 <div className={styles.textContent}>
                     <h4 className={styles.categoryHeader}>{category}</h4>
@@ -14,7 +14,7 @@ function Category({ category, img, link = "" }: ICategoryProps) {
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                     </p>
                 </div>
-            </div>
+            </article>
         </Link>
     )
 }

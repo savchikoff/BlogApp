@@ -5,10 +5,10 @@ import { ISearchedPostProps } from './interface';
 function SearchedPost({ id, title, tags }: ISearchedPostProps) {
     return (
         <Link href={`/posts/${id}`}>
-            <div className={styles.searchedPostContainer}>
+            <article className={styles.searchedPostContainer}>
                 <h6 className={styles.searchedPostTitle}>{title}</h6>
                 <p className={styles.searchedPostTags}>{tags.join(", ")}</p>
-            </div>
+            </article>
         </Link>
     )
 }

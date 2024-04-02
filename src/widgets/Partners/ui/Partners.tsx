@@ -10,7 +10,7 @@ import Link from 'next/link';
 export function Partners() {
     const t = useTranslations("Home.Partners");
     return (
-        <div className={styles.partnersContainer}>
+        <section className={styles.partnersContainer}>
             <div className={styles.partnersWrapper}>
                 <Slide>
                     <div className={styles.partnersTextContent}>
@@ -26,6 +26,6 @@ export function Partners() {
                     )}
                 </Slide>
             </div>
-        </div>
+        </section>
     )
 }

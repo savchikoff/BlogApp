@@ -2,21 +2,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 128px;
-    padding-bottom: 70px;
+    padding-top: countSize(64);
+    padding-bottom: countSize(35);
 }
 
 .contactUsWrapper {
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: countSize(32);
     width: 100%;
     max-width: 816px;
-    padding: 0 24px;
+    padding: 0 countSize(12);
 }
 
 .contactUsFormWrapper {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: countSize(16);
 }

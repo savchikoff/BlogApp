@@ -1,13 +1,13 @@
 .blogPostContainer {
     display: flex;
     justify-content: center;
-    padding: 128px 0;
+    padding: countSize(64) 0;
 }
 
 .blogPostWrapper {
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: countSize(32);
     max-width: 843px;
     width: 100%;
 }
@@ -15,39 +15,39 @@
 .blogPostHeaderWrapper {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: countSize(12);
 }
 
 .authorInfoWrapper {
     display: flex;
-    gap: 12px;
+    gap: countSize(6);
     align-items: center;
 }
 
 .authorName {
-    font-weight: 700;
-    font-size: 28px;
-    color: #592EA9;
+    font-weight: $bold;
+    font-size: countSize(14);
+    color: $purple;
 }
 
 .postDate {
-    color: #6D6E76;
+    color: $daveGray;
 }
 
 .blogPostHeading {
     color: inherit;
-    font-size: 48px;
+    font-size: countSize(24);
 }
 
 .blogPostCategoryWrapper {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: countSize(4);
 }
 
 .categoryName {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: countSize(12);
+    font-weight: $bold;
 }
 
 .blogPostImgWrapper {
@@ -62,31 +62,31 @@
 .blogPostTextContentWrapper {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: countSize(12);
 }
 
 .blogPostTextPartHeading {
     color: inherit;
-    margin-bottom: 16px;
+    margin-bottom: countSize(8);
 }
 
 .blogPostTextPartText {
-    color: #6D6E76;
+    color: $daveGray;
 }
 
 .blogPostTextPartTextWrapper {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: countSize(12);
 }
 
 .bulletPointsWrapper {
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    color: #494A52;
-    font-size: 24px;
-    font-weight: 700;
+    gap: countSize(2);
+    color: $quartz;
+    font-size: countSize(12);
+    font-weight: $bold;
 }
 
 .bulletPoint {

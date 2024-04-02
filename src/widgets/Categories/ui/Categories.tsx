@@ -9,7 +9,7 @@ import { categories } from "../../../shared/consts/categories";
 export function Categories() {
     const t = useTranslations("Categories");
     return (
-        <div className={styles.categoriesContainer}>
+        <section className={styles.categoriesContainer}>
             <Zoom>
                 <h2 className={styles.categoriesHeader}>{t("Header")}</h2>
             </Zoom>
@@ -19,11 +19,11 @@ export function Categories() {
                         const categoryName = item[0];
                         const { img, link } = item[1];
                         return (
-                            <Category key={link} category={t(categoryName)} img={img} link={link} />
+                            <Category dataCy={`category-${categoryName}`} key={link} category={t(categoryName)} img={img} link={link} />
                         )
                     })}
                 </Zoom>
             </div>
-        </div>
+        </section>
     )
 }

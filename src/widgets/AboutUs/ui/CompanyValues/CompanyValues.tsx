@@ -10,7 +10,7 @@ function CompanyValues() {
     const t = useTranslations("AboutUs.CompanyValues");
     return (
         <div className={styles.valuesWrapper}>
-            <div className={styles.aboutUsContainer}>
+            <section className={styles.aboutUsContainer}>
                 <div className={styles.aboutUsWrapper}>
                     <Zoom>
                         <div className={styles.aboutUsHeader}>
@@ -28,7 +28,7 @@ function CompanyValues() {
                         </div>
                     </Slide>
                 </div>
-            </div>
+            </section>
             <Zoom>
                 <div className={styles.imgWrapper}>
                     <Image
@@ -59,16 +59,16 @@ function CompanyValues() {
             <Slide>
                 <div className={styles.keyValuesContainer}>
                     <div className={styles.keyValuesWrapper}>
-                        <div className={styles.keyValueWrapper}>
+                        <section className={styles.keyValueWrapper}>
                             <div className={styles.keyValueSubheader}>{t("missionSubHeading")}</div>
                             <h4 className={styles.keyValueHeader}>{t("missionHeading")}</h4>
                             <div className={styles.keyValueDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</div>
-                        </div>
-                        <div className={styles.keyValueWrapper}>
+                        </section>
+                        <section className={styles.keyValueWrapper}>
                             <div className={styles.keyValueSubheader}>{t("visionSubHeading")}</div>
                             <h4 className={styles.keyValueHeader}>{t("visionHeading")}</h4>
                             <div className={styles.keyValueDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</div>
-                        </div>
+                        </section>
                     </div>
                 </div>
             </Slide>

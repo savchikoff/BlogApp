@@ -10,7 +10,7 @@ function NextPosts() {
     const t = useTranslations("BlogPost.NextPosts")
     const posts = getRandomPosts(blogPosts, 3);
     return (
-        <div className={styles.nextPostsWrapper}>
+        <section className={styles.nextPostsWrapper}>
             <h2 className={styles.nextPostsHeading}>
                 {t("heading")}
             </h2>
@@ -20,7 +20,7 @@ function NextPosts() {
                 ))}
             </div>
             <div className={styles.line}></div>
-        </div>
+        </section>
     )
 }
 

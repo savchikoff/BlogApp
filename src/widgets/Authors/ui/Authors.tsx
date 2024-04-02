@@ -8,7 +8,7 @@ import Author from "./Author/Author";
 export function Authors() {
     const t = useTranslations("Author")
     return (
-        <div className={styles.authorsContainer}>
+        <section className={styles.authorsContainer}>
             <div className={styles.authorsWrapper}>
                 <Zoom>
                     <h2 className={styles.authorsHeader}>{t('heading')}</h2>
@@ -21,6 +21,6 @@ export function Authors() {
                     </Zoom>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

@@ -12,7 +12,7 @@ import { CategoryType } from '@/shared/consts/categories';
 function Categories() {
     const t = useTranslations("Categories");
     return (
-        <div className={styles.allCategoriesWrapper}>
+        <section className={styles.allCategoriesWrapper}>
             <h2 className={styles.allCategoriesHeader}>{t("additionalHeader")}</h2>
             <div className={styles.allCategories}>
                 {Object.keys(categories).map((category => {
@@ -28,7 +28,7 @@ function Categories() {
                     )
                 }))}
             </div>
-        </div>
+        </section>
     )
 }
 

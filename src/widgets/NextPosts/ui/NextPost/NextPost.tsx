@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function NextPost({ id, img, author, createdAt, title, text }: INextPostProps) {
     return (
-        <div className={styles.nextPostWrapper}>
+        <article className={styles.nextPostWrapper}>
             <div className={styles.nextPostImgWrapper}>
                 <Image className={styles.nextPostImg} src={img} alt={title} />
             </div>
@@ -18,7 +18,7 @@ function NextPost({ id, img, author, createdAt, title, text }: INextPostProps) {
                 </Link>
                 <p className={styles.nextPostText}>{text}</p>
             </div>
-        </div>
+        </article>
     )
 }
 

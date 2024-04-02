@@ -24,22 +24,20 @@ function Search() {
     );
 
     return (
-        <>
-            <div className={styles.searchWrapper}>
-                <input
-                    className={styles.searchInput}
-                    placeholder={`${t('placeholder')}`}
-                    type="text"
-                    onChange={handleSearchChange} />
-                <button className={styles.searchButton}>{t('btnLabel')}</button>
-                {debounceSearchTerm &&
-                    <div className={styles.searchedPostsWrapper}>
-                        {filteredPosts.map(({ id, title, tags }) => (
-                            <SearchedPost id={id} title={title} tags={tags} />
-                        ))}
-                    </div>}
-            </div >
-        </>
+        <search className={styles.searchWrapper}>
+            <input
+                className={styles.searchInput}
+                placeholder={`${t('placeholder')}`}
+                type="text"
+                onChange={handleSearchChange} />
+            <button className={styles.searchButton}>{t('btnLabel')}</button>
+            {debounceSearchTerm &&
+                <div className={styles.searchedPostsWrapper}>
+                    {filteredPosts.map(({ id, title, tags }) => (
+                        <SearchedPost id={id} title={title} tags={tags} />
+                    ))}
+                </div>}
+        </search >
     )
 }
 

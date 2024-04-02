@@ -1,14 +1,14 @@
 .localeSwitcher {
     select {
-        color: white;
-        padding: 8px;
+        color: $white;
+        padding: countSize(4);
         border: none;
         background-color: transparent;
-        border: 1px solid #FFFFFF;
+        border: countSize(1, 1) solid $white;
 
         option {
-            color: #fff;
-            background: #232536;
+            color: $white;
+            background: $steelGray;
         }
     }
 }

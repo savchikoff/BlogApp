@@ -1,7 +1,7 @@
 .postsWrapper {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: countSize(16);
 }
 
 .headerWrapper {
@@ -11,12 +11,12 @@
 }
 
 .sectionHeader {
-    font-size: 36px;
-    color: #232536;
+    font-size: countSize(18);
+    color: $steelGray;
 }
 
 .viewAllLink {
-    color: #592EA9;
+    color: $purple;
 }
 
 .posts {

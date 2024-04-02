@@ -9,7 +9,7 @@ const LocaleSwitcher = () => {
     return (
         <LocaleSwitcherSelect defaultValue={locale} label={t('label')}>
             {locales.map((lang) => (
-                <option key={lang} value={lang}>
+                <option data-cy={`locale-${lang}`} key={lang} value={lang}>
                     {lang}
                 </option>
             ))}

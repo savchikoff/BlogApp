@@ -2,14 +2,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    padding: 40px;
+    gap: countSize(10);
+    padding: countSize(20);
     width: 296px;
-    background-color: #F4F4F4;
+    background-color: $wildSand;
     transition: all 0.3s ease;
 
     &:hover {
-        background-color: #FBF6EA;
+        background-color: $floralWhite;
     }
 
     @include breakpoint(md) {
@@ -26,24 +26,24 @@
 .authorName {
     text-align: center;
     color: inherit;
-    font-size: 28px;
+    font-size: countSize(14);
     transition: color 0.3s ease;
 
     &:hover {
-        color: #592EA9;
+        color: $purple;
     }
 
     @include breakpoint(xxl) {
-        font-size: 24px;
+        font-size: countSize(12);
     }
 }
 
 .position {
     text-align: center;
-    color: #6D6E76;
+    color: $daveGray;
 }
 
 .socialsLinks {
     display: flex;
-    gap: 16px;
+    gap: countSize(8);
 }

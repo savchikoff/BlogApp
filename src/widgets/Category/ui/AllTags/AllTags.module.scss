@@ -1,7 +1,7 @@
 .allTagsWrapper {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: countSize(12);
 }
 
 .allTagsHeader {
@@ -11,28 +11,28 @@
 .categoriesWrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: countSize(8);
 }
 
 .categoryButton {
     cursor: pointer;
-    font-weight: 700;
-    color: #6D6E76;
+    font-weight: $bold;
+    color: $daveGray;
     display: inline-block;
-    border-radius: 28px;
-    padding: 8px 38px;
-    border: 1px solid #6D6E76;
+    border-radius: countSize(14);
+    padding: countSize(4) countSize(19);
+    border: countSize(1, 1) solid $daveGray;
     transition: all 0.3s ease;
 
     &:hover {
-        background-color: #FFD050;
-        color: #232536;
-        border: 1px solid transparent;
+        background-color: $golden;
+        color: $steelGray;
+        border: countSize(1, 1) solid transparent;
     }
 }
 
 .categoryButtonActive {
-    background-color: #FFD050;
-    color: #232536;
-    border: 1px solid transparent;
+    background-color: $golden;
+    color: $steelGray;
+    border: countSize(1, 1) solid transparent;
 }

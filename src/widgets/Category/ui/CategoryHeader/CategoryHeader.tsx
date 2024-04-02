@@ -11,7 +11,7 @@ function CategoryHeader({ categoryName }: ICategoryHeaderProps) {
     const t = useTranslations("Categories");
     const capitalizedCategory = categoryName.charAt(0).toUpperCase() + categoryName.slice(1);
     return (
-        <div className={styles.categoryHeaderContainer}>
+        <section className={styles.categoryHeaderContainer}>
             <div className={container.container}>
                 <div className={styles.categoryHeaderWrapper}>
                     <h1 className={styles.categoryHeaderHeading}>
@@ -25,7 +25,7 @@ function CategoryHeader({ categoryName }: ICategoryHeaderProps) {
                     </span>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

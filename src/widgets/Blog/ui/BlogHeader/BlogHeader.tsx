@@ -12,10 +12,10 @@ import { getRandomPosts } from '@/shared/utils/getRandomPosts';
 
 function BlogHeader() {
     const t = useTranslations("FeaturedPost");
-    const featuredPost = getRandomPosts(blogPosts, 1)[0];
-    const { id, title, text, author, createdAt, img } = featuredPost;
+    // const featuredPost = getRandomPosts(blogPosts, 1)[0];
+    const { id, title, text, author, createdAt, img } = blogPosts[0];
     return (
-        <div className={styles.blogHeaderContainer}>
+        <section className={styles.blogHeaderContainer}>
             <div className={container.container}>
                 <Zoom>
                     <div className={styles.blogHeaderWrapper}>
@@ -41,7 +41,7 @@ function BlogHeader() {
                     </div>
                 </Zoom>
             </div>
-        </div>
+        </section>
     )
 }
 

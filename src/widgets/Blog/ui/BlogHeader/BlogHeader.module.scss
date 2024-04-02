@@ -1,6 +1,6 @@
 .blogHeaderContainer {
-    background-color: #F4F0F8;
-    padding: 94px 0;
+    background-color: $ghostWhite;
+    padding: countSize(47) 0;
 }
 
 .blogHeaderTextWrapper {
@@ -13,43 +13,52 @@
 .blogHeaderText {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: countSize(8);
 }
 
 .blogHeaderWrapper {
     display: flex;
     justify-content: space-between;
     gap: 141px;
+
+    @include breakpoint(md) {
+        flex-direction: column;
+        gap: countSize(16);
+    }
 }
 
 .blogHeaderSubheading {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: $semibold;
     letter-spacing: 3px;
-    margin-bottom: 20px;
+    margin-bottom: countSize(10);
 }
 
 .blogHeaderHeading {
     color: inherit;
-    font-size: 36px;
+    font-size: countSize(18);
 }
 
 .authorInfo {
-    font-size: 14px;
+    font-size: countSize(7);
 }
 
 .authorName {
-    color: #592EA9;
+    color: $purple;
 }
 
 .blogHeaderDescription {
-    color: #6D6E76;
-    margin-bottom: 32px;
+    color: $daveGray;
+    margin-bottom: countSize(16);
 }
 
 .blogHeaderImgWrapper {
     width: 515px;
     height: 359px;
+
+    @include breakpoint(md) {
+        order: -1;
+    }
 }
 
 .blogHeaderImg {

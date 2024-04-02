@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 export function AboutSection() {
     const t = useTranslations("Home.About");
     return (
-        <div className={styles.sectionWrapper}>
+        <section className={styles.sectionWrapper}>
             <div className={styles.lines}>
                 <Slide>
                     <div className={styles.yellowLine}></div>
@@ -49,6 +49,6 @@ export function AboutSection() {
                     </div>
                 </Zoom>
             </div>
-        </div>
+        </section>
     )
 }

@@ -25,13 +25,13 @@ export function Header() {
     }
 
     return (
-        <header className={styles.header}>
+        <header data-cy="header" className={styles.header}>
             <div className={container.container}>
                 <div className={styles.headerWrapper}>
                     <CompanyName />
                     <div className={styles.actionsWrapper}>
                         <Navigation />
-                        <Button onClick={handleModalOpen}>
+                        <Button dataCy="modal-btn" onClick={handleModalOpen}>
                             {t("label")}
                         </Button>
                         <LocaleSwitcher />

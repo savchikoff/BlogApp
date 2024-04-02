@@ -41,7 +41,7 @@ export function Pagination({ postsPerPage, totalPosts, paginate }: IPaginationPr
                         <li
                             className={styles.page + " " +
                                 (number == activePage ? styles.activeLink : '')}
-
+                            data-cy={`page-${2}`}
                             key={number}
                             onClick={handlePageClick(number)}
                         >
@@ -56,6 +56,7 @@ export function Pagination({ postsPerPage, totalPosts, paginate }: IPaginationPr
                     key={"next"}
                     onClick={handlePageClick(activePage + 1)}
                     className={styles.pageControl}
+                    data-cy="next-page"
                 >
                     <a
                         className={styles.pageLink}

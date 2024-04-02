@@ -1,22 +1,22 @@
 .authorsContainer {
-    padding-top: 128px;
+    padding-top: countSize(64);
 }
 
 .authorsWrapper {
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: countSize(24);
     align-items: center;
 }
 
 .authorsHeader {
     color: inherit;
-    font-size: 36px;
+    font-size: countSize(18);
 }
 
 .authors {
     display: flex;
-    gap: 32px;
+    gap: countSize(16);
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;

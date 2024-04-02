@@ -7,7 +7,7 @@
 
 .testimonialsWrapper {
     display: flex;
-    gap: 64px;
+    gap: countSize(32);
     transition: all 0.3s ease-in-out;
 }
 
@@ -16,7 +16,7 @@
     bottom: 0;
     right: 0;
     display: flex;
-    gap: 24px;
+    gap: countSize(12);
 }
 
 .testimonialsSlider {
@@ -27,11 +27,11 @@
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background-color: #FFFFFF;
+    background-color: $white;
     transition: background-color 0.5s ease;
 
     &:hover {
-        background-color: #232536;
+        background-color: $steelGray;
 
         img {
             filter: brightness(0) invert(1);

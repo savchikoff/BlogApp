@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Slide, Zoom } from "react-awesome-reveal";
-import Post from '../../../Post/Post';
+import Post from '../../../Post/ui/Post';
 import styles from './AllPosts.module.scss';
 import container from "@/shared/styles/container.module.scss";
 import { Pagination } from '@/shared';
@@ -32,7 +32,7 @@ function AllPosts() {
     const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
     return (
-        <div className={styles.allPostsContainer}>
+        <section className={styles.allPostsContainer}>
             <div className={styles.allPostsWrapper}>
                 <div className={styles.allPostsHeadingWrapper}>
                     <Zoom>
@@ -44,12 +44,12 @@ function AllPosts() {
                 </div>
                 <Slide>
                     {currentPosts.map(({ id, img, category, title, text }) => (
-                        <Post key={id} id={id} img={img} alt={title} category={category} header={title} description={text} />
+                        <Post dataCy={`post-${id}`} key={id} id={id} img={img} alt={title} category={category} header={title} description={text} />
                     ))}
                 </Slide>
                 <Pagination postsPerPage={postsPerPage} totalPosts={blogPosts.length} paginate={paginate} />
             </div>
-        </div>
+        </section>
     )
 }
 

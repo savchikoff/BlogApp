@@ -2,20 +2,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: countSize(16);
 }
 
 .categoriesHeader {
     color: inherit;
-    font-size: 36px;
+    font-size: countSize(18);
 }
 
 .categoriesWrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: countSize(16);
     justify-content: space-between;
     width: 100%;
+
+    @include breakpoint(xl) {
+        justify-content: center;
+    }
 
     @include breakpoint(lg) {
         flex-direction: column;

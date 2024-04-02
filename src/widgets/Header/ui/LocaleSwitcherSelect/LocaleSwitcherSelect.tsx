@@ -36,6 +36,7 @@ export default function LocaleSwitcherSelect({
     return (
         <div className={styles.localeSwitcher}>
             <select
+                data-cy="locale-switcher"
                 defaultValue={defaultValue}
                 disabled={isPending}
                 onChange={onSelectChange}

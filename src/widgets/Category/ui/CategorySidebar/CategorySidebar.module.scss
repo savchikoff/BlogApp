@@ -1,6 +1,6 @@
 .categorySidebarWrapper {
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: countSize(24);
     max-width: 350px;
 }

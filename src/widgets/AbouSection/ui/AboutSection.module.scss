@@ -2,39 +2,39 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding-bottom: 128px;
+    padding-bottom: countSize(64);
 }
 
 .lines {
     display: flex;
-    height: 24px;
-    max-width: 100%;
-    overflow: hidden;
+    justify-content: flex-end;
+    height: countSize(12);
+    width: 100%;
 }
 
 .yellowLine {
-    background-color: #FFD050;
-    width: 500px;
+    background-color: $golden;
+    width: 50vw;
     height: 100%;
 }
 
 .purpleLine {
-    background-color: #592EA9;
-    width: 280px;
+    background-color: $purple;
+    width: 10vw;
     height: 100%;
 }
 
 .infoWrapper {
     display: flex;
     justify-content: space-between;
-    gap: 32px;
+    gap: countSize(16);
     width: 100%;
-    padding: 96px 80px;
-    background-color: #F4F0F8;
+    padding: countSize(48) countSize(40);
+    background-color: $ghostWhite;
 
     @include breakpoint(lg) {
         flex-direction: column;
-        gap: 40px;
+        gap: countSize(20);
         align-items: stretch;
         justify-content: center;
     }
@@ -43,13 +43,13 @@
 .subHeader {
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-weight: 600;
+    font-weight: $semibold;
 }
 
 .aboutHeader {
     color: inherit;
-    font-size: 36px;
-    letter-spacing: -2px;
+    font-size: countSize(18);
+    letter-spacing: -countSize(1);
     max-width: 494px;
 
     @include breakpoint(lg) {
@@ -61,17 +61,17 @@
 .missionWrapper {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: countSize(12);
 }
 
 .contentWrapper {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: countSize(8);
 }
 
 .description {
-    color: #6D6E76;
+    color: $daveGray;
     max-width: 515px;
 
     @include breakpoint(lg) {
@@ -80,13 +80,13 @@
 }
 
 .aboutUsLink {
-    color: #592EA9;
-    font-weight: 600;
+    color: $purple;
+    font-weight: $semibold;
 }
 
 .missionHeader {
     color: inherit;
-    font-size: 28px;
+    font-size: countSize(14);
     letter-spacing: -1px;
     max-width: 481px;
 

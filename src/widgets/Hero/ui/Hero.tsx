@@ -14,12 +14,10 @@ export function Hero() {
     const t = useTranslations("FeaturedPost");
     const tCategories = useTranslations("Categories");
 
-    const [randomPosts, setRandomPosts] = useState<typeof blogPosts>(() => getRandomPosts(blogPosts, 1));
-
-    const { category, title, author, createdAt, text, id } = randomPosts[0];
+    const { category, title, author, createdAt, text, id } = blogPosts[0];
 
     return (
-        <div className={styles.headerContainer}>
+        <section className={styles.headerContainer}>
             <div className={container.container}>
                 <Zoom>
                     <div className={styles.contentWrapper}>
@@ -41,6 +39,6 @@ export function Hero() {
                     </div>
                 </Zoom>
             </div>
-        </div>
+        </section>
     )
 }

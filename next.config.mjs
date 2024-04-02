@@ -1,5 +1,4 @@
 import createNextIntlPlugin from 'next-intl/plugin';
-import path from 'path';
 
 const withNextIntl = createNextIntlPlugin();
 
@@ -9,6 +8,7 @@ const nextConfig = {
         prependData: `
             @import "./src/shared/styles/mixins.scss";
             @import "./src/shared/styles/variables.scss";
+            @import "./src/shared/styles/functions.scss";
         `
     }
 };

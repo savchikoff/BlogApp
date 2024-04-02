@@ -1,30 +1,30 @@
 .joinTeamContainer {
-    padding: 128px 0;
+    padding: countSize(64) 0;
 }
 
 .joinTeamWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: countSize(16);
 }
 
 .textWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: countSize(8);
 }
 
 .joinHeader {
     text-align: center;
     color: inherit;
-    font-size: 36px;
+    font-size: countSize(18);
     max-width: 414px;
 }
 
 .joinDescription {
     text-align: center;
-    color: #6D6E76;
+    color: $daveGray;
     max-width: 405px;
 }

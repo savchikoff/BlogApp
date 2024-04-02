@@ -1,5 +1,5 @@
 .noAuthor {
-    margin: 64px 0;
-    font-weight: 600;
-    font-size: 28px;
+    margin: countSize(32) 0;
+    font-weight: $semibold;
+    font-size: countSize(14);
 }

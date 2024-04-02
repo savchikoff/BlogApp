@@ -16,7 +16,7 @@ export function BlogPost({ postId }: IBlogPostProps) {
     const authorObj = authors.filter(({ name }) => name === author)[0];
     const { img: authorImg } = authorObj;
     return (
-        <div className={styles.blogPostContainer}>
+        <article className={styles.blogPostContainer}>
             <div className={styles.blogPostWrapper}>
                 <div className={styles.blogPostHeaderWrapper}>
                     <div className={styles.authorInfoWrapper}>
@@ -65,6 +65,6 @@ export function BlogPost({ postId }: IBlogPostProps) {
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
     )
 }

@@ -7,7 +7,7 @@ import styles from './ContactInfo.module.scss';
 function ContactInfo() {
     const t = useTranslations("ContactUs.ContactInfo")
     return (
-        <div className={styles.contactInfoContainer}>
+        <section className={styles.contactInfoContainer}>
             <div className={styles.contactInfoWrapper}>
                 <div className={styles.contactInfoSection}>
                     <div className={styles.contactInfoHeading}>{t("hoursHeading")}</div>
@@ -31,7 +31,7 @@ function ContactInfo() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

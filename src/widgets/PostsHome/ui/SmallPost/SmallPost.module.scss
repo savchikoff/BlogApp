@@ -1,15 +1,15 @@
 .postWrapper {
     display: flex;
     flex-direction: column;
-    font-size: 14px;
-    gap: 8px;
-    padding: 32px;
+    font-size: countSize(7);
+    gap: countSize(4);
+    padding: countSize(16);
     transition: all 0.3s ease;
     width: 517px;
     height: 181px;
 
     &:hover {
-        background-color: #FBF6EA;
+        background-color: $floralWhite;
     }
 
     @include breakpoint(lg) {
@@ -18,16 +18,16 @@
 }
 
 .authorInfo {
-    color: #592EA9;
+    color: $purple;
 }
 
 .postHeader {
     color: inherit;
     width: 369px;
-    font-size: 24px;
+    font-size: countSize(12);
     transition: all 0.3s ease;
 
     &:hover {
-        color: #592EA9;
+        color: $purple;
     }
 }

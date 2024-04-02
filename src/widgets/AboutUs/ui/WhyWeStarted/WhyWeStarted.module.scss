@@ -3,7 +3,13 @@
     align-items: center;
     justify-content: space-between;
     gap: 137px;
-    padding-top: 128px;
+    padding-top: countSize(64);
+
+    @include breakpoint(md) {
+        flex-direction: column;
+        align-items: stretch;
+        gap: countSize(32);
+    }
 }
 
 .peopleWrapper {
@@ -17,8 +23,15 @@
         left: 107px;
         width: 74px;
         height: 74px;
-        background-color: #592EA9;
+        background-color: $purple;
         border-radius: 50%;
         z-index: 5;
+    }
+
+
+    @include breakpoint(md) {
+        &::after {
+            bottom: -7%;
+        }
     }
 }

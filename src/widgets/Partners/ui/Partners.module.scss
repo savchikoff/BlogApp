@@ -17,12 +17,12 @@
 .partnersTextContent {
     display: flex;
     flex-direction: column;
-    color: #6D6E76;
+    color: $daveGray;
 }
 
 .partnersHeader {
     color: inherit;
-    font-size: 24px;
+    font-size: countSize(12);
 }
 
 .partnerImg {

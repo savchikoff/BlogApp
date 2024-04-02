@@ -48,7 +48,3 @@ $breakpoints: (
         }
     }
 }
-
-@function countSize($multiplier, $base-sizing: 2) {
-    @return ($base-sizing * $multiplier) * 1px;
-}

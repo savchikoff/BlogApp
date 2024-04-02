@@ -12,20 +12,20 @@
 
 .contactUsSubheading {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: $semibold;
     letter-spacing: 3px;
-    margin-bottom: 12px;
+    margin-bottom: countSize(6);
 }
 
 .contactUsHeading {
     text-transform: capitalize;
     text-align: center;
     color: inherit;
-    font-size: 48px;
-    margin-bottom: 24px;
+    font-size: countSize(24);
+    margin-bottom: countSize(12);
 }
 
 .contactUsDescription {
     text-align: center;
-    color: #6D6E76;
+    color: $daveGray;
 }

@@ -5,7 +5,7 @@ import { ISmallPostProps } from "./interfaces";
 
 function SmallPost({ id, author, createdAt, title }: ISmallPostProps) {
     return (
-        <div className={styles.postWrapper}>
+        <article className={styles.postWrapper}>
             <span className={styles.postInfo}>
                 By <span className={styles.authorInfo}>{author}</span>  l   {createdAt}
             </span>
@@ -14,7 +14,7 @@ function SmallPost({ id, author, createdAt, title }: ISmallPostProps) {
                     {title}
                 </h4>
             </Link>
-        </div>
+        </article>
     )
 }
 

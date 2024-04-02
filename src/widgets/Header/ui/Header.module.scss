@@ -1,21 +1,21 @@
 .header {
-    background-color: #232536;
+    background-color: $steelGray;
 }
 
 .headerWrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 18px 0;
+    padding: countSize(9) 0;
 }
 
 .companyName {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: countSize(12);
+    font-weight: $bold;
 }
 
 .actionsWrapper {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: countSize(16);
 }

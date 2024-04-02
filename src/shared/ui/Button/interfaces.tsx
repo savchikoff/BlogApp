@@ -6,4 +6,5 @@ export interface IButtonProps {
     type?: "submit" | "reset" | "button" | undefined;
     disabled?: boolean;
     onClick?: () => void;
+    dataCy?: string;
 }

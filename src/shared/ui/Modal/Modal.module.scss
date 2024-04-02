@@ -13,20 +13,20 @@
 .modalHeader {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 16px;
+    margin-bottom: countSize(8);
 }
 
 .modalContainer {
-    background: #FFFFFF;
-    padding: 20px;
-    border-radius: 8px;
+    background: $white;
+    padding: countSize(10);
+    border-radius: countSize(4);
     min-width: 500px;
-    border: 1px solid #FFD050;
+    border: countSize(1, 1) solid $golden;
 }
 
 .closeButton {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: countSize(8);
 }

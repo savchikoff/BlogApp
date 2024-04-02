@@ -5,7 +5,7 @@ import styles from "./Testimonial.module.scss";
 function Testimonial({ text, img, author, location }: ITestimonialProps) {
 
     return (
-        <div className={styles.testimonialWrapper}>
+        <article className={styles.testimonialWrapper}>
             <p className={styles.testimonialText}>
                 {text}
             </p>
@@ -16,7 +16,7 @@ function Testimonial({ text, img, author, location }: ITestimonialProps) {
                     <div className={styles.testimonialAuthorLocation}>{location}</div>
                 </div>
             </div>
-        </div>
+        </article>
     )
 }
 

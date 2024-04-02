@@ -1,11 +1,11 @@
 .postsContainer {
     display: flex;
     justify-content: space-between;
-    padding: 128px 0;
+    padding: countSize(64) 0;
 
     @include breakpoint(lg) {
         flex-direction: column;
         justify-content: flex-start;
-        gap: 32px;
+        gap: countSize(16);
     }
 }

@@ -1,16 +1,16 @@
 .categoryContainer {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    padding: 32px;
-    border: 1px solid #6D6E76;
+    gap: countSize(8);
+    padding: countSize(16);
+    border: countSize(1, 1) solid $daveGray;
     transition: all 0.3s ease;
     max-width: 296px;
     width: 100%;
 
     &:hover {
-        background-color: #FFD050;
-        border: 1px solid transparent;
+        background-color: $golden;
+        border: countSize(1, 1) solid transparent;
     }
 
     @include breakpoint(lg) {
@@ -21,14 +21,14 @@
 .textContent {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: countSize(2);
 }
 
 .categoryHeader {
     color: inherit;
-    font-size: 28px;
+    font-size: countSize(14);
 }
 
 .categoryDescription {
-    color: #6D6E76;
+    color: $daveGray;
 }

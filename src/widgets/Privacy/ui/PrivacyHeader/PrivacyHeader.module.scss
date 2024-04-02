@@ -2,24 +2,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 80px 0;
-    background-color: #F4F0F8;
+    padding: countSize(40) 0;
+    background-color: $ghostWhite;
 }
 
 .privacyHeaderWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4px;
+    gap: countSize(2);
 }
 
 .privacyHeading {
     text-transform: capitalize;
     color: inherit;
-    font-size: 48px;
+    font-size: countSize(24);
 }
 
 .updateTime {
     text-transform: capitalize;
-    color: #777683;
+    color: $spanishGray;
 }

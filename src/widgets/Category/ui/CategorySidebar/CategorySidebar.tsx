@@ -6,11 +6,11 @@ import { ICategorySidebarProps } from './interfaces';
 
 function CategorySidebar({ selectedTags, setSelectedTags }: ICategorySidebarProps) {
     return (
-        <div className={styles.categorySidebarWrapper}>
+        <aside className={styles.categorySidebarWrapper}>
             <Search />
             <AllTags selectedTags={selectedTags} setSelectedTags={setSelectedTags} />
             <Categories />
-        </div>
+        </aside>
     )
 }
 

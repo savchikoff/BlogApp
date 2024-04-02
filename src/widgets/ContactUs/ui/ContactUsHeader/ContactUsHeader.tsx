@@ -7,7 +7,7 @@ import styles from './ContactUsHeader.module.scss';
 function ContactUsHeader() {
     const t = useTranslations("ContactUs.ContactHeader");
     return (
-        <div className={styles.contactUsHeaderContainer}>
+        <section className={styles.contactUsHeaderContainer}>
             <Zoom>
                 <div className={styles.contactUsHeaderWrapper}>
                     <div className={styles.contactUsSubheading}>
@@ -21,7 +21,7 @@ function ContactUsHeader() {
                     </p>
                 </div>
             </Zoom>
-        </div>
+        </section>
     )
 }
 

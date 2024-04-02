@@ -13,7 +13,7 @@ function AllPostsSection() {
     const t = useTranslations("Home.PostsHome")
     return (
         <Slide direction='right'>
-            <div className={styles.postsWrapper}>
+            <section className={styles.postsWrapper}>
                 <div className={styles.headerWrapper}>
                     <h2 className={styles.sectionHeader}>{t("allPostsHeading")}</h2>
                     <Link href={routes.Blog}>
@@ -29,7 +29,7 @@ function AllPostsSection() {
                         ))}
                     </Slide>
                 </div>
-            </div >
+            </section >
         </Slide>
     )
 }

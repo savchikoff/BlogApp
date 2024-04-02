@@ -11,15 +11,15 @@ export function JoinTeam() {
     const t = useTranslations("JoinUs");
     return (
         <Slide>
-            <div className={styles.joinTeamContainer}>
+            <section className={styles.joinTeamContainer}>
                 <div className={styles.joinTeamWrapper}>
                     <div className={styles.textWrapper}>
                         <h3 className={styles.joinHeader}>{t("heading")}</h3>
                         <p className={styles.joinDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
-                    <Button isPrimary><Link href={routes.Contacts}>{t("link")}</Link></Button>
+                    <Button isPrimary><Link data-cy="join-us" href={routes.Contacts}>{t("link")}</Link></Button>
                 </div>
-            </div>
+            </section>
         </Slide>
     )
 }

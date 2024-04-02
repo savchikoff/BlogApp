@@ -11,7 +11,7 @@ function OurTeam() {
     const t = useTranslations("AboutUs.OurTeam");
     return (
         <Slide direction='right'>
-            <div className={styles.ourTeamWrapper}>
+            <article className={styles.ourTeamWrapper}>
                 <AboutSectionDescription
                     header={`${t("heading")}`}
                     subheader='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.'
@@ -25,7 +25,7 @@ function OurTeam() {
                         alt='handshake'
                     />
                 </div>
-            </div>
+            </article>
         </Slide>
     )
 }

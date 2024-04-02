@@ -10,7 +10,7 @@ import { useTranslations } from "next-intl";
 export function StorySection() {
     const t = useTranslations("Home.Why")
     return (
-        <div className={styles.storyWrapper}>
+        <section className={styles.storyWrapper}>
             <Slide>
                 <Image
                     className={styles.storyImg}
@@ -36,6 +36,6 @@ export function StorySection() {
                     <Button isPrimary>{t("link")} &gt;</Button>
                 </Slide>
             </div>
-        </div>
+        </section>
     )
 }

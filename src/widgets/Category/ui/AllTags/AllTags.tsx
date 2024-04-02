@@ -22,7 +22,7 @@ function AllTags({ selectedTags, setSelectedTags }: IAllTagsProps) {
 
 
     return (
-        <div className={styles.allTagsWrapper}>
+        <section className={styles.allTagsWrapper}>
             <h2 className={styles.allTagsHeader}>{t("tagsHeader")}</h2>
             <div className={styles.allTags}>
                 <ul className={styles.categoriesWrapper}>
@@ -32,6 +32,7 @@ function AllTags({ selectedTags, setSelectedTags }: IAllTagsProps) {
                             className={classNames(styles.categoryButton, selectedTags?.includes(tag) &&
                                 styles.categoryButtonActive)}
                             onClick={handleTagsChange(tag, !selectedTags?.includes(tag))}
+                            data-cy={`tag-${tag}`}
                         >
                             {t(tag)}
                         </li>
@@ -44,7 +45,7 @@ function AllTags({ selectedTags, setSelectedTags }: IAllTagsProps) {
                     </li>
                 </ul>
             </div>
-        </div >
+        </section >
     )
 }
 
