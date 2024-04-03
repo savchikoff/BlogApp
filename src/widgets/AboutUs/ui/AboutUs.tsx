@@ -1,4 +1,3 @@
-import styles from "./AboutUs.module.scss";
 import CompanyValues from "./CompanyValues/CompanyValues";
 import OurTeam from "./OurTeam/OurTeam";
 import WhyWeStarted from "./WhyWeStarted/WhyWeStarted";

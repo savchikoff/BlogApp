@@ -26,7 +26,7 @@ function TestimonialsSlider() {
         <div className={styles.testimonialsContainer}>
             <div
                 className={styles.testimonialsWrapper}
-                style={{ transform: `translateX(-${activeSlide * 532}px)`, width: `${532 * testimonials.length}px` }}
+                style={{ transform: `translateX(-${activeSlide * 464}px)`, width: `${464 * testimonials.length}px` }}
             >
                 {testimonials.map(({ text, img, author, location, id }) => (
                     <Testimonial
@@ -39,10 +39,10 @@ function TestimonialsSlider() {
                 ))}
             </div>
             <div className={styles.testimonialsSliderWrapper}>
-                <div className={styles.testimonialsSlider} onClick={handleClickPrev} >
+                <div role='button' className={styles.testimonialsSlider} onClick={handleClickPrev} >
                     <Image src={leftArrow} alt="leftArrow" />
                 </div>
-                <div className={styles.testimonialsSlider} onClick={handleClickNext}>
+                <div role='button' className={styles.testimonialsSlider} onClick={handleClickNext}>
                     <Image src={rightArrow} alt="rightArrow" />
                 </div>
             </div>

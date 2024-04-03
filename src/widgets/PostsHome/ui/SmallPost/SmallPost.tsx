@@ -1,6 +1,5 @@
-import styles from "./SmallPost.module.scss";
 import Link from "next/link";
-import { routes } from "@/shared/consts/routes";
+import styles from "./SmallPost.module.scss";
 import { ISmallPostProps } from "./interfaces";
 
 function SmallPost({ id, author, createdAt, title }: ISmallPostProps) {

@@ -1,14 +1,13 @@
 "use client"
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import styles from './Header.module.scss';
 import container from '@/shared/styles/container.module.scss';
 import { Navigation } from '../../Navigation/ui/Navigation';
 import LocaleSwitcher from './LocaleSwitcher';
-import { Button } from '@/shared';
-import { CompanyName } from '@/shared';
-import { Modal } from '@/shared';
-import { useTranslations } from 'next-intl';
+import { Button, Modal, CompanyName } from '@/shared';
+import BurgerMenu from './BurgerMenu/BurgerMenu';
 
 export function Header() {
 
@@ -36,14 +35,21 @@ export function Header() {
                         </Button>
                         <LocaleSwitcher />
                     </div>
+                    <BurgerMenu>
+                        <Navigation />
+                        <Button isPrimary dataCy="modal-btn" onClick={handleModalOpen}>
+                            {t("label")}
+                        </Button>
+                        <LocaleSwitcher />
+                    </BurgerMenu>
                 </div>
             </div>
             <Modal isOpen={isModalOpen} onClose={handleModalClose}>
                 <iframe width="600" height="315"
+                    title='video'
                     allowFullScreen
                     frameBorder="0"
-                    src="https://www.youtube.com/embed/zRp4NS_eeGc">
-                </iframe>
+                    src="https://www.youtube.com/embed/zRp4NS_eeGc" />
             </Modal>
         </header>
     )

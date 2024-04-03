@@ -1,5 +1,9 @@
 .header {
     background-color: $steelGray;
+
+    @include breakpoint(lg) {
+        position: relative;
+    }
 }
 
 .headerWrapper {
@@ -18,4 +22,8 @@
     display: flex;
     align-items: center;
     gap: countSize(16);
+
+    @include breakpoint(lg) {
+        display: none;
+    }
 }

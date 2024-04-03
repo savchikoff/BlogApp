@@ -5,6 +5,7 @@ import { Zoom } from "react-awesome-reveal";
 import styles from "./Authors.module.scss";
 import { authors } from "@/shared/consts/authors";
 import Author from "./Author/Author";
+
 export function Authors() {
     const t = useTranslations("Author")
     return (

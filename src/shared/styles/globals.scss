@@ -41,9 +41,17 @@ h6 {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: countSize(18);
 
     @include breakpoint(lg) {
-        font-size: 32px;
+        font-size: countSize(16);
+    }
+}
+
+h3 {
+    font-size: countSize(14);
+
+    @include breakpoint(sm) {
+        font-size: countSize(12);
     }
 }

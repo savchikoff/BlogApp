@@ -56,9 +56,20 @@
     color: inherit;
     font-size: countSize(24);
     max-width: 446px;
+
+    @include breakpoint(lg) {
+        font-size: countSize(20);
+    }
 }
 
 .storyDescription {
     max-width: 546px;
     color: $daveGray;
+}
+
+.storyImgWrapper {
+
+    @include breakpoint(md) {
+        height: 600px
+    }
 }

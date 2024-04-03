@@ -6,6 +6,7 @@
 .testimonialsWrapper {
     display: flex;
     justify-content: space-between;
+    gap: 32px;
 
     @include breakpoint(md) {
         flex-direction: column;
@@ -33,7 +34,6 @@
 }
 
 .testimonialsHeader {
-    font-size: countSize(18);
     color: inherit;
     max-width: 345px;
 }

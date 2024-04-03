@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { Formik, Field, ErrorMessage, FormikValues, FormikHelpers } from "formik";
 import { toast } from "react-toastify";
@@ -30,7 +30,7 @@ function NewsLetterForm() {
                     () => {
                         toast.success("You form was send to our edition!");
                     },
-                    (error) => {
+                    () => {
                         toast.error(`Something went wrong :(`);
                     },
                 );
@@ -40,24 +40,21 @@ function NewsLetterForm() {
     };
 
     return (
-        <>
-
-            <Formik
-                initialValues={initialValues}
-                validationSchema={schema}
-                onSubmit={handleSubmit}
-            >
-                {({ isSubmitting, handleSubmit }) => (
-                    <form className={styles.formWrapper} onSubmit={handleSubmit}>
-                        <label htmlFor="email">
-                            <Field data-cy="footer-input" placeholder={`${t("placeholder")}`} className={styles.emailInput} name="email" type="email" />
-                            <ErrorMessage className={styles.error} name="email" component="div" />
-                        </label>
-                        <Button dataCy="subs-button" isPrimary type="submit" disabled={isSubmitting}>{t("link")}</Button>
-                    </form>
-                )}
-            </Formik>
-        </>
+        <Formik
+            initialValues={initialValues}
+            validationSchema={schema}
+            onSubmit={handleSubmit}
+        >
+            {({ isSubmitting, handleSubmit }) => (
+                <form className={styles.formWrapper} onSubmit={handleSubmit}>
+                    <label htmlFor="email">
+                        <Field data-cy="footer-input" placeholder={`${t("placeholder")}`} className={styles.emailInput} name="email" type="email" />
+                        <ErrorMessage className={styles.error} name="email" component="div" />
+                    </label>
+                    <Button dataCy="subs-button" isPrimary type="submit" disabled={isSubmitting}>{t("link")}</Button>
+                </form>
+            )}
+        </Formik>
     )
 }
 

@@ -38,7 +38,7 @@ export function ContactForm() {
                     () => {
                         toast.success("You were successfully subscribed!");
                     },
-                    (error) => {
+                    () => {
                         toast.error(`Something went wrong :(`);
                     },
                 );

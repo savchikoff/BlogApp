@@ -1,14 +1,12 @@
 "use client"
 
-import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Zoom } from "react-awesome-reveal";
+import Link from "next/link";
 import styles from "./Hero.module.scss";
 import container from "@/shared/styles/container.module.scss";
-import Link from "next/link";
 import { Button } from "@/shared";
 import { blogPosts } from "@/shared/consts/blogPosts";
-import { getRandomPosts } from "@/shared/utils/getRandomPosts";
 
 export function Hero() {
     const t = useTranslations("FeaturedPost");

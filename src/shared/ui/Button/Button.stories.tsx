@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
+import "@/shared/styles/globals.scss";
 
 import { Button } from './Button';
 

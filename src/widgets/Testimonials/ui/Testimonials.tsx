@@ -16,8 +16,7 @@ export function Testimonials() {
                         <h2 className={styles.testimonialsHeader}>{t("heading")}</h2>
                         <p className={styles.testimonialsDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                     </div>
-                    <div className={styles.line}>
-                    </div>
+                    <div className={styles.line} />
                     <TestimonialsSlider />
                 </div>
             </section>

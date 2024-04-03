@@ -20,10 +20,10 @@ export function Modal({ isOpen, onClose, children }: IModalProps) {
 
 
     return (
-        <div data-cy="modal-window" className={styles.modalOverlay} onClick={handleOverlayClick}>
+        <div role="dialog" data-cy="modal-window" className={styles.modalOverlay} onClick={handleOverlayClick}>
             <div className={styles.modalContainer} ref={modalRef}>
                 <div className={styles.modalHeader}>
-                    <div data-cy="modal-close-btn" className={styles.closeButton} onClick={onClose}>❌</div>
+                    <div role="button" data-cy="modal-close-btn" className={styles.closeButton} onClick={onClose}>❌</div>
                 </div>
                 {children}
             </div>

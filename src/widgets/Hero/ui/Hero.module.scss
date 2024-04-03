@@ -25,19 +25,38 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     line-height: countSize(10);
+
+    @include breakpoint(lg) {
+        font-size: countSize(7);
+    }
 }
 
 .mainHeader {
     font-size: countSize(28);
     letter-spacing: -1 * countSize(1);
     max-width: 803px;
-    line-height: countSize(32);
+
+    @include breakpoint(lg) {
+        font-size: countSize(24);
+    }
+
+    @include breakpoint(sm) {
+        font-size: countSize(20);
+    }
 }
 
 .description {
     max-width: 599px;
+
+    @include breakpoint(lg) {
+        font-size: countSize(7);
+    }
 }
 
 .authorInfo {
     color: $golden;
+
+    @include breakpoint(lg) {
+        font-size: countSize(7);
+    }
 }

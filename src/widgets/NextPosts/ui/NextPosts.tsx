@@ -2,13 +2,14 @@
 
 import { useTranslations } from "next-intl";
 import { blogPosts } from "@/shared/consts/blogPosts";
-import { getRandomPosts } from "@/shared/utils/getRandomPosts";
+import { getRandomPosts } from "../utils/getRandomPosts";
 import styles from './NextPosts.module.scss';
 import NextPost from "./NextPost/NextPost";
+import { INextPostsProps } from "./interfaces";
 
-function NextPosts() {
+function NextPosts({ postId }: INextPostsProps) {
     const t = useTranslations("BlogPost.NextPosts")
-    const posts = getRandomPosts(blogPosts, 3);
+    const posts = getRandomPosts(blogPosts, postId);
     return (
         <section className={styles.nextPostsWrapper}>
             <h2 className={styles.nextPostsHeading}>
@@ -19,7 +20,7 @@ function NextPosts() {
                     <NextPost key={id} id={id} img={img} title={title} text={text} author={author} createdAt={createdAt} />
                 ))}
             </div>
-            <div className={styles.line}></div>
+            <div className={styles.line} />
         </section>
     )
 }

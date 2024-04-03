@@ -10,7 +10,7 @@ function Testimonial({ text, img, author, location }: ITestimonialProps) {
                 {text}
             </p>
             <div className={styles.testimonialAuthor}>
-                <Image src={img} alt={author} />
+                <Image placeholder="blur" src={img} alt={author} />
                 <div className={styles.testimonialsInfo}>
                     <h4 className={styles.testimonialAuthorName}>{author}</h4>
                     <div className={styles.testimonialAuthorLocation}>{location}</div>

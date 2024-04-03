@@ -1,22 +1,25 @@
 "use client"
 
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Slide } from "react-awesome-reveal";
 import styles from "./StorySection.module.scss";
 import storyImg from '../assets/storyImg.jpg';
 import { Button } from "@/shared";
-import { useTranslations } from "next-intl";
 
 export function StorySection() {
     const t = useTranslations("Home.Why")
     return (
         <section className={styles.storyWrapper}>
             <Slide>
-                <Image
-                    className={styles.storyImg}
-                    src={storyImg}
-                    alt="story-img"
-                />
+                <div className={styles.storyImgWrapper}>
+                    <Image
+                        placeholder="blur"
+                        className={styles.storyImg}
+                        src={storyImg}
+                        alt="story-img"
+                    />
+                </div>
             </Slide>
             <div className={styles.storyContentWrapper}>
                 <Slide direction="right">

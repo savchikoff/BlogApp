@@ -1,22 +1,15 @@
 'use client';
 
 import { useParams } from 'next/navigation';
-import { ChangeEvent, ReactNode, useTransition } from 'react';
+import { ChangeEvent, useTransition } from 'react';
 import { useRouter, usePathname } from '@/navigation';
 import styles from './LocaleSwitcherSelect.module.scss';
-
-
-type Props = {
-    children: ReactNode;
-    defaultValue: string;
-    label: string;
-};
+import { ILocaleSwitcherSelectProps } from './interfaces';
 
 export default function LocaleSwitcherSelect({
     children,
-    defaultValue,
-    label
-}: Props) {
+    defaultValue
+}: ILocaleSwitcherSelectProps) {
     const router = useRouter();
     const [isPending, startTransition] = useTransition();
     const pathname = usePathname();

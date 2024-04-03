@@ -10,7 +10,7 @@ function FeaturedPost({ id, authorName, createdAt, title, text, img }: IFeatured
         <article className={styles.postContainer}>
             <div className={styles.postWrapper}>
                 <div className={styles.postImgWrapper}>
-                    <Image className={styles.postImg} src={img} alt="post-img" />
+                    <Image placeholder="blur" className={styles.postImg} src={img} alt="post-img" />
                 </div>
                 <div className={styles.articleTextWrapper}>
                     <span className={styles.articleInfo}>

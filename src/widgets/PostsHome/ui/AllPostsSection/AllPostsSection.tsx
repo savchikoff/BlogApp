@@ -1,7 +1,7 @@
 "use client"
 
 import { useTranslations } from 'next-intl';
-import { Slide, Zoom } from 'react-awesome-reveal';
+import { Slide } from 'react-awesome-reveal';
 import Link from 'next/link';
 import styles from './AllPostsSection.module.scss';
 import SmallPost from '../SmallPost/SmallPost';

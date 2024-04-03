@@ -1,14 +1,14 @@
 "use client";
 
 import { useState } from 'react';
+import classNames from 'classnames';
 import { useTranslations } from 'next-intl';
 import { Slide, Zoom } from "react-awesome-reveal";
-import Post from '../../../Post/ui/Post';
+import Post from '@/widgets/Post/ui/Post';
 import styles from './AllPosts.module.scss';
 import container from "@/shared/styles/container.module.scss";
 import { Pagination } from '@/shared';
 import { blogPosts } from '@/shared/consts/blogPosts';
-import classNames from 'classnames';
 
 function AllPosts() {
 
@@ -39,7 +39,7 @@ function AllPosts() {
                         <h1 className={styles.allPostsHeading}>{t("heading")}</h1>
                     </Zoom>
                     <Slide direction='right'>
-                        <div className={styles.line}></div>
+                        <div className={styles.line} />
                     </Slide>
                 </div>
                 <Slide>
@@ -48,8 +48,8 @@ function AllPosts() {
                     ))}
                 </Slide>
                 <Pagination postsPerPage={postsPerPage} totalPosts={blogPosts.length} paginate={paginate} />
-            </div>
-        </section>
+            </div >
+        </section >
     )
 }
 

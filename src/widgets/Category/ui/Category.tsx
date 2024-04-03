@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import classNames from 'classnames';
 import styles from './Category.module.scss';
 import container from '@/shared/styles/container.module.scss';
 import CategoryHeader from './CategoryHeader/CategoryHeader';
@@ -10,7 +11,6 @@ import CategorySidebar from './CategorySidebar/CategorySidebar';
 import Post from '@/widgets/Post/ui/Post';
 import { blogPosts } from '@/shared/consts/blogPosts';
 import { categories } from '@/shared/consts/categories';
-import classNames from 'classnames';
 
 
 export function Category({ categoryName }: ICategoryProps) {

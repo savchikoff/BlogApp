@@ -4,8 +4,7 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Categories.module.scss';
-import { categories } from '@/shared/consts/categories';
-import { CategoryType } from '@/shared/consts/categories';
+import { categories, CategoryType } from '@/shared/consts/categories';
 
 
 

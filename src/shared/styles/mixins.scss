@@ -1,4 +1,7 @@
 $breakpoints: (
+    mobS: (min: 320px, max: 319.98px),
+    mobM: (min: 375px, max: 374.98),
+    mobL: (min: 425px, max: 424.98),
     sm: (min: 576px,
         max: 575.98px,
     ),

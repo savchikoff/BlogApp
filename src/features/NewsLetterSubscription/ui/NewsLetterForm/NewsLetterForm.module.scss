@@ -1,6 +1,6 @@
 .formWrapper {
     display: flex;
-    gap: 24px;
+    gap: countSize(12);
 
     @include breakpoint(lg) {
         flex-direction: column;
@@ -10,24 +10,29 @@
 
 .emailInput {
     font-family: inherit;
-    height: 56px;
+    height: countSize(28);
     background: none;
-    border: 1px solid #4C4C4C;
-    padding: 0 24px;
+    border: countSize(1, 1) solid $darkGray;
+    padding: 0 countSize(12);
     width: 323px;
-    color: #FFFFFF;
-    margin-bottom: 8px;
+    color: $white;
+    margin-bottom: countSize(4);
 
     &::placeholder {
-        color: #6D6E76;
+        color: $daveGray;
     }
 
     @include breakpoint(lg) {
         width: 100%;
-        padding: 16px;
+        padding: countSize(8);
+    }
+
+    @include breakpoint(lg) {
+        font-size: countSize(7);
+        height: countSize(24);
     }
 }
 
 .error {
-    color: #FF0000;
+    color: $red;
 }

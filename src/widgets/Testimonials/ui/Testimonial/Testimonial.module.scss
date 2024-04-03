@@ -2,15 +2,20 @@
     display: flex;
     flex-direction: column;
     gap: 121px;
-    width: 100%;
+    max-width: 400px;
 }
 
 .testimonialText {
     font-weight: $bold;
     font-size: countSize(12);
+    word-break: break-word;
 
-    @include breakpoint(md) {
+    @include breakpoint(xl) {
         font-size: countSize(10);
+    }
+
+    @include breakpoint(lg) {
+        font-size: countSize(8);
     }
 }
 
@@ -27,6 +32,10 @@
 .testimonialAuthorName {
     color: inherit;
     font-size: countSize(12);
+
+    @include breakpoint(xl) {
+        font-size: countSize(10);
+    }
 }
 
 .testimonialAuthorLocation {

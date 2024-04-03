@@ -1,18 +1,16 @@
 "use client"
 
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 import { Zoom } from 'react-awesome-reveal';
 import Image from 'next/image';
 import styles from './BlogHeader.module.scss';
 import container from '@/shared/styles/container.module.scss';
 import { Button } from '@/shared';
 import { blogPosts } from '@/shared/consts/blogPosts';
-import Link from 'next/link';
-import { getRandomPosts } from '@/shared/utils/getRandomPosts';
 
 function BlogHeader() {
     const t = useTranslations("FeaturedPost");
-    // const featuredPost = getRandomPosts(blogPosts, 1)[0];
     const { id, title, text, author, createdAt, img } = blogPosts[0];
     return (
         <section className={styles.blogHeaderContainer}>
@@ -34,6 +32,7 @@ function BlogHeader() {
                         </div>
                         <div className={styles.blogHeaderImgWrapper}>
                             <Image
+                                placeholder='blur'
                                 className={styles.blogHeaderImg}
                                 src={img}
                                 alt={title} />

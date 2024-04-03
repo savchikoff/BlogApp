@@ -34,7 +34,7 @@ function Search() {
             {debounceSearchTerm &&
                 <div className={styles.searchedPostsWrapper}>
                     {filteredPosts.map(({ id, title, tags }) => (
-                        <SearchedPost id={id} title={title} tags={tags} />
+                        <SearchedPost key={id} id={id} title={title} tags={tags} />
                     ))}
                 </div>}
         </search >

@@ -11,7 +11,7 @@ function Post({ id, img, alt, category, header, description, dataCy }: IPostProp
     return (
         <article className={styles.postWrapper}>
             <div className={styles.imgWrapper}>
-                <Image className={styles.postImg} src={img} alt={alt} />
+                <Image placeholder="blur" className={styles.postImg} src={img} alt={alt} />
             </div>
             <div className={styles.postTextWrapper}>
                 <Link href={`/category/${category.toLowerCase()}`} className={styles.postCategory}>{t(category)}</Link>

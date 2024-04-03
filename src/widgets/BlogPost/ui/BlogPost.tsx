@@ -1,8 +1,8 @@
 "use client"
 
 import { useTranslations } from 'next-intl';
-import styles from './BlogPost.module.scss';
 import Image from 'next/image';
+import styles from './BlogPost.module.scss';
 import { IBlogPostProps } from './interfaces';
 import { blogPosts } from '@/shared/consts/blogPosts';
 import { authors } from '@/shared/consts/authors';
@@ -10,7 +10,7 @@ import { authors } from '@/shared/consts/authors';
 export function BlogPost({ postId }: IBlogPostProps) {
     const t = useTranslations("Categories");
     const post = blogPosts.filter(post => post.id === postId)[0];
-    const { id, img, category, title, text, createdAt, author, rocketIcon,
+    const { img, category, title, createdAt, author, rocketIcon,
         postContent: { bulletPoints, text: postText, title: postTitle }
     } = post;
     const authorObj = authors.filter(({ name }) => name === author)[0];
@@ -20,7 +20,7 @@ export function BlogPost({ postId }: IBlogPostProps) {
             <div className={styles.blogPostWrapper}>
                 <div className={styles.blogPostHeaderWrapper}>
                     <div className={styles.authorInfoWrapper}>
-                        <Image width={48} height={48} src={authorImg} alt={author} />
+                        <Image placeholder='blur' width={48} height={48} src={authorImg} alt={author} />
                         <div className={styles.authorInfo}>
                             <p className={styles.authorName}>{author}</p>
                             <span className={styles.postDate}>Posted on {createdAt}</span>
@@ -35,7 +35,7 @@ export function BlogPost({ postId }: IBlogPostProps) {
                     </div>
                 </div>
                 <div className={styles.blogPostImgWrapper}>
-                    <Image className={styles.blogPostImg} src={img} alt={title} />
+                    <Image placeholder='blur' className={styles.blogPostImg} src={img} alt={title} />
                 </div>
                 <div className={styles.blogPostTextContentWrapper}>
                     <div className={styles.blogPostTextPart}>
@@ -49,8 +49,8 @@ export function BlogPost({ postId }: IBlogPostProps) {
                         <div className={styles.blogPostTextPartTextWrapper}>
                             <p className={styles.blogPostTextPartText}>{postText}</p>
                             <ul className={styles.bulletPointsWrapper}>
-                                {bulletPoints.map((point, index) => (
-                                    <li key={index} className={styles.bulletPoint}>{point}</li>
+                                {bulletPoints.map(({ id, content }) => (
+                                    <li key={id} className={styles.bulletPoint}>{content}</li>
                                 ))}
                             </ul>
                             <p className={styles.blogPostTextPartText}>{postText}</p>

@@ -11,7 +11,7 @@ function ContactInfo() {
             <div className={styles.contactInfoWrapper}>
                 <div className={styles.contactInfoSection}>
                     <div className={styles.contactInfoHeading}>{t("hoursHeading")}</div>
-                    <div className={styles.line}></div>
+                    <div className={styles.line} />
                     <div className={styles.contactInfoDataWrapper}>
                         <p className={styles.contactInfoData}>{t("workingDays")}</p>
                         <p className={styles.contactInfoData}>{t("workingHours")} </p>
@@ -20,7 +20,7 @@ function ContactInfo() {
                 </div>
                 <div className={styles.contactInfoSection}>
                     <div className={styles.contactInfoHeading}>{t("contactHeading")}</div>
-                    <div className={styles.line}></div>
+                    <div className={styles.line} />
                     <div className={styles.contactInfoDataWrapper}>
                         <p className={styles.contactInfoData}>
                             <a href="callto: 020 7993 2905">020 7993 2905</a>
@@ -31,7 +31,7 @@ function ContactInfo() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 

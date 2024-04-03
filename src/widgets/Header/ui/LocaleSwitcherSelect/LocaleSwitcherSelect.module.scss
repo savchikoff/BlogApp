@@ -10,5 +10,11 @@
             color: $white;
             background: $steelGray;
         }
+
+        @include breakpoint(lg) {
+            color: $steelGray;
+            border: countSize(1, 1) solid $steelGray;
+            ;
+        }
     }
 }

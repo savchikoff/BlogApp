@@ -1,5 +1,6 @@
 "use client"
 
+import classNames from 'classnames';
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import styles from './Pagination.module.scss';
@@ -26,43 +27,32 @@ export function Pagination({ postsPerPage, totalPosts, paginate }: IPaginationPr
         <nav>
             <ul className={styles.paginationWrapper}>
                 <li
-                    key={"previous"}
+                    key="previous"
                     onClick={handlePageClick(activePage - 1)}
                     className={styles.pageControl}
                 >
-                    <a
-                        className={styles.pageLink}
-                    >
-                        &lt; {t("prevPage")}
-                    </a>
+                    &lt; {t("prevPage")}
                 </li>
                 {
                     pageNumbers.map(number => (
                         <li
-                            className={styles.page + " " +
-                                (number == activePage ? styles.activeLink : '')}
+                            className={classNames(styles.page, { [styles.activeLink]: number === activePage })}
                             data-cy={`page-${2}`}
                             key={number}
                             onClick={handlePageClick(number)}
                         >
-                            <a
-                            >
-                                {number}
-                            </a>
+
+                            {number}
                         </li>
                     ))
                 }
                 <li
-                    key={"next"}
+                    key="next"
                     onClick={handlePageClick(activePage + 1)}
                     className={styles.pageControl}
                     data-cy="next-page"
                 >
-                    <a
-                        className={styles.pageLink}
-                    >
-                        {t("nextPage")} &gt;
-                    </a>
+                    {t("nextPage")} &gt;
                 </li>
             </ul>
         </nav >

@@ -12,7 +12,7 @@ function AllTags({ selectedTags, setSelectedTags }: IAllTagsProps) {
     const handleTagsChange = (tagName: string, selected: boolean) => () => {
         const nextSelectedTags = selected ?
             [...selectedTags, tagName] :
-            selectedTags?.filter(tag => tag != tagName);
+            selectedTags?.filter(tag => tag !== tagName);
         setSelectedTags(nextSelectedTags);
     }
 

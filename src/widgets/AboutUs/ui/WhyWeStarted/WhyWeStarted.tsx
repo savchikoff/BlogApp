@@ -14,6 +14,7 @@ function WhyWeStarted() {
             <article className={styles.whyWeStartedWrapper}>
                 <div className={styles.peopleWrapper}>
                     <Image
+                        placeholder='blur'
                         className={styles.peopleImg}
                         layout="responsive"
                         src={people}

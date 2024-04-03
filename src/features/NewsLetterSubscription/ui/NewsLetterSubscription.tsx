@@ -8,9 +8,9 @@ export function NewsLetterSubscription() {
     const t = useTranslations("Footer")
     return (
         <div className={styles.formWrapper}>
-            <h3 className={styles.footerFormHeader}>
+            <h2 className={styles.footerFormHeader}>
                 {t("formHeading")}
-            </h3>
+            </h2>
             <NewsLetterForm />
         </div>
     )

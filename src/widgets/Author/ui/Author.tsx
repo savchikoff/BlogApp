@@ -1,13 +1,13 @@
 "use client"
 
 import { useTranslations } from 'next-intl';
+import classNames from 'classnames';
 import container from '@/styles/container.module.scss';
 import styles from './Author.module.scss';
 import { IAuthorProps } from './interfaces'
 import AuthorHeader from './AuthorHeader/AuthorHeader';
 import AuthorPosts from './AuthorPosts/AuthorPosts';
 import { authors } from '@/shared/consts/authors';
-import classNames from 'classnames';
 
 export function Author({ id }: IAuthorProps) {
     const t = useTranslations("AuthorPage");

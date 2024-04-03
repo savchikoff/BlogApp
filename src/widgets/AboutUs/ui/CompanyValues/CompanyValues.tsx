@@ -32,6 +32,7 @@ function CompanyValues() {
             <Zoom>
                 <div className={styles.imgWrapper}>
                     <Image
+                        placeholder="blur"
                         layout="responsive"
                         src={overview} alt="overview" />
                     <div className={styles.companyStatsContainer}>
@@ -50,12 +51,12 @@ function CompanyValues() {
                             </div>
                         </div>
                         <div className={styles.lines}>
-                            <div className={styles.purpleLine}></div>
-                            <div className={styles.yellowLine}></div>
+                            <div className={styles.purpleLine} />
+                            <div className={styles.yellowLine} />
                         </div>
                     </div>
-                </div>
-            </Zoom>
+                </div >
+            </Zoom >
             <Slide>
                 <div className={styles.keyValuesContainer}>
                     <div className={styles.keyValuesWrapper}>

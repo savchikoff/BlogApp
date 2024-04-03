@@ -8,7 +8,7 @@ function Author({ authorName, position, img, alt, link }: IAuthorProps) {
     return (
 
         <article className={styles.authorWrapper}>
-            <Image src={img} alt={alt} />
+            <Image placeholder='blur' src={img} alt={alt} />
             <div className={styles.textContent}>
                 <Link href={link}>
                     <h3 className={styles.authorName}>{authorName}</h3>

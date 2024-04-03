@@ -1,11 +1,11 @@
 "use client"
 
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { Slide } from 'react-awesome-reveal';
 import Image from 'next/image';
 import styles from './Partners.module.scss';
 import { partners } from '../consts/partners';
-import Link from 'next/link';
 
 export function Partners() {
     const t = useTranslations("Home.Partners");
@@ -20,7 +20,7 @@ export function Partners() {
                 </Slide>
                 <Slide direction='right'>
                     {partners.map(({ alt, img, id }) =>
-                        <Link key={id} href="">
+                        <Link key={id} href="/">
                             <Image className={styles.partnerImg} src={img} alt={alt} />
                         </Link>
                     )}

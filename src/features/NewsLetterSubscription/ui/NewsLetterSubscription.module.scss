@@ -9,11 +9,11 @@
     @include breakpoint(lg) {
         flex-direction: column;
         gap: countSize(12);
+        padding: countSize(18);
     }
 }
 
 .footerFormHeader {
-    font-size: countSize(18);
     max-width: 600px;
 
     @include breakpoint(md) {

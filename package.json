@@ -17,6 +17,7 @@
     "@emailjs/browser": "^4.3.3",
     "@emotion/react": "^11.11.4",
     "@types/mapbox-gl": "^3.1.0",
+    "@types/react-burger-menu": "^2.8.7",
     "classnames": "^2.5.1",
     "formik": "^2.4.5",
     "i18next": "^23.10.1",
@@ -27,6 +28,7 @@
     "next-intl": "^3.9.5",
     "react": "^18",
     "react-awesome-reveal": "^4.2.8",
+    "react-burger-menu": "^3.0.9",
     "react-dom": "^18",
     "react-i18next": "^14.1.0",
     "react-toastify": "^10.0.5",
@@ -73,10 +75,11 @@
     "storybook": "^8.0.0",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
+    "tsconfig-paths-webpack-plugin": "^4.1.0",
     "typescript": "^5.4.2"
   },
   "lint-staged": {
-    "*.ts": "eslint --cache --fix",
+    "*.tsx, *.ts": "eslint --cache --fix",
     "*.--write": "prettier --write"
   }
 }

@@ -8,7 +8,7 @@ function PostPage({ params: { id } }: IPostPageProps) {
     return (
         <div className={container.container}>
             <BlogPost postId={Number(id)} />
-            <NextPosts />
+            <NextPosts postId={Number(id)} />
             <JoinTeam />
         </div>
     )

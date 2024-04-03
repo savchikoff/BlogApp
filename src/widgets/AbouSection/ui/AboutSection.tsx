@@ -1,9 +1,9 @@
 "use client"
 
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { Slide, Zoom } from "react-awesome-reveal";
 import styles from "./AboutSection.module.scss";
-import { useTranslations } from "next-intl";
 
 export function AboutSection() {
     const t = useTranslations("Home.About");
@@ -11,10 +11,10 @@ export function AboutSection() {
         <section className={styles.sectionWrapper}>
             <div className={styles.lines}>
                 <Slide>
-                    <div className={styles.yellowLine}></div>
+                    <div className={styles.yellowLine} />
                 </Slide>
                 <Slide direction="right">
-                    <div className={styles.purpleLine}></div>
+                    <div className={styles.purpleLine} />
                 </Slide>
             </div>
             <div className={styles.infoWrapper}>

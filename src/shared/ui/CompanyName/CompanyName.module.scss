@@ -2,4 +2,8 @@
     font-weight: $bold;
     color: $white;
     font-size: countSize(12);
+
+    @include breakpoint(sm) {
+        font-size: countSize(10);
+    }
 }

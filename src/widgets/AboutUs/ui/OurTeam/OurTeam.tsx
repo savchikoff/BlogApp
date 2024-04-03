@@ -19,6 +19,7 @@ function OurTeam() {
                 />
                 <div className={styles.handShakeWrapper}>
                     <Image
+                        placeholder='blur'
                         className={styles.handShakeImg}
                         layout="responsive"
                         src={handShake}

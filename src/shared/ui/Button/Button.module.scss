@@ -12,6 +12,12 @@
     &:disabled {
         cursor: not-allowed;
     }
+
+    @include breakpoint(lg) {
+        font-size: 14px;
+        padding: countSize(6) countSize(16);
+        height: 48px;
+    }
 }
 
 .buttonPrimary {

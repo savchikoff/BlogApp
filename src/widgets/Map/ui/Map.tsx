@@ -9,7 +9,6 @@ export function Map() {
     const mapContainer = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-
         if (mapContainer.current) {
             const map = new mapboxgl.Map({
                 accessToken: process.env.NEXT_PUBLIC_MAPBOX_TOKEN as string,
@@ -25,13 +24,14 @@ export function Map() {
             const popUp = new mapboxgl.Popup({ offset: 25 }).setHTML(
                 `<p><strong>Office:</strong> Yakuba Kolasa, 28</p>`
             );
-            const marker = new mapboxgl.Marker()
+            new mapboxgl.Marker()
                 .setLngLat([27.594019908613216, 53.925715522650535])
                 .setPopup(popUp)
                 .addTo(map);
 
             return () => map.remove();
         }
+        return () => { }
     }, []);
 
     return (

@@ -36,9 +36,7 @@ export default function Home() {
 		<>
 			<Hero />
 			<div className={container.container}>
-				{componentsToRender.slice(0, showItems).map(({ id, component: Component }) => {
-					return <Component key={id} />;
-				})}
+				{componentsToRender.slice(0, showItems).map(({ id, component: Component }) => <Component key={id} />)}
 				<div ref={observedElement} />
 			</div >
 		</>
