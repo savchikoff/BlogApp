@@ -43,6 +43,10 @@
     @include breakpoint(sm) {
         font-size: countSize(20);
     }
+
+    @include breakpoint(mobL) {
+        font-size: countSize(14);
+    }
 }
 
 .description {

@@ -11,10 +11,20 @@
 
 .sectionDescriptionHeader {
     color: inherit;
-    font-size: countSize(18);
+
 }
 
 .sectionDescriptionSubheader {
     color: inherit;
     font-size: countSize(12);
+
+    @include breakpoint(sm) {
+        font-size: countSize(10);
+    }
+}
+
+.sectionDescriptionDescription {
+    @include breakpoint(sm) {
+        font-size: countSize(7);
+    }
 }

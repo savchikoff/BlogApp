@@ -30,4 +30,8 @@
 
 .categoryDescription {
     color: $daveGray;
+
+    @include breakpoint(mobL) {
+        font-size: countSize(7);
+    }
 }

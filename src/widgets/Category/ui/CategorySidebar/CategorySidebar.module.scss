@@ -3,4 +3,8 @@
     flex-direction: column;
     gap: countSize(24);
     max-width: 350px;
+
+    @include breakpoint(xl) {
+        max-width: 100%;
+    }
 }

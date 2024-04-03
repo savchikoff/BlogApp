@@ -14,7 +14,7 @@ function NextPost({ id, img, author, createdAt, title, text }: INextPostProps) {
                     By <span className={styles.authorName}>{author}</span>   l  {createdAt}
                 </span>
                 <Link href={`/posts/${id}`}>
-                    <h3 className={styles.nextPostHeading}>{title}</h3>
+                    <h2 className={styles.nextPostHeading}>{title}</h2>
                 </Link>
                 <p className={styles.nextPostText}>{text}</p>
             </div>

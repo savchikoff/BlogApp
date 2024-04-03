@@ -36,7 +36,6 @@
 
 .blogHeaderHeading {
     color: inherit;
-    font-size: countSize(18);
 }
 
 .authorInfo {
@@ -55,6 +54,10 @@
 .blogHeaderImgWrapper {
     width: 515px;
     height: 359px;
+
+    @include breakpoint(mobL) {
+        max-width: 100%;
+    }
 
     @include breakpoint(md) {
         order: -1;

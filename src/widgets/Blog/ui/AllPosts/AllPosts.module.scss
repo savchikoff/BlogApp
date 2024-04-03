@@ -1,11 +1,19 @@
 .allPostsContainer {
     padding: countSize(32);
+
+    @include breakpoint(mobL) {
+        padding: countSize(24) countSize(12);
+    }
 }
 
 .allPostsWrapper {
     display: flex;
     flex-direction: column;
     gap: countSize(32);
+
+    @include breakpoint(mobL) {
+        gap: countSize(18);
+    }
 }
 
 .allPostsHeadingWrapper {
@@ -16,7 +24,6 @@
 
 .allPostsHeading {
     color: inherit;
-    font-size: countSize(24);
 }
 
 .line {

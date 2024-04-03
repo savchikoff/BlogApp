@@ -3,6 +3,10 @@
     flex-direction: column;
     align-items: flex-end;
     padding-bottom: countSize(64);
+
+    @include breakpoint(md) {
+        padding-bottom: countSize(40);
+    }
 }
 
 .lines {
@@ -48,7 +52,7 @@
 
 .aboutHeader {
     color: inherit;
-    letter-spacing: -countSize(1);
+    letter-spacing: -1 * countSize(1);
     max-width: 494px;
 
     @include breakpoint(lg) {
@@ -75,6 +79,10 @@
 
     @include breakpoint(lg) {
         max-width: 100%;
+    }
+
+    @include breakpoint(mobL) {
+        font-size: countSize(7);
     }
 }
 

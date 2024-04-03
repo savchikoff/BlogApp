@@ -4,7 +4,7 @@
     color: $white;
 
     @include breakpoint(lg) {
-        font-size: 14px;
+        font-size: countSize(7);
         flex-direction: column;
         align-items: center;
         color: $steelGray;
@@ -18,10 +18,8 @@
 .linksContainerFooter {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: countSize(12);
     color: $white;
-
-    @include breakpoint(mobM) {
-        flex-direction: column;
-    }
 }

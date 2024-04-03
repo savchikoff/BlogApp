@@ -22,6 +22,10 @@
     border-radius: countSize(4);
     min-width: 500px;
     border: countSize(1, 1) solid $golden;
+
+    @include breakpoint(sm) {
+        min-width: 300px;
+    }
 }
 
 .closeButton {

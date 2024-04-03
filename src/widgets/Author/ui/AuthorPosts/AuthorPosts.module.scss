@@ -3,6 +3,10 @@
     display: flex;
     flex-direction: column;
     gap: countSize(32);
+
+    @include breakpoint(md) {
+        padding: countSize(40) 0;
+    }
 }
 
 .authorPostsWrapper {
@@ -14,4 +18,12 @@
 .authorPostsHeading {
     color: inherit;
     font-size: countSize(24);
+
+    @include breakpoint(md) {
+        font-size: countSize(20);
+    }
+
+    @include breakpoint(md) {
+        font-size: countSize(20);
+    }
 }

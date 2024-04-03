@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import classNames from 'classnames';
-import container from '@/styles/container.module.scss';
+import container from '@/shared/styles/container.module.scss';
 import styles from './Author.module.scss';
 import { IAuthorProps } from './interfaces'
 import AuthorHeader from './AuthorHeader/AuthorHeader';

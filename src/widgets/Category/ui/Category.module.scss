@@ -3,12 +3,17 @@
     justify-content: space-between;
     gap: countSize(12);
     padding: countSize(64) 0;
+
+    @include breakpoint(xl) {
+        flex-direction: column;
+    }
 }
 
 .categoryPostsWrapper {
     display: flex;
     flex-direction: column;
     gap: countSize(32);
+    order: 1;
 }
 
 .noPostsLabel {

@@ -62,12 +62,12 @@ function CompanyValues() {
                     <div className={styles.keyValuesWrapper}>
                         <section className={styles.keyValueWrapper}>
                             <div className={styles.keyValueSubheader}>{t("missionSubHeading")}</div>
-                            <h4 className={styles.keyValueHeader}>{t("missionHeading")}</h4>
+                            <h2 className={styles.keyValueHeader}>{t("missionHeading")}</h2>
                             <div className={styles.keyValueDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</div>
                         </section>
                         <section className={styles.keyValueWrapper}>
                             <div className={styles.keyValueSubheader}>{t("visionSubHeading")}</div>
-                            <h4 className={styles.keyValueHeader}>{t("visionHeading")}</h4>
+                            <h2 className={styles.keyValueHeader}>{t("visionHeading")}</h2>
                             <div className={styles.keyValueDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</div>
                         </section>
                     </div>

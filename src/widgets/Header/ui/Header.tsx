@@ -45,7 +45,8 @@ export function Header() {
                 </div>
             </div>
             <Modal isOpen={isModalOpen} onClose={handleModalClose}>
-                <iframe width="600" height="315"
+                <iframe
+                    className={styles.iFrameContainer}
                     title='video'
                     allowFullScreen
                     frameBorder="0"

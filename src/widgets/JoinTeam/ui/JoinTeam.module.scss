@@ -1,5 +1,9 @@
 .joinTeamContainer {
     padding: countSize(64) 0;
+
+    @include breakpoint(md) {
+        padding: countSize(40) 0;
+    }
 }
 
 .joinTeamWrapper {

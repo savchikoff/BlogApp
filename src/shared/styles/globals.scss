@@ -40,11 +40,27 @@ h6 {
     color: #FFFFFF;
 }
 
+h1 {
+    font-size: countSize(24);
+
+    @include breakpoint(lg) {
+        font-size: countSize(20);
+    }
+
+    @include breakpoint(md) {
+        font-size: countSize(16);
+    }
+}
+
 h2 {
     font-size: countSize(18);
 
     @include breakpoint(lg) {
         font-size: countSize(16);
+    }
+
+    @include breakpoint(sm) {
+        font-size: countSize(12);
     }
 }
 

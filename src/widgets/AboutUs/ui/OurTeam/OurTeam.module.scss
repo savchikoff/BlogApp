@@ -10,6 +10,10 @@
         align-items: stretch;
         gap: countSize(32);
     }
+
+    @include breakpoint(md) {
+        padding-top: countSize(40);
+    }
 }
 
 .handShakeWrapper {
@@ -33,9 +37,9 @@
         &::after {
             content: "";
             top: 30%;
-            left: -countSize(10);
-            width: 100px;
-            height: 116px;
+            left: -1 * countSize(10);
+            width: 50px;
+            height: 58px;
         }
     }
 }

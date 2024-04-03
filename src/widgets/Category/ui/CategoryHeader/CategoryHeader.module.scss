@@ -16,7 +16,6 @@
 .categoryHeaderHeading {
     text-align: center;
     color: inherit;
-    font-size: countSize(28);
     text-transform: capitalize;
 }
 
@@ -25,6 +24,10 @@
     max-width: 515px;
     color: $daveGray;
     margin-bottom: countSize(8);
+
+    @include breakpoint(sm) {
+        font-size: countSize(7);
+    }
 }
 
 .categoryHeaderBreadCrumbs {
@@ -34,5 +37,9 @@
 
     & a:hover {
         color: $purple;
+    }
+
+    @include breakpoint(sm) {
+        font-size: countSize(7);
     }
 }

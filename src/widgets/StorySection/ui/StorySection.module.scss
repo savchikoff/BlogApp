@@ -7,6 +7,10 @@
     @include breakpoint(lg) {
         flex-direction: column;
     }
+
+    @include breakpoint(md) {
+        padding-top: countSize(40);
+    }
 }
 
 .storyContentWrapper {
@@ -60,16 +64,24 @@
     @include breakpoint(lg) {
         font-size: countSize(20);
     }
+
+    @include breakpoint(mobL) {
+        font-size: countSize(14);
+    }
 }
 
 .storyDescription {
     max-width: 546px;
     color: $daveGray;
+
+    @include breakpoint(mobL) {
+        font-size: countSize(7);
+    }
 }
 
 .storyImgWrapper {
 
     @include breakpoint(md) {
-        height: 600px
+        display: none;
     }
 }

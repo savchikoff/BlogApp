@@ -1,18 +1,31 @@
 .contactInfoContainer {
     padding: countSize(24) countSize(32);
     background-color: $purple;
+
+    @include breakpoint(sm) {
+        padding: countSize(16);
+    }
 }
 
 .contactInfoWrapper {
     display: flex;
     gap: countSize(20);
+
+    @include breakpoint(mobL) {
+        flex-direction: column;
+    }
 }
 
 .contactInfoSection {
     display: flex;
     flex-direction: column;
     gap: countSize(8);
-    width: 50%
+
+    width: 50%;
+
+    @include breakpoint(mobL) {
+        width: 100%;
+    }
 }
 
 .line {

@@ -1,17 +1,29 @@
 .authorHeaderContainer {
     padding-top: countSize(64);
     background-color: $ghostWhite;
+
+    @include breakpoint(md) {
+        padding-top: countSize(40);
+    }
 }
 
 .authorHeaderWrapper {
     display: flex;
     flex-direction: column;
     gap: countSize(52);
+
+    @include breakpoint(md) {
+        gap: countSize(36);
+    }
 }
 
 .authorInfoWrapper {
     display: flex;
     gap: countSize(16);
+
+    @include breakpoint(mobL) {
+        flex-direction: column;
+    }
 }
 
 .authorTextInfoWrapper {
@@ -22,12 +34,15 @@
 }
 
 .authorWelcomeMessage {
-    font-size: countSize(24);
     color: inherit;
 }
 
 .authorDescription {
     color: $daveGray;
+
+    @include breakpoint(md) {
+        font-size: countSize(7);
+    }
 }
 
 .socialsLinks {

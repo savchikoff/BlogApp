@@ -2,6 +2,10 @@
     display: flex;
     justify-content: center;
     padding: countSize(64) 0;
+
+    @include breakpoint(md) {
+        padding: countSize(30) 0;
+    }
 }
 
 .blogPostWrapper {
@@ -10,6 +14,10 @@
     gap: countSize(32);
     max-width: 843px;
     width: 100%;
+
+    @include breakpoint(md) {
+        gap: countSize(20);
+    }
 }
 
 .blogPostHeaderWrapper {
@@ -28,15 +36,22 @@
     font-weight: $bold;
     font-size: countSize(14);
     color: $purple;
+
+    @include breakpoint(sm) {
+        font-size: countSize(10);
+    }
 }
 
 .postDate {
     color: $daveGray;
+
+    @include breakpoint(sm) {
+        font-size: countSize(7);
+    }
 }
 
 .blogPostHeading {
     color: inherit;
-    font-size: countSize(24);
 }
 
 .blogPostCategoryWrapper {
@@ -52,11 +67,19 @@
 
 .blogPostImgWrapper {
     width: 100%;
+
+    @include breakpoint(sm) {
+        height: 250px;
+    }
 }
 
 .blogPostImg {
     object-fit: cover;
     width: 100%;
+
+    @include breakpoint(sm) {
+        height: 100%;
+    }
 }
 
 .blogPostTextContentWrapper {
@@ -72,6 +95,10 @@
 
 .blogPostTextPartText {
     color: $daveGray;
+
+    @include breakpoint(md) {
+        font-size: countSize(7);
+    }
 }
 
 .blogPostTextPartTextWrapper {
@@ -91,4 +118,8 @@
 
 .bulletPoint {
     list-style: disc inside;
+
+    @include breakpoint(lg) {
+        font-size: countSize(8);
+    }
 }

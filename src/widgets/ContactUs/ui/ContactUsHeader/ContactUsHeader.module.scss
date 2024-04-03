@@ -21,11 +21,14 @@
     text-transform: capitalize;
     text-align: center;
     color: inherit;
-    font-size: countSize(24);
     margin-bottom: countSize(12);
 }
 
 .contactUsDescription {
     text-align: center;
     color: $daveGray;
+
+    @include breakpoint(sm) {
+        font-size: countSize(7);
+    }
 }

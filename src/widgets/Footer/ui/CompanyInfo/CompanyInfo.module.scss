@@ -1,6 +1,8 @@
 .companyInfoWrapper {
     display: flex;
     justify-content: space-between;
+    gap: countSize(8);
+    flex-wrap: wrap;
     color: $spanishGray;
 }
 

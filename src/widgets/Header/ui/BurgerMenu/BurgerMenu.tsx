@@ -1,6 +1,7 @@
 "use client"
 
 import { PropsWithChildren, useState } from 'react';
+import classNames from 'classnames';
 import styles from './BurgerMenu.module.scss';
 
 function BurgerMenu({ children }: PropsWithChildren) {
@@ -10,7 +11,7 @@ function BurgerMenu({ children }: PropsWithChildren) {
     };
 
     return (
-        <div className={styles.burgerMenu + (isOpen ? ` ${styles.open}` : '')}>
+        <div className={classNames(styles.burgerMenu, { [styles.open]: isOpen })}>
             <div role="button" className={styles.burgerMenuBar} onClick={toggleMenu}>
                 <span className={styles.burgerMenuBarIcon} />
                 <span className={styles.burgerMenuBarIcon} />

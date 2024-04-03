@@ -1,5 +1,9 @@
 .authorsContainer {
     padding-top: countSize(64);
+
+    @include breakpoint(md) {
+        padding-top: countSize(40);
+    }
 }
 
 .authorsWrapper {

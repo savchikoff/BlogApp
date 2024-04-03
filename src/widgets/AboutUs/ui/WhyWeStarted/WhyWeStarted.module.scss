@@ -10,6 +10,10 @@
         align-items: stretch;
         gap: countSize(32);
     }
+
+    @include breakpoint(md) {
+        padding-top: countSize(40);
+    }
 }
 
 .peopleWrapper {
@@ -32,6 +36,8 @@
     @include breakpoint(md) {
         &::after {
             bottom: -7%;
+            width: 60px;
+            height: 60px;
         }
     }
 }

@@ -17,6 +17,12 @@
     display: flex;
     align-items: center;
     gap: countSize(16);
+
+    @include breakpoint(md) {
+        flex-direction: column;
+        align-items: stretch;
+        padding: countSize(20) 0;
+    }
 }
 
 .aboutUsHeader {
@@ -28,7 +34,10 @@
 
     @include breakpoint(lg) {
         padding: countSize(16);
-        ;
+    }
+
+    @include breakpoint(md) {
+        padding: 0;
     }
 }
 
@@ -40,7 +49,6 @@
 .aboutUsHeading {
     max-width: 496px;
     color: inherit;
-    font-size: countSize(24);
 }
 
 .aboutUsDescription {
@@ -73,6 +81,13 @@
     @include breakpoint(md) {
         width: 100%;
     }
+
+    @include breakpoint(mobL) {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        gap: countSize(8);
+    }
 }
 
 .companyNumberWrapper {
@@ -83,6 +98,10 @@
 .companyNumberValue {
     font-size: countSize(28);
     font-weight: $bold;
+
+    @include breakpoint(md) {
+        font-size: countSize(20);
+    }
 }
 
 .lines {
@@ -116,6 +135,10 @@
     display: flex;
     justify-content: space-between;
     gap: countSize(16);
+
+    @include breakpoint(sm) {
+        flex-direction: column;
+    }
 }
 
 .keyValueWrapper {
@@ -132,11 +155,14 @@
 
 .keyValueHeader {
     color: inherit;
-    font-size: countSize(14);
     max-width: 481px;
 }
 
 .keyValueDescription {
     color: $daveGray;
     max-width: 516px;
+
+    @include breakpoint(sm) {
+        font-size: countSize(7);
+    }
 }

@@ -14,6 +14,17 @@
 .nextPostImgWrapper {
     width: 405px;
     height: 318px;
+
+    @include breakpoint(sm) {
+        width: 100%;
+        height: 200px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 }
 
 .nextPostImg {
@@ -31,7 +42,6 @@
 }
 
 .nextPostHeading {
-    font-size: countSize(14);
     color: inherit;
     transition: all 0.3s ease;
 
@@ -42,4 +52,8 @@
 
 .nextPostText {
     color: $daveGray;
+
+    @include breakpoint(md) {
+        font-size: countSize(7);
+    }
 }
