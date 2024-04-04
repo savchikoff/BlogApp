@@ -4,7 +4,6 @@
     font-weight: 700;
     font-size: countSize(9);
     padding: countSize(8) countSize(24);
-    height: 56px;
     border: none;
     transition: all 0.3s ease;
     border: countSize(1, 1) solid transparent;
@@ -16,7 +15,6 @@
     @include breakpoint(lg) {
         font-size: 14px;
         padding: countSize(6) countSize(16);
-        height: 48px;
     }
 }
 

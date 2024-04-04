@@ -1,6 +1,6 @@
 describe('Contact Form spec', () => {
     beforeEach(() => {
-        cy.visit('http://localhost:3000/contacts');
+        cy.visit('/contacts');
     });
 
     it('should open modal window', () => {

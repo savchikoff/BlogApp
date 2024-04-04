@@ -1,6 +1,6 @@
 describe('Tags spec', () => {
     beforeEach(() => {
-        cy.visit('http://localhost:3000/category/economy');
+        cy.visit('/category/economy');
     });
 
     it('should display label that there is no posts with such category', () => {

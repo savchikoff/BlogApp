@@ -30,4 +30,8 @@
     &:hover {
         color: $purple;
     }
+
+    @include breakpoint(mobL) {
+        width: 100%;
+    }
 }

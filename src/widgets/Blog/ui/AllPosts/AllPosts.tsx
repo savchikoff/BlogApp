@@ -47,7 +47,7 @@ function AllPosts() {
                         <Post dataCy={`post-${id}`} key={id} id={id} img={img} alt={title} category={category} header={title} description={text} />
                     ))}
                 </Slide>
-                <Pagination postsPerPage={postsPerPage} totalPosts={blogPosts.length} paginate={paginate} />
+                <Pagination postsPerPage={postsPerPage} totalPosts={blogPosts.length} paginate={paginate} prevPageText={t("prevPage")} nextPageText={t("nextPage")} />
             </div >
         </section >
     )

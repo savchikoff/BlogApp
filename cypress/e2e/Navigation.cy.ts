@@ -1,6 +1,6 @@
 describe('Navigation spec', () => {
     beforeEach(() => {
-        cy.visit('http://localhost:3000/');
+        cy.visit('/');
     });
 
     it('should show navigation on the screen', () => {

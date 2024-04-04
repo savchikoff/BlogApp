@@ -1,6 +1,13 @@
 describe('Subscription Form spec', () => {
     beforeEach(() => {
-        cy.visit('http://localhost:3000/');
+        cy.visit('/');
+
+        cy.intercept('POST', 'https://api.emailjs.com/api/v1.0/email/send', (req) => {
+            req.reply({
+                statusCode: 200,
+                body: 'Mocked response from emailJs'
+            });
+        }).as('emailJsRequest');
     });
 
     it('should send message to en email', () => {
@@ -9,7 +16,7 @@ describe('Subscription Form spec', () => {
 
         emailInput.type("hello@mail.ru");
         subscriptionButton.click();
-        cy.wait(5000);
+        cy.wait('@emailJsRequest');
 
         emailInput.should('have.value', "");
     });

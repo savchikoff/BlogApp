@@ -8,6 +8,8 @@ const meta: Meta<typeof Pagination> = {
     argTypes: {
         postsPerPage: { control: 'number' },
         totalPosts: { control: 'number' },
+        prevPageText: { type: 'string' },
+        nextPageText: { type: 'string' }
     }
 };
 
@@ -18,6 +20,8 @@ type Story = StoryObj<typeof Pagination>;
 export const Primary: Story = {
     args: {
         postsPerPage: 5,
-        totalPosts: 7
+        totalPosts: 7,
+        prevPageText: "Prev",
+        nextPageText: "Next"
     },
 };

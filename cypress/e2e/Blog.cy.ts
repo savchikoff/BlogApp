@@ -1,6 +1,6 @@
 describe('Blog spec', () => {
     beforeEach(() => {
-        cy.visit('http://localhost:3000/blog');
+        cy.visit('/blog');
     });
 
     it('should navigate to blog post page according to an id', () => {

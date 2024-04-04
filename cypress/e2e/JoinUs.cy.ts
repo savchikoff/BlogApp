@@ -1,6 +1,6 @@
 describe('Join Us spec', () => {
     beforeEach(() => {
-        cy.visit('http://localhost:3000/about-us');
+        cy.visit('/about-us');
     });
 
     it('should navigate to contacts page', () => {

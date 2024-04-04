@@ -1,10 +1,10 @@
 describe('Privacy Policy spec', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000/privacy');
+    cy.visit('/privacy');
   });
 
   it('should open Privacy Policy Page in browser', () => {
-    cy.visit('http://localhost:3000/privacy');
+    cy.visit('/privacy');
   });
 
   it('should display all the elements of Privacy Policy Page', () => {

@@ -1,6 +1,6 @@
 describe('Category spec', () => {
     beforeEach(() => {
-        cy.visit('http://localhost:3000/blog');
+        cy.visit('/blog');
     });
 
     it('should navigate to business category page', () => {
