@@ -14,12 +14,16 @@
 }
 
 .privacyHeading {
+    text-align: center;
     text-transform: capitalize;
     color: inherit;
-    font-size: countSize(24);
 }
 
 .updateTime {
     text-transform: capitalize;
     color: $spanishGray;
+
+    @include breakpoint(md) {
+        font-size: countSize(7);
+    }
 }

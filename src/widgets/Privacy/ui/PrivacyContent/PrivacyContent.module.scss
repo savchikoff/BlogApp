@@ -3,6 +3,10 @@
     align-items: center;
     justify-content: center;
     padding: countSize(64);
+
+    @include breakpoint(md) {
+        padding: countSize(40) countSize(20);
+    }
 }
 
 .privacyContentWrapper {
@@ -14,14 +18,16 @@
 
 .privacyContentHeading {
     color: inherit;
-    font-size: countSize(24);
 }
 
 .privacyContentSubHeading {
     color: inherit;
-    font-size: countSize(18);
 }
 
 .privacyContentText {
     color: $darkGray;
+
+    @include breakpoint(md) {
+        font-size: countSize(7);
+    }
 }
