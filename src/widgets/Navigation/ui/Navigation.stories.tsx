@@ -14,12 +14,12 @@ export default meta;
 
 type Story = StoryObj<typeof Navigation>;
 
-export const withPrivacy: Story = {
+export const WithPrivacy: Story = {
     args: {
         isWithPrivacy: true
     },
 };
-export const withoutPrivacy: Story = {
+export const WithoutPrivacy: Story = {
     args: {
         isWithPrivacy: false
     },

@@ -1,14 +1,14 @@
 "use client"
 
-import Image from "next/image"
-import { useState } from "react"
+import { useState } from "react";
+import Image from "next/image";
+import classNames from "classnames";
 
 import { testimonials } from "@/shared/consts/testimonials"
 
 import leftArrow from '@/widgets/Testimonials/assets/icons/leftArrow.svg';
 import rightArrow from '@/widgets/Testimonials/assets/icons/rightArrow.svg';
 import styles from "./TestimonialsSlider.module.scss"
-import classNames from "classnames";
 
 export function TestimonialsSlider() {
     const [activeSlide, setActiveSlide] = useState(0)
