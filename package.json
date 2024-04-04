@@ -80,7 +80,7 @@
     "typescript": "^5.4.2"
   },
   "lint-staged": {
-    "*.{js, jsx, ts, tsx}": "eslint --cache --fix",
+    "*.{js, jsx, ts, tsx}": "next lint --cache --fix",
     "*.--write": "prettier --write"
   }
 }
