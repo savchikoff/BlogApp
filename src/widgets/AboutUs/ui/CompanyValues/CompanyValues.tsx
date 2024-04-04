@@ -4,7 +4,7 @@ import { Slide, Zoom } from "react-awesome-reveal";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import styles from "./CompanyValues.module.scss";
-import overview from '@/widgets/AboutUs/assets/overview.jpg';
+import overview from '@/widgets/AboutUs/assets/overview.webp';
 
 function CompanyValues() {
     const t = useTranslations("AboutUs.CompanyValues");

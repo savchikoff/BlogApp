@@ -1,19 +1,50 @@
-.testimonialsContainer {
-    position: relative;
-    max-width: 532px;
-    overflow: hidden;
+.sliderWrapper {
     width: 100%;
+    position: relative;
+    overflow: hidden;
+}
 
-    @include breakpoint(xl) {
-        max-width: 450px;
+.sliderItems {
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
 
+.sliderItem {
+    flex-shrink: 0;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+
+    &Text {
+        font-size: countSize(12);
+        font-weight: 700;
+        line-height: 32px;
+        margin-bottom: countSize(48);
+
+        @include breakpoint(xl) {
+            font-size: countSize(10);
+        }
+
+        @include breakpoint(md) {
+            margin-bottom: countSize(20);
+        }
+
+        @include breakpoint(sm) {
+            margin-bottom: countSize(12);
+        }
     }
 }
 
-.testimonialsWrapper {
+.authorInfo {
     display: flex;
-    gap: countSize(32);
-    transition: all 0.3s ease-in-out;
+    align-items: center;
+    gap: countSize(16);
+}
+
+.authorName {
+    font-size: countSize(12);
+    font-weight: 700;
 }
 
 .testimonialsSliderWrapper {
@@ -22,6 +53,11 @@
     right: 0;
     display: flex;
     gap: countSize(12);
+
+    @include breakpoint(mobL) {
+        position: static;
+        margin-top: countSize(12);
+    }
 }
 
 .testimonialsSlider {

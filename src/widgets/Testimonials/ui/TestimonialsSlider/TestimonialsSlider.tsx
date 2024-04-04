@@ -1,53 +1,59 @@
 "use client"
 
-import { useState } from 'react';
-import Image from 'next/image';
-import Testimonial from '../Testimonial/Testimonial';
-import styles from './TestimonialsSlider.module.scss';
-import leftArrow from "../../assets/icons/leftArrow.svg";
-import rightArrow from "../../assets/icons/rightArrow.svg";
-import { testimonials } from '@/shared/consts/testimonials';
+import Image from "next/image"
+import { useState } from "react"
 
-function TestimonialsSlider() {
-    const [activeSlide, setActiveSlide] = useState(0);
+import { testimonials } from "@/shared/consts/testimonials"
 
-    const handleClickNext = () => {
-        setActiveSlide((prev) => (prev + 1) % testimonials.length);
-    };
+import leftArrow from '@/widgets/Testimonials/assets/icons/leftArrow.svg';
+import rightArrow from '@/widgets/Testimonials/assets/icons/rightArrow.svg';
+import styles from "./TestimonialsSlider.module.scss"
+import classNames from "classnames";
 
-    const handleClickPrev = () => {
+export function TestimonialsSlider() {
+    const [activeSlide, setActiveSlide] = useState(0)
+
+    const handleNext = () => {
+        setActiveSlide((prevSlide) => (prevSlide + 1) % testimonials.length)
+    }
+
+    const handlePrev = () => {
         setActiveSlide(
-            (prev) => (prev - 1 + testimonials.length) % testimonials.length
-        );
-    };
-
+            (prevSlide) => (prevSlide - 1 + testimonials.length) % testimonials.length,
+        )
+    }
+    const currentTransform = -activeSlide * 100
 
     return (
-        <div className={styles.testimonialsContainer}>
+        <div className={styles.sliderWrapper}>
             <div
-                className={styles.testimonialsWrapper}
-                style={{ transform: `translateX(-${activeSlide * 464}px)`, width: `${464 * testimonials.length}px` }}
+                className={styles.sliderItems}
+                style={{ transform: `translateX(${currentTransform}%)` }}
             >
-                {testimonials.map(({ text, img, author, location, id }) => (
-                    <Testimonial
-                        text={text}
-                        img={img}
-                        author={author}
-                        location={location}
+                {testimonials.map(({ author, location, img, text, id }, index) => (
+                    <div
                         key={id}
-                    />
+                        className={classNames(styles.sliderItem, { [styles.active]: index === activeSlide })}
+                    >
+                        <p className={styles.sliderItemText}>{text}</p>
+                        <div className={styles.authorInfo}>
+                            <Image src={img} alt={author} width={48} height={48} />
+                            <div>
+                                <p className={styles.authorName}>{author}</p>
+                                <p className={styles.authorLocation}>{location}</p>
+                            </div>
+                        </div>
+                    </div>
                 ))}
             </div>
             <div className={styles.testimonialsSliderWrapper}>
-                <div role='button' className={styles.testimonialsSlider} onClick={handleClickPrev} >
+                <div role='button' className={styles.testimonialsSlider} onClick={handlePrev} >
                     <Image src={leftArrow} alt="leftArrow" />
                 </div>
-                <div role='button' className={styles.testimonialsSlider} onClick={handleClickNext}>
+                <div role='button' className={styles.testimonialsSlider} onClick={handleNext}>
                     <Image src={rightArrow} alt="rightArrow" />
                 </div>
             </div>
         </div>
     )
 }
-
-export default TestimonialsSlider;

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import classNames from 'classnames';
 import { useTranslations } from 'next-intl';
 import { Slide, Zoom } from "react-awesome-reveal";
-import Post from '@/widgets/Post/ui/Post';
+import { Post } from '@/widgets/Post';
 import styles from './AllPosts.module.scss';
 import container from "@/shared/styles/container.module.scss";
 import { Pagination } from '@/shared';

@@ -1,6 +1,10 @@
 .testimonialsContainer {
     background-color: $floralWhite;
     padding: countSize(46) countSize(56);
+
+    @include breakpoint(sm) {
+        padding: countSize(20);
+    }
 }
 
 .testimonialsWrapper {

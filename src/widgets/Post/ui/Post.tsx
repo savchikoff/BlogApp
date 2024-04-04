@@ -6,7 +6,7 @@ import Image from 'next/image';
 import styles from './Post.module.scss';
 import { IPostProps } from './interfaces';
 
-function Post({ id, img, alt, category, header, description, dataCy }: IPostProps) {
+export function Post({ id, img, alt, category, header, description, dataCy }: IPostProps) {
     const t = useTranslations("Categories");
     return (
         <article className={styles.postWrapper}>
@@ -21,5 +21,3 @@ function Post({ id, img, alt, category, header, description, dataCy }: IPostProp
         </article >
     )
 }
-
-export default Post

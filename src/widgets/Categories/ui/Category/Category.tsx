@@ -7,7 +7,7 @@ function Category({ category, img, link = "", dataCy }: ICategoryProps) {
     return (
         <Link data-cy={dataCy} href={link}>
             <article className={styles.categoryContainer}>
-                <Image src={img} alt={`${category}-icon`} />
+                <Image width={48} height={48} src={img} alt={`${category}-icon`} />
                 <div className={styles.textContent}>
                     <h3 className={styles.categoryHeader}>{category}</h3>
                     <p className={styles.categoryDescription}>

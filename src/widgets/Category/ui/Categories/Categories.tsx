@@ -20,7 +20,7 @@ function Categories() {
                     return (
                         <Link key={category} href={link}>
                             <div className={styles.categoryWrapper}>
-                                <Image src={img} alt={category} />
+                                <Image width={48} height={48} src={img} alt={category} />
                                 <h4 className={styles.categoryName}>{t(category)}</h4>
                             </div>
                         </Link>

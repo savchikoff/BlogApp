@@ -13,9 +13,9 @@ function BurgerMenu({ children }: PropsWithChildren) {
     return (
         <div className={classNames(styles.burgerMenu, { [styles.open]: isOpen })}>
             <div role="button" className={styles.burgerMenuBar} onClick={toggleMenu}>
-                <span className={styles.burgerMenuBarIcon} />
-                <span className={styles.burgerMenuBarIcon} />
-                <span className={styles.burgerMenuBarIcon} />
+                <span className={classNames(styles.burgerMenuBarIcon, { [styles.open]: isOpen })} />
+                <span className={classNames(styles.burgerMenuBarIcon, { [styles.open]: isOpen })} />
+                <span className={classNames(styles.burgerMenuBarIcon, { [styles.open]: isOpen })} />
             </div>
             <nav className={styles.burgerMenuNav}>
                 <div className={styles.burgerMenuNavItems}>

@@ -13,7 +13,10 @@
     display: flex;
     flex-direction: column;
     gap: countSize(32);
-    order: 1;
+
+    @include breakpoint(xl) {
+        order: 1;
+    }
 }
 
 .noPostsLabel {

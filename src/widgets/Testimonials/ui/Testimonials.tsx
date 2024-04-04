@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { Zoom } from 'react-awesome-reveal';
 import styles from './Testimonials.module.scss';
-import TestimonialsSlider from './TestimonialsSlider/TestimonialsSlider';
+import { TestimonialsSlider } from './TestimonialsSlider/TestimonialsSlider';
 
 export function Testimonials() {
     const t = useTranslations("Home.Testimonials")

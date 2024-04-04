@@ -8,7 +8,7 @@ import container from '@/shared/styles/container.module.scss';
 import CategoryHeader from './CategoryHeader/CategoryHeader';
 import { ICategoryProps } from './interfaces';
 import CategorySidebar from './CategorySidebar/CategorySidebar';
-import Post from '@/widgets/Post/ui/Post';
+import { Post } from '@/widgets/Post';
 import { blogPosts } from '@/shared/consts/blogPosts';
 import { categories } from '@/shared/consts/categories';
 

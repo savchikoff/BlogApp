@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import styles from './AuthorPosts.module.scss';
 import { blogPosts } from '@/shared/consts/blogPosts';
 import { IAuthorPostsProps } from './interfaces';
-import Post from '@/widgets/Post/ui/Post';
+import { Post } from '@/widgets/Post';
 
 function AuthorPosts({ authorName }: IAuthorPostsProps) {
     const t = useTranslations("AuthorPage");

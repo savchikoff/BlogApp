@@ -5,7 +5,7 @@ import { Slide } from 'react-awesome-reveal';
 import Image from 'next/image';
 import styles from './OurTeam.module.scss';
 import AboutSectionDescription from '../AboutSectionDescription/AboutSectionDescription';
-import handShake from "@/widgets/AboutUs/assets/handshake.jpg";
+import handShake from "@/widgets/AboutUs/assets/handshake.webp";
 
 function OurTeam() {
     const t = useTranslations("AboutUs.OurTeam");

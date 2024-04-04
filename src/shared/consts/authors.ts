@@ -1,11 +1,11 @@
-import authorImg1 from '../assets/avatars/author1.png';
-import authorImg2 from '../assets/avatars/author2.png';
-import authorImg3 from '../assets/avatars/author3.png';
-import authorImg4 from '../assets/avatars/author4.png';
-import authorImg5 from '../assets/avatars/author5.png';
-import authorImg6 from '../assets/avatars/author6.png';
-import authorImg7 from '../assets/avatars/author7.png';
-import authorImg8 from '../assets/avatars/author8.png';
+import authorImg1 from '../assets/avatars/author1.webp';
+import authorImg2 from '../assets/avatars/author2.webp';
+import authorImg3 from '../assets/avatars/author3.webp';
+import authorImg4 from '../assets/avatars/author4.webp';
+import authorImg5 from '../assets/avatars/author5.webp';
+import authorImg6 from '../assets/avatars/author6.webp';
+import authorImg7 from '../assets/avatars/author7.webp';
+import authorImg8 from '../assets/avatars/author8.webp';
 
 export const authors = [
     {
