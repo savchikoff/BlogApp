@@ -12,7 +12,7 @@ import {
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
 import styles from './ContactForm.module.scss';
-import { FormValues } from './interfaces';
+import { FormValues } from './ContactForm.interfaces';
 import { schema } from '../consts/schema';
 import { Button } from '@/shared';
 
