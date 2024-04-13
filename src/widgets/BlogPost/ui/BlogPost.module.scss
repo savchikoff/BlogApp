@@ -1,125 +1,125 @@
 .blogPostContainer {
-    display: flex;
-    justify-content: center;
-    padding: countSize(64) 0;
+	display: flex;
+	justify-content: center;
+	padding: countSize(64) 0;
 
-    @include breakpoint(md) {
-        padding: countSize(30) 0;
-    }
+	@include breakpoint(md) {
+		padding: countSize(30) 0;
+	}
 }
 
 .blogPostWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(32);
-    max-width: 843px;
-    width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: countSize(32);
+	max-width: 843px;
+	width: 100%;
 
-    @include breakpoint(md) {
-        gap: countSize(20);
-    }
+	@include breakpoint(md) {
+		gap: countSize(20);
+	}
 }
 
 .blogPostHeaderWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(12);
+	display: flex;
+	flex-direction: column;
+	gap: countSize(12);
 }
 
 .authorInfoWrapper {
-    display: flex;
-    gap: countSize(6);
-    align-items: center;
+	display: flex;
+	gap: countSize(6);
+	align-items: center;
 }
 
 .authorName {
-    font-weight: $bold;
-    font-size: countSize(14);
-    color: $purple;
+	font-weight: $bold;
+	font-size: countSize(14);
+	color: $purple;
 
-    @include breakpoint(sm) {
-        font-size: countSize(10);
-    }
+	@include breakpoint(sm) {
+		font-size: countSize(10);
+	}
 }
 
 .postDate {
-    color: $daveGray;
+	color: $daveGray;
 
-    @include breakpoint(sm) {
-        font-size: countSize(7);
-    }
+	@include breakpoint(sm) {
+		font-size: countSize(7);
+	}
 }
 
 .blogPostHeading {
-    color: inherit;
+	color: inherit;
 }
 
 .blogPostCategoryWrapper {
-    display: flex;
-    align-items: center;
-    gap: countSize(4);
+	display: flex;
+	align-items: center;
+	gap: countSize(4);
 }
 
 .categoryName {
-    font-size: countSize(12);
-    font-weight: $bold;
+	font-size: countSize(12);
+	font-weight: $bold;
 }
 
 .blogPostImgWrapper {
-    width: 100%;
+	width: 100%;
 
-    @include breakpoint(sm) {
-        height: 250px;
-    }
+	@include breakpoint(sm) {
+		height: 250px;
+	}
 }
 
 .blogPostImg {
-    object-fit: cover;
-    width: 100%;
+	object-fit: cover;
+	width: 100%;
 
-    @include breakpoint(sm) {
-        height: 100%;
-    }
+	@include breakpoint(sm) {
+		height: 100%;
+	}
 }
 
 .blogPostTextContentWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(12);
+	display: flex;
+	flex-direction: column;
+	gap: countSize(12);
 }
 
 .blogPostTextPartHeading {
-    color: inherit;
-    margin-bottom: countSize(8);
+	color: inherit;
+	margin-bottom: countSize(8);
 }
 
 .blogPostTextPartText {
-    color: $daveGray;
+	color: $daveGray;
 
-    @include breakpoint(md) {
-        font-size: countSize(7);
-    }
+	@include breakpoint(md) {
+		font-size: countSize(7);
+	}
 }
 
 .blogPostTextPartTextWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(12);
+	display: flex;
+	flex-direction: column;
+	gap: countSize(12);
 }
 
 .bulletPointsWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(2);
-    color: $quartz;
-    font-size: countSize(12);
-    font-weight: $bold;
+	display: flex;
+	flex-direction: column;
+	gap: countSize(2);
+	color: $quartz;
+	font-size: countSize(12);
+	font-weight: $bold;
 }
 
 .bulletPoint {
-    list-style: disc inside;
+	list-style: disc inside;
 
-    @include breakpoint(lg) {
-        font-size: countSize(8);
-    }
+	@include breakpoint(lg) {
+		font-size: countSize(8);
+	}
 }

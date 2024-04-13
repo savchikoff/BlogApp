@@ -1,3 +1,3 @@
 export interface ICategoryProps {
-    categoryName: string;
+	categoryName: string;
 }

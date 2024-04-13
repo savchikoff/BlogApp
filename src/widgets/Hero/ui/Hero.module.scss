@@ -1,70 +1,70 @@
 .headerContainer {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 720px;
-    background: url('../assets/background.webp') no-repeat center center;
-    background-size: cover;
-    color: $white;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 720px;
+	background: url('../assets/background.webp') no-repeat center center;
+	background-size: cover;
+	color: $white;
 
-    @include breakpoint(md) {
-        height: 500px;
-    }
+	@include breakpoint(md) {
+		height: 500px;
+	}
 }
 
 .contentWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: countSize(24);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: countSize(24);
 }
 
 .infoWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(12);
+	display: flex;
+	flex-direction: column;
+	gap: countSize(12);
 }
 
 .subHeader {
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    line-height: countSize(10);
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	line-height: countSize(10);
 
-    @include breakpoint(lg) {
-        font-size: countSize(7);
-    }
+	@include breakpoint(lg) {
+		font-size: countSize(7);
+	}
 }
 
 .mainHeader {
-    font-size: countSize(28);
-    letter-spacing: -1 * countSize(1);
-    max-width: 803px;
+	font-size: countSize(28);
+	letter-spacing: -1 * countSize(1);
+	max-width: 803px;
 
-    @include breakpoint(lg) {
-        font-size: countSize(24);
-    }
+	@include breakpoint(lg) {
+		font-size: countSize(24);
+	}
 
-    @include breakpoint(sm) {
-        font-size: countSize(20);
-    }
+	@include breakpoint(sm) {
+		font-size: countSize(20);
+	}
 
-    @include breakpoint(mobL) {
-        font-size: countSize(14);
-    }
+	@include breakpoint(mobL) {
+		font-size: countSize(14);
+	}
 }
 
 .description {
-    max-width: 599px;
+	max-width: 599px;
 
-    @include breakpoint(lg) {
-        font-size: countSize(7);
-    }
+	@include breakpoint(lg) {
+		font-size: countSize(7);
+	}
 }
 
 .authorInfo {
-    color: $golden;
+	color: $golden;
 
-    @include breakpoint(lg) {
-        font-size: countSize(7);
-    }
+	@include breakpoint(lg) {
+		font-size: countSize(7);
+	}
 }

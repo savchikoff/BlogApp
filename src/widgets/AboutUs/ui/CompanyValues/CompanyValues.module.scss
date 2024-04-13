@@ -1,168 +1,168 @@
 .valuesWrapper {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .aboutUsContainer {
-    z-index: 1;
-    padding-left: countSize(80);
-    padding-right: countSize(20);
+	z-index: 1;
+	padding-left: countSize(80);
+	padding-right: countSize(20);
 
-    @include breakpoint(md) {
-        padding: 0;
-    }
+	@include breakpoint(md) {
+		padding: 0;
+	}
 }
 
 .aboutUsWrapper {
-    display: flex;
-    align-items: center;
-    gap: countSize(16);
+	display: flex;
+	align-items: center;
+	gap: countSize(16);
 
-    @include breakpoint(md) {
-        flex-direction: column;
-        align-items: stretch;
-        padding: countSize(20) 0;
-    }
+	@include breakpoint(md) {
+		flex-direction: column;
+		align-items: stretch;
+		padding: countSize(20) 0;
+	}
 }
 
 .aboutUsHeader {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(8);
-    padding: countSize(32);
-    background-color: $white;
+	display: flex;
+	flex-direction: column;
+	gap: countSize(8);
+	padding: countSize(32);
+	background-color: $white;
 
-    @include breakpoint(lg) {
-        padding: countSize(16);
-    }
+	@include breakpoint(lg) {
+		padding: countSize(16);
+	}
 
-    @include breakpoint(md) {
-        padding: 0;
-    }
+	@include breakpoint(md) {
+		padding: 0;
+	}
 }
 
 .aboutUsSubHeading {
-    text-transform: uppercase;
-    letter-spacing: 3px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
 }
 
 .aboutUsHeading {
-    max-width: 496px;
-    color: inherit;
+	max-width: 496px;
+	color: inherit;
 }
 
 .aboutUsDescription {
-    max-width: 477px;
-    color: $darkGray;
+	max-width: 477px;
+	color: $darkGray;
 }
 
 .imgWrapper {
-    position: relative;
-    margin-top: -countSize(32);
+	position: relative;
+	margin-top: -countSize(32);
 }
 
 .companyStatsContainer {
-    position: absolute;
-    bottom: 0;
-    left: countSize(54);
+	position: absolute;
+	bottom: 0;
+	left: countSize(54);
 
-    @include breakpoint(md) {
-        position: static;
-    }
+	@include breakpoint(md) {
+		position: static;
+	}
 }
 
 .companyStatsWrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 630px;
-    padding: countSize(16) countSize(24);
-    background-color: $golden;
+	display: flex;
+	justify-content: space-between;
+	width: 630px;
+	padding: countSize(16) countSize(24);
+	background-color: $golden;
 
-    @include breakpoint(md) {
-        width: 100%;
-    }
+	@include breakpoint(md) {
+		width: 100%;
+	}
 
-    @include breakpoint(mobL) {
-        text-align: center;
-        flex-direction: column;
-        align-items: center;
-        gap: countSize(8);
-    }
+	@include breakpoint(mobL) {
+		text-align: center;
+		flex-direction: column;
+		align-items: center;
+		gap: countSize(8);
+	}
 }
 
 .companyNumberWrapper {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .companyNumberValue {
-    font-size: countSize(28);
-    font-weight: $bold;
+	font-size: countSize(28);
+	font-weight: $bold;
 
-    @include breakpoint(md) {
-        font-size: countSize(20);
-    }
+	@include breakpoint(md) {
+		font-size: countSize(20);
+	}
 }
 
 .lines {
-    display: flex;
-    height: countSize(12);
-    width: 100%;
+	display: flex;
+	height: countSize(12);
+	width: 100%;
 }
 
 .purpleLine {
-    background-color: $purple;
-    max-width: 300px;
-    width: 100%;
+	background-color: $purple;
+	max-width: 300px;
+	width: 100%;
 }
 
 .yellowLine {
-    background-color: $golden;
-    max-width: 550px;
-    width: 100%;
+	background-color: $golden;
+	max-width: 550px;
+	width: 100%;
 }
 
 .keyValuesContainer {
-    padding: countSize(64) countSize(54) countSize(32) countSize(54);
-    background-color: $ghostWhite;
+	padding: countSize(64) countSize(54) countSize(32) countSize(54);
+	background-color: $ghostWhite;
 
-    @include breakpoint(lg) {
-        padding: countSize(28);
-    }
+	@include breakpoint(lg) {
+		padding: countSize(28);
+	}
 }
 
 .keyValuesWrapper {
-    display: flex;
-    justify-content: space-between;
-    gap: countSize(16);
+	display: flex;
+	justify-content: space-between;
+	gap: countSize(16);
 
-    @include breakpoint(sm) {
-        flex-direction: column;
-    }
+	@include breakpoint(sm) {
+		flex-direction: column;
+	}
 }
 
 .keyValueWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(8);
+	display: flex;
+	flex-direction: column;
+	gap: countSize(8);
 }
 
 .keyValueSubheader {
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    margin-bottom: countSize(4);
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	margin-bottom: countSize(4);
 }
 
 .keyValueHeader {
-    color: inherit;
-    max-width: 481px;
+	color: inherit;
+	max-width: 481px;
 }
 
 .keyValueDescription {
-    color: $daveGray;
-    max-width: 516px;
+	color: $daveGray;
+	max-width: 516px;
 
-    @include breakpoint(sm) {
-        font-size: countSize(7);
-    }
+	@include breakpoint(sm) {
+		font-size: countSize(7);
+	}
 }

@@ -1,21 +1,21 @@
 .footer {
-    background-color: $steelGray;
+	background-color: $steelGray;
 }
 
 .navigationWrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
-    @include breakpoint(sm) {
-        flex-direction: column;
-        gap: countSize(10);
-    }
+	@include breakpoint(sm) {
+		flex-direction: column;
+		gap: countSize(10);
+	}
 }
 
 .footerWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(24);
-    padding: countSize(28) 0;
+	display: flex;
+	flex-direction: column;
+	gap: countSize(24);
+	padding: countSize(28) 0;
 }

@@ -1,16 +1,16 @@
 .postsContainer {
-    display: flex;
-    justify-content: space-between;
-    padding: countSize(64) 0;
-    gap: countSize(32);
+	display: flex;
+	justify-content: space-between;
+	padding: countSize(64) 0;
+	gap: countSize(32);
 
-    @include breakpoint(md) {
-        padding: countSize(40) 0;
-    }
+	@include breakpoint(md) {
+		padding: countSize(40) 0;
+	}
 
-    @include breakpoint(lg) {
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: countSize(16);
-    }
+	@include breakpoint(lg) {
+		flex-direction: column;
+		justify-content: flex-start;
+		gap: countSize(16);
+	}
 }

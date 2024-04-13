@@ -1,34 +1,34 @@
 .allCategoriesWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(20);
+	display: flex;
+	flex-direction: column;
+	gap: countSize(20);
 }
 
 .allCategoriesHeader {
-    color: inherit;
+	color: inherit;
 }
 
 .allCategories {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(12);
+	display: flex;
+	flex-direction: column;
+	gap: countSize(12);
 }
 
 .categoryWrapper {
-    display: flex;
-    align-items: center;
-    gap: countSize(8);
-    padding: countSize(12);
-    border-color: $white;
-    border: countSize(1, 1) solid $silverSand;
-    transition: all 0.3s ease;
+	display: flex;
+	align-items: center;
+	gap: countSize(8);
+	padding: countSize(12);
+	border-color: $white;
+	border: countSize(1, 1) solid $silverSand;
+	transition: all 0.3s ease;
 
-    &:hover {
-        background-color: $golden;
-    }
+	&:hover {
+		background-color: $golden;
+	}
 }
 
 .categoryName {
-    font-size: countSize(14);
-    color: inherit;
+	font-size: countSize(14);
+	color: inherit;
 }

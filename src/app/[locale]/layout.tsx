@@ -1,26 +1,24 @@
-import { Metadata } from "next";
-import { Sen } from "next/font/google";
-import { useMessages, NextIntlClientProvider } from "next-intl";
+import { Metadata } from 'next';
+import { Sen } from 'next/font/google';
+import { useMessages, NextIntlClientProvider } from 'next-intl';
 import { ToastContainer } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
 import '@/shared/styles/globals.scss';
 
-import { Header } from "@/widgets/Header";
-import { Footer } from "@/widgets/Footer";
+import { Header } from '@/widgets/Header';
+import { Footer } from '@/widgets/Footer';
 
-
-const sen = Sen({ subsets: ['latin'], weight: ["400", "500", "600", "700"] });
+const sen = Sen({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
 
 export const metadata: Metadata = {
-	title: "Blog App",
-	description: "Blog App built with the use of NextJS"
-}
-
+	title: 'Blog App',
+	description: 'Blog App built with the use of NextJS',
+};
 
 export default function RootLayout({
 	children,
-	params: { locale }
+	params: { locale },
 }: {
 	children: React.ReactNode;
 	params: { locale: string };

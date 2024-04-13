@@ -1,33 +1,33 @@
 .privacyContentContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: countSize(64);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: countSize(64);
 
-    @include breakpoint(md) {
-        padding: countSize(40) countSize(20);
-    }
+	@include breakpoint(md) {
+		padding: countSize(40) countSize(20);
+	}
 }
 
 .privacyContentWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(16);
-    max-width: 768px;
+	display: flex;
+	flex-direction: column;
+	gap: countSize(16);
+	max-width: 768px;
 }
 
 .privacyContentHeading {
-    color: inherit;
+	color: inherit;
 }
 
 .privacyContentSubHeading {
-    color: inherit;
+	color: inherit;
 }
 
 .privacyContentText {
-    color: $darkGray;
+	color: $darkGray;
 
-    @include breakpoint(md) {
-        font-size: countSize(7);
-    }
+	@include breakpoint(md) {
+		font-size: countSize(7);
+	}
 }

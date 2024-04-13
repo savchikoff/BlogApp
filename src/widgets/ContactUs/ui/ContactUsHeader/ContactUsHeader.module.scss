@@ -1,34 +1,34 @@
 .contactUsHeaderContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .contactUsHeaderWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .contactUsSubheading {
-    text-transform: uppercase;
-    font-weight: $semibold;
-    letter-spacing: 3px;
-    margin-bottom: countSize(6);
+	text-transform: uppercase;
+	font-weight: $semibold;
+	letter-spacing: 3px;
+	margin-bottom: countSize(6);
 }
 
 .contactUsHeading {
-    text-transform: capitalize;
-    text-align: center;
-    color: inherit;
-    margin-bottom: countSize(12);
+	text-transform: capitalize;
+	text-align: center;
+	color: inherit;
+	margin-bottom: countSize(12);
 }
 
 .contactUsDescription {
-    text-align: center;
-    color: $daveGray;
+	text-align: center;
+	color: $daveGray;
 
-    @include breakpoint(sm) {
-        font-size: countSize(7);
-    }
+	@include breakpoint(sm) {
+		font-size: countSize(7);
+	}
 }

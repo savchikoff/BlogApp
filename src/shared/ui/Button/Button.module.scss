@@ -1,41 +1,41 @@
 @mixin button {
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: countSize(9);
-    padding: countSize(8) countSize(24);
-    border: none;
-    transition: all 0.3s ease;
-    border: countSize(1, 1) solid transparent;
+	cursor: pointer;
+	font-family: inherit;
+	font-weight: 700;
+	font-size: countSize(9);
+	padding: countSize(8) countSize(24);
+	border: none;
+	transition: all 0.3s ease;
+	border: countSize(1, 1) solid transparent;
 
-    &:disabled {
-        cursor: not-allowed;
-    }
+	&:disabled {
+		cursor: not-allowed;
+	}
 
-    @include breakpoint(lg) {
-        font-size: 14px;
-        padding: countSize(6) countSize(16);
-    }
+	@include breakpoint(lg) {
+		font-size: 14px;
+		padding: countSize(6) countSize(16);
+	}
 }
 
 .buttonPrimary {
-    @include button;
+	@include button;
 
-    background-color: $golden;
+	background-color: $golden;
 
-    &:hover {
-        background-color: $white;
-    }
+	&:hover {
+		background-color: $white;
+	}
 
-    border: countSize(1, 1) solid $silver;
+	border: countSize(1, 1) solid $silver;
 }
 
 .buttonSecondary {
-    @include button;
+	@include button;
 
-    background-color: $white;
+	background-color: $white;
 
-    &:hover {
-        background-color: $golden;
-    }
+	&:hover {
+		background-color: $golden;
+	}
 }

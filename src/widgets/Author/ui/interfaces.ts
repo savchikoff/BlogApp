@@ -1,3 +1,3 @@
 export interface IAuthorProps {
-    id: number;
+	id: number;
 }

@@ -1,38 +1,37 @@
 .postWrapper {
-    display: flex;
-    flex-direction: column;
-    font-size: countSize(7);
-    gap: countSize(4);
-    padding: countSize(16);
-    transition: all 0.3s ease;
-    width: 517px;
-    height: 181px;
+	display: flex;
+	flex-direction: column;
+	font-size: countSize(7);
+	gap: countSize(4);
+	padding: countSize(16);
+	transition: all 0.3s ease;
+	width: 517px;
+	height: 181px;
 
-    &:hover {
-        background-color: $floralWhite;
-    }
+	&:hover {
+		background-color: $floralWhite;
+	}
 
-    @include breakpoint(lg) {
-        max-width: 100%;
-        width: 100%;
-    }
+	@include breakpoint(lg) {
+		width: 100%;
+	}
 }
 
 .authorInfo {
-    color: $purple;
+	color: $purple;
 }
 
 .postHeader {
-    color: inherit;
-    width: 369px;
-    font-size: countSize(12);
-    transition: all 0.3s ease;
+	color: inherit;
+	width: 369px;
+	font-size: countSize(12);
+	transition: all 0.3s ease;
 
-    &:hover {
-        color: $purple;
-    }
+	&:hover {
+		color: $purple;
+	}
 
-    @include breakpoint(mobL) {
-        width: 100%;
-    }
+	@include breakpoint(mobL) {
+		width: 100%;
+	}
 }

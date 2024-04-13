@@ -1,3 +1,3 @@
 export interface IPostPageProps {
-    params: { id: string }
+	params: { id: string };
 }

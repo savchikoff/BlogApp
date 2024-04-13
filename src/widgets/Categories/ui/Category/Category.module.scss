@@ -1,37 +1,37 @@
 .categoryContainer {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(8);
-    padding: countSize(16);
-    border: countSize(1, 1) solid $daveGray;
-    transition: all 0.3s ease;
-    max-width: 296px;
-    width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: countSize(8);
+	padding: countSize(16);
+	border: countSize(1, 1) solid $daveGray;
+	transition: all 0.3s ease;
+	max-width: 296px;
+	width: 100%;
 
-    &:hover {
-        background-color: $golden;
-        border: countSize(1, 1) solid transparent;
-    }
+	&:hover {
+		background-color: $golden;
+		border: countSize(1, 1) solid transparent;
+	}
 
-    @include breakpoint(lg) {
-        max-width: 100%;
-    }
+	@include breakpoint(lg) {
+		max-width: 100%;
+	}
 }
 
 .textContent {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(2);
+	display: flex;
+	flex-direction: column;
+	gap: countSize(2);
 }
 
 .categoryHeader {
-    color: inherit;
+	color: inherit;
 }
 
 .categoryDescription {
-    color: $daveGray;
+	color: $daveGray;
 
-    @include breakpoint(mobL) {
-        font-size: countSize(7);
-    }
+	@include breakpoint(mobL) {
+		font-size: countSize(7);
+	}
 }

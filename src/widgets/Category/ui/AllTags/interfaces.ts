@@ -1,4 +1,4 @@
 export interface IAllTagsProps {
-    selectedTags: string[];
-    setSelectedTags: (tags: string[]) => void;
+	selectedTags: string[];
+	setSelectedTags: (tags: string[]) => void;
 }

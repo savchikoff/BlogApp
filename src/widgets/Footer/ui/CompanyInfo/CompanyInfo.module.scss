@@ -1,18 +1,18 @@
 .companyInfoWrapper {
-    display: flex;
-    justify-content: space-between;
-    gap: countSize(8);
-    flex-wrap: wrap;
-    color: $spanishGray;
+	display: flex;
+	justify-content: space-between;
+	gap: countSize(8);
+	flex-wrap: wrap;
+	color: $spanishGray;
 }
 
 .companyContactInfo {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(2);
+	display: flex;
+	flex-direction: column;
+	gap: countSize(2);
 }
 
 .socialsLinks {
-    display: flex;
-    gap: countSize(16);
+	display: flex;
+	gap: countSize(16);
 }

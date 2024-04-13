@@ -1,26 +1,26 @@
 .contactUsContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: countSize(64);
-    padding-bottom: countSize(35);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: countSize(64);
+	padding-bottom: countSize(35);
 
-    @include breakpoint(md) {
-        padding-top: countSize(40);
-    }
+	@include breakpoint(md) {
+		padding-top: countSize(40);
+	}
 }
 
 .contactUsWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(32);
-    width: 100%;
-    max-width: 816px;
-    padding: 0 countSize(12);
+	display: flex;
+	flex-direction: column;
+	gap: countSize(32);
+	width: 100%;
+	max-width: 816px;
+	padding: 0 countSize(12);
 }
 
 .contactUsFormWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(16);
+	display: flex;
+	flex-direction: column;
+	gap: countSize(16);
 }

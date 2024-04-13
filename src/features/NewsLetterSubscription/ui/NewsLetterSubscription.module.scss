@@ -1,24 +1,24 @@
 .formWrapper {
-    display: flex;
-    justify-content: space-between;
-    gap: countSize(8);
-    flex-wrap: wrap;
-    padding: countSize(32) countSize(40);
-    background-color: $gunMetal;
+	display: flex;
+	justify-content: space-between;
+	gap: countSize(8);
+	flex-wrap: wrap;
+	padding: countSize(32) countSize(40);
+	background-color: $gunMetal;
 
-    @include breakpoint(lg) {
-        flex-direction: column;
-        gap: countSize(12);
-        padding: countSize(18);
-    }
+	@include breakpoint(lg) {
+		flex-direction: column;
+		gap: countSize(12);
+		padding: countSize(18);
+	}
 }
 
 .footerFormHeader {
-    max-width: 600px;
+	max-width: 600px;
 
-    @include breakpoint(md) {
-        font-size: countSize(12);
-        align-items: center;
-        text-align: center;
-    }
+	@include breakpoint(md) {
+		font-size: countSize(12);
+		align-items: center;
+		text-align: center;
+	}
 }

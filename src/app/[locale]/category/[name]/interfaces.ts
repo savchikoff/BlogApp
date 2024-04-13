@@ -1,3 +1,3 @@
 export interface ICategoryPageProps {
-    params: { name: string }
+	params: { name: string };
 }

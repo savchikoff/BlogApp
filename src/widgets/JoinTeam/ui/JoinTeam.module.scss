@@ -1,33 +1,33 @@
 .joinTeamContainer {
-    padding: countSize(64) 0;
+	padding: countSize(64) 0;
 
-    @include breakpoint(md) {
-        padding: countSize(40) 0;
-    }
+	@include breakpoint(md) {
+		padding: countSize(40) 0;
+	}
 }
 
 .joinTeamWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: countSize(16);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: countSize(16);
 }
 
 .textWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: countSize(8);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: countSize(8);
 }
 
 .joinHeader {
-    text-align: center;
-    color: inherit;
-    max-width: 414px;
+	text-align: center;
+	color: inherit;
+	max-width: 414px;
 }
 
 .joinDescription {
-    text-align: center;
-    color: $daveGray;
-    max-width: 405px;
+	text-align: center;
+	color: $daveGray;
+	max-width: 405px;
 }

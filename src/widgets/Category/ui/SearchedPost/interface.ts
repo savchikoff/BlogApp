@@ -1,5 +1,5 @@
 export interface ISearchedPostProps {
-    id: number;
-    title: string;
-    tags: string[];
+	id: number;
+	title: string;
+	tags: string[];
 }

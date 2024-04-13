@@ -1,11 +1,11 @@
 .container {
-    padding: 0 countSize(28);
+	padding: 0 countSize(28);
 
-    @include breakpoint(lg) {
-        padding: 0 countSize(16);
-    }
+	@include breakpoint(lg) {
+		padding: 0 countSize(16);
+	}
 
-    @include breakpoint(mobM) {
-        padding: 0 countSize(8);
-    }
+	@include breakpoint(mobM) {
+		padding: 0 countSize(8);
+	}
 }

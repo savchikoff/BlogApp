@@ -1,60 +1,59 @@
 .contactInfoContainer {
-    padding: countSize(24) countSize(32);
-    background-color: $purple;
+	padding: countSize(24) countSize(32);
+	background-color: $purple;
 
-    @include breakpoint(sm) {
-        padding: countSize(16);
-    }
+	@include breakpoint(sm) {
+		padding: countSize(16);
+	}
 }
 
 .contactInfoWrapper {
-    display: flex;
-    gap: countSize(20);
+	display: flex;
+	gap: countSize(20);
 
-    @include breakpoint(mobL) {
-        flex-direction: column;
-    }
+	@include breakpoint(mobL) {
+		flex-direction: column;
+	}
 }
 
 .contactInfoSection {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(8);
+	display: flex;
+	flex-direction: column;
+	gap: countSize(8);
 
-    width: 50%;
+	width: 50%;
 
-    @include breakpoint(mobL) {
-        width: 100%;
-    }
+	@include breakpoint(mobL) {
+		width: 100%;
+	}
 }
 
 .line {
-    height: 1px;
-    width: 100%;
-    background-color: $white;
-    opacity: 10%;
+	height: 1px;
+	width: 100%;
+	background-color: $white;
+	opacity: 10%;
 }
 
 .contactInfoHeading {
-    font-size: countSize(7);
-    color: $white;
-    opacity: 60%;
+	font-size: countSize(7);
+	color: $white;
+	opacity: 60%;
 }
 
-
 .contactInfoDataWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(2);
+	display: flex;
+	flex-direction: column;
+	gap: countSize(2);
 }
 
 .contactInfoData {
-    font-weight: $bold;
-    font-size: countSize(10);
-    color: $white;
+	font-weight: $bold;
+	font-size: countSize(10);
+	color: $white;
 }
 
 .contactInfoMessage {
-    color: $white;
-    opacity: 60%;
+	color: $white;
+	opacity: 60%;
 }

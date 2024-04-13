@@ -1,43 +1,42 @@
 .whyWeStartedWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 137px;
-    padding-top: countSize(64);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 137px;
+	padding-top: countSize(64);
 
-    @include breakpoint(md) {
-        flex-direction: column;
-        align-items: stretch;
-        gap: countSize(32);
-    }
+	@include breakpoint(md) {
+		flex-direction: column;
+		align-items: stretch;
+		gap: countSize(32);
+	}
 
-    @include breakpoint(md) {
-        padding-top: countSize(40);
-    }
+	@include breakpoint(md) {
+		padding-top: countSize(40);
+	}
 }
 
 .peopleWrapper {
-    position: relative;
+	position: relative;
 
-    &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        bottom: -10%;
-        left: 107px;
-        width: 74px;
-        height: 74px;
-        background-color: $purple;
-        border-radius: 50%;
-        z-index: 5;
-    }
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: -10%;
+		left: 107px;
+		width: 74px;
+		height: 74px;
+		background-color: $purple;
+		border-radius: 50%;
+		z-index: 5;
+	}
 
-
-    @include breakpoint(md) {
-        &::after {
-            bottom: -7%;
-            width: 60px;
-            height: 60px;
-        }
-    }
+	@include breakpoint(md) {
+		&::after {
+			bottom: -7%;
+			width: 60px;
+			height: 60px;
+		}
+	}
 }

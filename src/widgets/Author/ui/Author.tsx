@@ -1,35 +1,35 @@
-"use client"
+'use client';
 
 import { useTranslations } from 'next-intl';
 import classNames from 'classnames';
 import container from '@/shared/styles/container.module.scss';
 import styles from './Author.module.scss';
-import { IAuthorProps } from './interfaces'
+import { IAuthorProps } from './interfaces';
 import AuthorHeader from './AuthorHeader/AuthorHeader';
 import AuthorPosts from './AuthorPosts/AuthorPosts';
 import { authors } from '@/shared/consts/authors';
 
 export function Author({ id }: IAuthorProps) {
-    const t = useTranslations("AuthorPage");
+	const t = useTranslations('AuthorPage');
 
-    const author = authors.filter(author => author.id === id)[0];
+	const author = authors.filter((author) => author.id === id)[0];
 
-    if (!author) {
-        return (
-            <div className={classNames(container.container, styles.noAuthor)}>
-                {t("noAuthor", { id })}
-            </div>
-        );
-    }
+	if (!author) {
+		return (
+			<div className={classNames(container.container, styles.noAuthor)}>
+				{t('noAuthor', { id })}
+			</div>
+		);
+	}
 
-    const { name, img } = author;
+	const { name, img } = author;
 
-    return (
-        <>
-            <AuthorHeader name={name} img={img} />
-            <div className={container.container}>
-                <AuthorPosts authorName={name} />
-            </div>
-        </>
-    )
+	return (
+		<>
+			<AuthorHeader name={name} img={img} />
+			<div className={container.container}>
+				<AuthorPosts authorName={name} />
+			</div>
+		</>
+	);
 }

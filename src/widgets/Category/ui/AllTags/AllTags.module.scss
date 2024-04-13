@@ -1,38 +1,38 @@
 .allTagsWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(12);
+	display: flex;
+	flex-direction: column;
+	gap: countSize(12);
 }
 
 .allTagsHeader {
-    color: inherit;
+	color: inherit;
 }
 
 .categoriesWrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: countSize(8);
+	display: flex;
+	flex-wrap: wrap;
+	gap: countSize(8);
 }
 
 .categoryButton {
-    cursor: pointer;
-    font-weight: $bold;
-    color: $daveGray;
-    display: inline-block;
-    border-radius: countSize(14);
-    padding: countSize(4) countSize(19);
-    border: countSize(1, 1) solid $daveGray;
-    transition: all 0.3s ease;
+	cursor: pointer;
+	font-weight: $bold;
+	color: $daveGray;
+	display: inline-block;
+	border-radius: countSize(14);
+	padding: countSize(4) countSize(19);
+	border: countSize(1, 1) solid $daveGray;
+	transition: all 0.3s ease;
 
-    &:hover {
-        background-color: $golden;
-        color: $steelGray;
-        border: countSize(1, 1) solid transparent;
-    }
+	&:hover {
+		background-color: $golden;
+		color: $steelGray;
+		border: countSize(1, 1) solid transparent;
+	}
 }
 
 .categoryButtonActive {
-    background-color: $golden;
-    color: $steelGray;
-    border: countSize(1, 1) solid transparent;
+	background-color: $golden;
+	color: $steelGray;
+	border: countSize(1, 1) solid transparent;
 }

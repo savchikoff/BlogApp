@@ -1,7 +1,7 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
 export interface ILocaleSwitcherSelectProps {
-    children: ReactNode;
-    defaultValue: string;
-    label: string;
+	children: ReactNode;
+	defaultValue: string;
+	label: string;
 }

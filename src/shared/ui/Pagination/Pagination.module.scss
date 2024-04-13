@@ -1,43 +1,41 @@
 .paginationWrapper {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    gap: countSize(4);
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	gap: countSize(4);
 }
 
 .page {
-    display: block;
-    text-align: center;
-    width: countSize(16);
-    height: countSize(16);
-    border-radius: 50%;
-    cursor: pointer;
-    line-height: 1.8;
-    color: $daveGray;
-    border: countSize(1) solid $daveGray;
-    font-weight: $semibold;
-    transition: all 0.3s ease;
-    ;
-
-    &:hover {
-        border: countSize(1) solid $purple;
-        color: $purple;
-    }
+	display: block;
+	text-align: center;
+	width: countSize(16);
+	height: countSize(16);
+	border-radius: 50%;
+	cursor: pointer;
+	line-height: 1.8;
+	color: $daveGray;
+	border: countSize(1) solid $daveGray;
+	font-weight: $semibold;
+	transition: all 0.3s ease;
+	&:hover {
+		border: countSize(1) solid $purple;
+		color: $purple;
+	}
 }
 
 .pageControl {
-    cursor: pointer;
-    font-size: countSize(12);
-    font-weight: $bold;
-    transition: all 0.3s ease;
+	cursor: pointer;
+	font-size: countSize(12);
+	font-weight: $bold;
+	transition: all 0.3s ease;
 
-    &:hover {
-        color: $daveGray;
-    }
+	&:hover {
+		color: $daveGray;
+	}
 }
 
 .activeLink {
-    border: countSize(1) solid $purple;
-    color: $purple;
+	border: countSize(1) solid $purple;
+	color: $purple;
 }

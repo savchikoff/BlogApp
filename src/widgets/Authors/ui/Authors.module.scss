@@ -1,35 +1,35 @@
 .authorsContainer {
-    padding-top: countSize(64);
+	padding-top: countSize(64);
 
-    @include breakpoint(md) {
-        padding-top: countSize(40);
-    }
+	@include breakpoint(md) {
+		padding-top: countSize(40);
+	}
 }
 
 .authorsWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(24);
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: countSize(24);
+	align-items: center;
 }
 
 .authorsHeader {
-    color: inherit;
+	color: inherit;
 }
 
 .authors {
-    display: flex;
-    gap: countSize(16);
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
+	display: flex;
+	gap: countSize(16);
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
 
-    @include breakpoint(xl) {
-        justify-content: center;
-    }
+	@include breakpoint(xl) {
+		justify-content: center;
+	}
 
-    @include breakpoint(md) {
-        flex-direction: column;
-        align-items: stretch;
-    }
+	@include breakpoint(md) {
+		flex-direction: column;
+		align-items: stretch;
+	}
 }

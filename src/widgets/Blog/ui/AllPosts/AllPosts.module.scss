@@ -1,38 +1,38 @@
 .allPostsContainer {
-    padding: countSize(32);
+	padding: countSize(32);
 
-    @include breakpoint(mobL) {
-        padding: countSize(24) countSize(12);
-    }
+	@include breakpoint(mobL) {
+		padding: countSize(24) countSize(12);
+	}
 }
 
 .allPostsWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(32);
+	display: flex;
+	flex-direction: column;
+	gap: countSize(32);
 
-    @include breakpoint(mobL) {
-        gap: countSize(18);
-    }
+	@include breakpoint(mobL) {
+		gap: countSize(18);
+	}
 }
 
 .allPostsHeadingWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(8);
+	display: flex;
+	flex-direction: column;
+	gap: countSize(8);
 }
 
 .allPostsHeading {
-    color: inherit;
+	color: inherit;
 }
 
 .line {
-    height: 1px;
-    background-color: $daveGray;
+	height: 1px;
+	background-color: $daveGray;
 }
 
 .noPosts {
-    margin: countSize(32) 0;
-    font-weight: $semibold;
-    font-size: countSize(14);
+	margin: countSize(32) 0;
+	font-weight: $semibold;
+	font-size: countSize(14);
 }

@@ -5,13 +5,13 @@ import { JoinTeam } from '@/widgets/JoinTeam';
 import NextPosts from '@/widgets/NextPosts/ui/NextPosts';
 
 function PostPage({ params: { id } }: IPostPageProps) {
-    return (
-        <div className={container.container}>
-            <BlogPost postId={Number(id)} />
-            <NextPosts postId={Number(id)} />
-            <JoinTeam />
-        </div>
-    )
+	return (
+		<div className={container.container}>
+			<BlogPost postId={Number(id)} />
+			<NextPosts postId={Number(id)} />
+			<JoinTeam />
+		</div>
+	);
 }
 
 export default PostPage;

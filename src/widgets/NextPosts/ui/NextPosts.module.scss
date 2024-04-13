@@ -1,22 +1,22 @@
 .nextPostsWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(32);
+	display: flex;
+	flex-direction: column;
+	gap: countSize(32);
 }
 
 .nextPosts {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: countSize(16);
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: countSize(16);
 }
 
 .nextPostsHeading {
-    color: inherit;
+	color: inherit;
 }
 
 .line {
-    background-color: $daveGray;
-    height: 1px;
-    width: 100%;
+	background-color: $daveGray;
+	height: 1px;
+	width: 100%;
 }

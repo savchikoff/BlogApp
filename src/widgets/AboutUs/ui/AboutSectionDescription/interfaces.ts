@@ -1,5 +1,5 @@
 export interface IAboutSectionDescriptionProps {
-    header: string;
-    subheader: string;
-    text: string;
+	header: string;
+	subheader: string;
+	text: string;
 }

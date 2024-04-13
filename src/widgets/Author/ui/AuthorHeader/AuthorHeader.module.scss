@@ -1,69 +1,69 @@
 .authorHeaderContainer {
-    padding-top: countSize(64);
-    background-color: $ghostWhite;
+	padding-top: countSize(64);
+	background-color: $ghostWhite;
 
-    @include breakpoint(md) {
-        padding-top: countSize(40);
-    }
+	@include breakpoint(md) {
+		padding-top: countSize(40);
+	}
 }
 
 .authorHeaderWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(52);
+	display: flex;
+	flex-direction: column;
+	gap: countSize(52);
 
-    @include breakpoint(md) {
-        gap: countSize(36);
-    }
+	@include breakpoint(md) {
+		gap: countSize(36);
+	}
 }
 
 .authorInfoWrapper {
-    display: flex;
-    gap: countSize(16);
+	display: flex;
+	gap: countSize(16);
 
-    @include breakpoint(mobL) {
-        flex-direction: column;
-    }
+	@include breakpoint(mobL) {
+		flex-direction: column;
+	}
 }
 
 .authorTextInfoWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(12);
-    max-width: 669px;
+	display: flex;
+	flex-direction: column;
+	gap: countSize(12);
+	max-width: 669px;
 }
 
 .authorWelcomeMessage {
-    color: inherit;
+	color: inherit;
 }
 
 .authorDescription {
-    color: $daveGray;
+	color: $daveGray;
 
-    @include breakpoint(md) {
-        font-size: countSize(7);
-    }
+	@include breakpoint(md) {
+		font-size: countSize(7);
+	}
 }
 
 .socialsLinks {
-    display: flex;
-    gap: countSize(8);
+	display: flex;
+	gap: countSize(8);
 }
 
 .authorHeaderLines {
-    display: flex;
-    height: countSize(12);
-    width: 100%;
+	display: flex;
+	height: countSize(12);
+	width: 100%;
 }
 
 .authorHeaderYellowLine {
-    background-color: $golden;
-    height: 100%;
-    width: 60%;
+	background-color: $golden;
+	height: 100%;
+	width: 60%;
 }
 
 .authorHeaderPurpleLine {
-    background-color: $purple;
-    height: 100%;
-    width: 40%;
+	background-color: $purple;
+	height: 100%;
+	width: 40%;
 }

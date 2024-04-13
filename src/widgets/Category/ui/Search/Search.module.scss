@@ -1,48 +1,48 @@
 .searchWrapper {
-    height: 54px;
-    position: relative;
+	height: 54px;
+	position: relative;
 }
 
 .searchInput {
-    font-family: inherit;
-    height: 100%;
-    width: 60%;
-    border: countSize(1, 1) solid $spanishGray;
-    border-radius: countSize(3);
-    padding: countSize(3, 5) countSize(5, 5);
+	font-family: inherit;
+	height: 100%;
+	width: 60%;
+	border: countSize(1, 1) solid $spanishGray;
+	border-radius: countSize(3);
+	padding: countSize(3, 5) countSize(5, 5);
 
-    &::placeholder {
-        color: $gunMetal;
-        font-weight: $bold;
-    }
+	&::placeholder {
+		color: $gunMetal;
+		font-weight: $bold;
+	}
 }
 
 .searchButton {
-    cursor: pointer;
-    height: 100%;
-    font-family: inherit;
-    font-weight: $bold;
-    background-color: $golden;
-    border: none;
-    padding: countSize(8);
-    border-radius: countSize(3);
-    margin-left: -1 * countSize(4);
-    transition: all 0.3s ease;
-    border: countSize(1, 1) solid transparent;
+	cursor: pointer;
+	height: 100%;
+	font-family: inherit;
+	font-weight: $bold;
+	background-color: $golden;
+	border: none;
+	padding: countSize(8);
+	border-radius: countSize(3);
+	margin-left: -1 * countSize(4);
+	transition: all 0.3s ease;
+	border: countSize(1, 1) solid transparent;
 
-    &:hover {
-        background-color: $white;
-    }
+	&:hover {
+		background-color: $white;
+	}
 
-    border: countSize(1, 1) solid $silver;
+	border: countSize(1, 1) solid $silver;
 }
 
 .searchedPostsWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(2);
-    position: absolute;
-    top: 110%;
-    left: 0;
-    width: 280px;
+	display: flex;
+	flex-direction: column;
+	gap: countSize(2);
+	position: absolute;
+	top: 110%;
+	left: 0;
+	width: 280px;
 }

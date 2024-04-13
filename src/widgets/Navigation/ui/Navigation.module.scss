@@ -1,25 +1,25 @@
 .linksContainer {
-    display: flex;
-    gap: countSize(12);
-    color: $white;
+	display: flex;
+	gap: countSize(12);
+	color: $white;
 
-    @include breakpoint(lg) {
-        font-size: countSize(7);
-        flex-direction: column;
-        align-items: center;
-        color: $steelGray;
-    }
+	@include breakpoint(lg) {
+		font-size: countSize(7);
+		flex-direction: column;
+		align-items: center;
+		color: $steelGray;
+	}
 }
 
 .linkActive {
-    color: $golden;
+	color: $golden;
 }
 
 .linksContainerFooter {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: countSize(12);
-    color: $white;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: countSize(12);
+	color: $white;
 }

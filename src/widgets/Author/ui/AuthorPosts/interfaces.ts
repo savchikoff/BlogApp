@@ -1,3 +1,3 @@
 export interface IAuthorPostsProps {
-    authorName: string;
+	authorName: string;
 }

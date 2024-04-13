@@ -1,44 +1,44 @@
 .postContainer {
-    padding: countSize(16);
-    border: countSize(1, 1) solid $daveGray;
-    max-width: 733px;
+	padding: countSize(16);
+	border: countSize(1, 1) solid $daveGray;
+	max-width: 733px;
 
-    @include breakpoint (lg) {
-        max-width: 100%;
-    }
+	@include breakpoint(lg) {
+		max-width: 100%;
+	}
 }
 
 .postWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: countSize(16);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: countSize(16);
 }
 
 .postImgWrapper {
-    width: 100%;
+	width: 100%;
 }
 
 .postImg {
-    width: 100%;
-    object-fit: cover;
+	width: 100%;
+	object-fit: cover;
 }
 
 .articleTextWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(8);
+	display: flex;
+	flex-direction: column;
+	gap: countSize(8);
 }
 
 .authorInfo {
-    color: $purple;
+	color: $purple;
 }
 
 .articleHeader {
-    color: inherit;
-    letter-spacing: -1px;
+	color: inherit;
+	letter-spacing: -1px;
 }
 
 .articleDescription {
-    color: $daveGray;
+	color: $daveGray;
 }

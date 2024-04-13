@@ -1,29 +1,29 @@
 .privacyHeaderContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: countSize(40) 0;
-    background-color: $ghostWhite;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: countSize(40) 0;
+	background-color: $ghostWhite;
 }
 
 .privacyHeaderWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: countSize(2);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: countSize(2);
 }
 
 .privacyHeading {
-    text-align: center;
-    text-transform: capitalize;
-    color: inherit;
+	text-align: center;
+	text-transform: capitalize;
+	color: inherit;
 }
 
 .updateTime {
-    text-transform: capitalize;
-    color: $spanishGray;
+	text-transform: capitalize;
+	color: $spanishGray;
 
-    @include breakpoint(md) {
-        font-size: countSize(7);
-    }
+	@include breakpoint(md) {
+		font-size: countSize(7);
+	}
 }

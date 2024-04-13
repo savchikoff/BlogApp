@@ -1,9 +1,9 @@
 .sectionWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(16);
+	display: flex;
+	flex-direction: column;
+	gap: countSize(16);
 }
 
 .sectionHeader {
-    color: $steelGray;
+	color: $steelGray;
 }

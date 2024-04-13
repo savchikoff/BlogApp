@@ -1,4 +1,4 @@
 export interface ICategorySidebarProps {
-    selectedTags: string[],
-    setSelectedTags: (tags: string[]) => void
+	selectedTags: string[];
+	setSelectedTags: (tags: string[]) => void;
 }

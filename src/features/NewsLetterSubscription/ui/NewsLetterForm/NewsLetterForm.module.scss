@@ -1,38 +1,38 @@
 .formWrapper {
-    display: flex;
-    gap: countSize(12);
+	display: flex;
+	gap: countSize(12);
 
-    @include breakpoint(lg) {
-        flex-direction: column;
-        gap: 0;
-    }
+	@include breakpoint(lg) {
+		flex-direction: column;
+		gap: 0;
+	}
 }
 
 .emailInput {
-    font-family: inherit;
-    height: countSize(28);
-    background: none;
-    border: countSize(1, 1) solid $darkGray;
-    padding: 0 countSize(12);
-    width: 323px;
-    color: $white;
-    margin-bottom: countSize(4);
+	font-family: inherit;
+	height: countSize(28);
+	background: none;
+	border: countSize(1, 1) solid $darkGray;
+	padding: 0 countSize(12);
+	width: 323px;
+	color: $white;
+	margin-bottom: countSize(4);
 
-    &::placeholder {
-        color: $daveGray;
-    }
+	&::placeholder {
+		color: $daveGray;
+	}
 
-    @include breakpoint(lg) {
-        width: 100%;
-        padding: countSize(8);
-    }
+	@include breakpoint(lg) {
+		width: 100%;
+		padding: countSize(8);
+	}
 
-    @include breakpoint(lg) {
-        font-size: countSize(7);
-        height: countSize(24);
-    }
+	@include breakpoint(lg) {
+		font-size: countSize(7);
+		height: countSize(24);
+	}
 }
 
 .error {
-    color: $red;
+	color: $red;
 }

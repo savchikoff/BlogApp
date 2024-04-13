@@ -1,81 +1,81 @@
 .sliderWrapper {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
 }
 
 .sliderItems {
-    display: flex;
-    width: 100%;
-    transition: all 0.5s ease-in-out;
+	display: flex;
+	width: 100%;
+	transition: all 0.5s ease-in-out;
 }
 
 .sliderItem {
-    flex-shrink: 0;
-    width: 100%;
-    object-fit: cover;
-    overflow: hidden;
+	flex-shrink: 0;
+	width: 100%;
+	object-fit: cover;
+	overflow: hidden;
 
-    &Text {
-        font-size: countSize(12);
-        font-weight: 700;
-        line-height: 32px;
-        margin-bottom: countSize(48);
+	&Text {
+		font-size: countSize(12);
+		font-weight: 700;
+		line-height: 32px;
+		margin-bottom: countSize(48);
 
-        @include breakpoint(xl) {
-            font-size: countSize(10);
-        }
+		@include breakpoint(xl) {
+			font-size: countSize(10);
+		}
 
-        @include breakpoint(md) {
-            margin-bottom: countSize(20);
-        }
+		@include breakpoint(md) {
+			margin-bottom: countSize(20);
+		}
 
-        @include breakpoint(sm) {
-            margin-bottom: countSize(12);
-        }
-    }
+		@include breakpoint(sm) {
+			margin-bottom: countSize(12);
+		}
+	}
 }
 
 .authorInfo {
-    display: flex;
-    align-items: center;
-    gap: countSize(16);
+	display: flex;
+	align-items: center;
+	gap: countSize(16);
 }
 
 .authorName {
-    font-size: countSize(12);
-    font-weight: 700;
+	font-size: countSize(12);
+	font-weight: 700;
 }
 
 .testimonialsSliderWrapper {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    gap: countSize(12);
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	gap: countSize(12);
 
-    @include breakpoint(mobL) {
-        position: static;
-        margin-top: countSize(12);
-    }
+	@include breakpoint(mobL) {
+		position: static;
+		margin-top: countSize(12);
+	}
 }
 
 .testimonialsSlider {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background-color: $white;
-    transition: background-color 0.5s ease;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	background-color: $white;
+	transition: background-color 0.5s ease;
 
-    &:hover {
-        background-color: $steelGray;
+	&:hover {
+		background-color: $steelGray;
 
-        img {
-            filter: brightness(0) invert(1);
-        }
-    }
+		img {
+			filter: brightness(0) invert(1);
+		}
+	}
 }

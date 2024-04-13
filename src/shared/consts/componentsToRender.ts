@@ -1,5 +1,5 @@
 import { PostsHome } from '@/widgets/PostsHome';
-import { AboutSection } from '@/widgets/AbouSection';
+import { AboutSection } from '@/widgets/AboutSection';
 import { Categories } from '@/widgets/Categories';
 import { Authors } from '@/widgets/Authors';
 import { StorySection } from '@/widgets/StorySection';
@@ -15,5 +15,5 @@ export const componentsToRender = [
     { id: 5, component: Authors },
     { id: 6, component: Partners },
     { id: 7, component: Testimonials },
-    { id: 8, component: JoinTeam }
+    { id: 8, component: JoinTeam },
 ];

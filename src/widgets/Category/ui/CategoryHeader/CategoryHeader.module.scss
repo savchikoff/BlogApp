@@ -1,45 +1,45 @@
 .categoryHeaderContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $ghostWhite;
-    padding: countSize(40) countSize(16);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $ghostWhite;
+	padding: countSize(40) countSize(16);
 }
 
 .categoryHeaderWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: countSize(8);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: countSize(8);
 }
 
 .categoryHeaderHeading {
-    text-align: center;
-    color: inherit;
-    text-transform: capitalize;
+	text-align: center;
+	color: inherit;
+	text-transform: capitalize;
 }
 
 .categoryHeaderDescription {
-    text-align: center;
-    max-width: 515px;
-    color: $daveGray;
-    margin-bottom: countSize(8);
+	text-align: center;
+	max-width: 515px;
+	color: $daveGray;
+	margin-bottom: countSize(8);
 
-    @include breakpoint(sm) {
-        font-size: countSize(7);
-    }
+	@include breakpoint(sm) {
+		font-size: countSize(7);
+	}
 }
 
 .categoryHeaderBreadCrumbs {
-    font-weight: $semibold;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
+	font-weight: $semibold;
+	text-transform: uppercase;
+	transition: all 0.3s ease;
 
-    & a:hover {
-        color: $purple;
-    }
+	& a:hover {
+		color: $purple;
+	}
 
-    @include breakpoint(sm) {
-        font-size: countSize(7);
-    }
+	@include breakpoint(sm) {
+		font-size: countSize(7);
+	}
 }

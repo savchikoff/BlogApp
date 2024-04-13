@@ -1,36 +1,36 @@
 .modalOverlay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9000;
 }
 
 .modalHeader {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: countSize(8);
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: countSize(8);
 }
 
 .modalContainer {
-    background: $white;
-    padding: countSize(10);
-    border-radius: countSize(4);
-    min-width: 500px;
-    border: countSize(1, 1) solid $golden;
+	background: $white;
+	padding: countSize(10);
+	border-radius: countSize(4);
+	min-width: 500px;
+	border: countSize(1, 1) solid $golden;
 
-    @include breakpoint(sm) {
-        min-width: 300px;
-    }
+	@include breakpoint(sm) {
+		min-width: 300px;
+	}
 }
 
 .closeButton {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: countSize(8);
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: countSize(8);
 }

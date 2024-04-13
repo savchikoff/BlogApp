@@ -1,47 +1,47 @@
 .testimonialsContainer {
-    background-color: $floralWhite;
-    padding: countSize(46) countSize(56);
+	background-color: $floralWhite;
+	padding: countSize(46) countSize(56);
 
-    @include breakpoint(sm) {
-        padding: countSize(20);
-    }
+	@include breakpoint(sm) {
+		padding: countSize(20);
+	}
 }
 
 .testimonialsWrapper {
-    display: flex;
-    justify-content: space-between;
-    gap: 32px;
+	display: flex;
+	justify-content: space-between;
+	gap: 32px;
 
-    @include breakpoint(md) {
-        flex-direction: column;
-        gap: countSize(16);
-        align-items: flex-start;
-    }
+	@include breakpoint(md) {
+		flex-direction: column;
+		gap: countSize(16);
+		align-items: flex-start;
+	}
 }
 
 .testimonialsInfo {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(8);
+	display: flex;
+	flex-direction: column;
+	gap: countSize(8);
 }
 
 .line {
-    width: 1px;
-    min-height: 100%;
-    background-color: $daveGray;
+	width: 1px;
+	min-height: 100%;
+	background-color: $daveGray;
 }
 
 .testimonialsSubheader {
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: $semibold;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: $semibold;
 }
 
 .testimonialsHeader {
-    color: inherit;
-    max-width: 345px;
+	color: inherit;
+	max-width: 345px;
 }
 
 .testimonialsDescription {
-    max-width: 349px;
+	max-width: 349px;
 }

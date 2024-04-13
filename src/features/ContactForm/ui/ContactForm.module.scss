@@ -1,34 +1,34 @@
 .contactForm {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: countSize(8);
-    width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: countSize(8);
+	width: 100%;
 
-    input {
-        font-family: inherit;
-        padding: countSize(12);
-        margin-bottom: countSize(2);
-        width: 100%;
+	input {
+		font-family: inherit;
+		padding: countSize(12);
+		margin-bottom: countSize(2);
+		width: 100%;
 
-        @include breakpoint(lg) {
-            padding: countSize(8);
-        }
-    }
+		@include breakpoint(lg) {
+			padding: countSize(8);
+		}
+	}
 
-    select {
-        font-family: inherit;
-        padding: 24px;
-        width: 100%;
-    }
+	select {
+		font-family: inherit;
+		padding: 24px;
+		width: 100%;
+	}
 
-    textarea {
-        font-family: inherit;
-        padding: 24px;
-        width: 100%;
-    }
+	textarea {
+		font-family: inherit;
+		padding: 24px;
+		width: 100%;
+	}
 }
 
 .error {
-    color: $red;
+	color: $red;
 }

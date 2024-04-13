@@ -1,20 +1,19 @@
 .localeSwitcher {
-    select {
-        color: $white;
-        padding: countSize(4);
-        border: none;
-        background-color: transparent;
-        border: countSize(1, 1) solid $white;
+	select {
+		color: $white;
+		padding: countSize(4);
+		border: none;
+		background-color: transparent;
+		border: countSize(1, 1) solid $white;
 
-        option {
-            color: $white;
-            background: $steelGray;
-        }
+		option {
+			color: $white;
+			background: $steelGray;
+		}
 
-        @include breakpoint(lg) {
-            color: $steelGray;
-            border: countSize(1, 1) solid $steelGray;
-            ;
-        }
-    }
+		@include breakpoint(lg) {
+			color: $steelGray;
+			border: countSize(1, 1) solid $steelGray;
+		}
+	}
 }

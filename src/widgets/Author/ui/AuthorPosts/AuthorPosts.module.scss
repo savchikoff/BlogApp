@@ -1,29 +1,29 @@
 .authorPostsContainer {
-    padding: countSize(64) 0;
-    display: flex;
-    flex-direction: column;
-    gap: countSize(32);
+	padding: countSize(64) 0;
+	display: flex;
+	flex-direction: column;
+	gap: countSize(32);
 
-    @include breakpoint(md) {
-        padding: countSize(40) 0;
-    }
+	@include breakpoint(md) {
+		padding: countSize(40) 0;
+	}
 }
 
 .authorPostsWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(32);
+	display: flex;
+	flex-direction: column;
+	gap: countSize(32);
 }
 
 .authorPostsHeading {
-    color: inherit;
-    font-size: countSize(24);
+	color: inherit;
+	font-size: countSize(24);
 
-    @include breakpoint(md) {
-        font-size: countSize(20);
-    }
+	@include breakpoint(md) {
+		font-size: countSize(20);
+	}
 
-    @include breakpoint(md) {
-        font-size: countSize(20);
-    }
+	@include breakpoint(md) {
+		font-size: countSize(20);
+	}
 }

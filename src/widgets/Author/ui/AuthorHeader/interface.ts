@@ -1,6 +1,6 @@
-import { StaticImageData } from "next/image";
+import { StaticImageData } from 'next/image';
 
 export interface IAuthorHeaderProps {
-    img: StaticImageData;
-    name: string;
+	img: StaticImageData;
+	name: string;
 }

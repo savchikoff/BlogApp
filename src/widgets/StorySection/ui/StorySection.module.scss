@@ -1,87 +1,86 @@
 .storyWrapper {
-    padding-top: countSize(64);
-    display: flex;
-    align-items: flex-end;
-    position: relative;
+	padding-top: countSize(64);
+	display: flex;
+	align-items: flex-end;
+	position: relative;
 
-    @include breakpoint(lg) {
-        flex-direction: column;
-    }
+	@include breakpoint(lg) {
+		flex-direction: column;
+	}
 
-    @include breakpoint(md) {
-        padding-top: countSize(40);
-    }
+	@include breakpoint(md) {
+		padding-top: countSize(40);
+	}
 }
 
 .storyContentWrapper {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    margin-left: -1 * countSize(12);
-    flex-direction: column;
-    align-items: flex-start;
-    background: $white;
-    width: 50%;
-    padding: countSize(40);
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	margin-left: -1 * countSize(12);
+	flex-direction: column;
+	align-items: flex-start;
+	background: $white;
+	width: 50%;
+	padding: countSize(40);
 
-    @include breakpoint(lg) {
-        position: static;
-        padding: countSize(20);
-        width: 100%;
-        margin-left: 0;
-    }
+	@include breakpoint(lg) {
+		position: static;
+		padding: countSize(20);
+		width: 100%;
+		margin-left: 0;
+	}
 }
 
 .storyImg {
-    width: 80%;
-    object-fit: cover;
+	width: 80%;
+	object-fit: cover;
 
-    @include breakpoint(lg) {
-        width: 100%;
-    }
+	@include breakpoint(lg) {
+		width: 100%;
+	}
 }
 
 .storySubHeader {
-    text-transform: uppercase;
-    font-weight: $semibold;
-    letter-spacing: 3px;
-    margin-bottom: countSize(12);
+	text-transform: uppercase;
+	font-weight: $semibold;
+	letter-spacing: 3px;
+	margin-bottom: countSize(12);
 }
 
 .storyInfoWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: countSize(8);
-    margin-bottom: countSize(16);
+	display: flex;
+	flex-direction: column;
+	gap: countSize(8);
+	margin-bottom: countSize(16);
 }
 
 .storyHeader {
-    color: inherit;
-    font-size: countSize(24);
-    max-width: 446px;
+	color: inherit;
+	font-size: countSize(24);
+	max-width: 446px;
 
-    @include breakpoint(lg) {
-        font-size: countSize(20);
-    }
+	@include breakpoint(lg) {
+		font-size: countSize(20);
+	}
 
-    @include breakpoint(mobL) {
-        font-size: countSize(14);
-    }
+	@include breakpoint(mobL) {
+		font-size: countSize(14);
+	}
 }
 
 .storyDescription {
-    max-width: 546px;
-    color: $daveGray;
+	max-width: 546px;
+	color: $daveGray;
 
-    @include breakpoint(mobL) {
-        font-size: countSize(7);
-    }
+	@include breakpoint(mobL) {
+		font-size: countSize(7);
+	}
 }
 
 .storyImgWrapper {
-
-    @include breakpoint(md) {
-        display: none;
-    }
+	@include breakpoint(md) {
+		display: none;
+	}
 }

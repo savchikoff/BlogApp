@@ -1,38 +1,38 @@
 .header {
-    background-color: $steelGray;
+	background-color: $steelGray;
 
-    @include breakpoint(lg) {
-        position: relative;
-    }
+	@include breakpoint(lg) {
+		position: relative;
+	}
 }
 
 .headerWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: countSize(9) 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: countSize(9) 0;
 }
 
 .companyName {
-    font-size: countSize(12);
-    font-weight: $bold;
+	font-size: countSize(12);
+	font-weight: $bold;
 }
 
 .actionsWrapper {
-    display: flex;
-    align-items: center;
-    gap: countSize(16);
+	display: flex;
+	align-items: center;
+	gap: countSize(16);
 
-    @include breakpoint(lg) {
-        display: none;
-    }
+	@include breakpoint(lg) {
+		display: none;
+	}
 }
 
 .iFrameContainer {
-    width: 100%;
-    height: 300px;
+	width: 100%;
+	height: 300px;
 
-    @include breakpoint(sm) {
-        height: 150px;
-    }
+	@include breakpoint(sm) {
+		height: 150px;
+	}
 }
