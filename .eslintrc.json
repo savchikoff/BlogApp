@@ -16,7 +16,10 @@
 		"ecmaVersion": "latest",
 		"sourceType": "module"
 	},
-	"plugins": ["react", "simple-import-sort"],
+	"plugins": [
+		"react",
+		"simple-import-sort"
+	],
 	"rules": {
 		"import/prefer-default-export": "off",
 		"import/extensions": [
@@ -33,7 +36,12 @@
 		"react/jsx-filename-extension": [
 			2,
 			{
-				"extensions": [".js", ".jsx", ".ts", ".tsx"]
+				"extensions": [
+					".js",
+					".jsx",
+					".ts",
+					".tsx"
+				]
 			}
 		],
 		"import/no-extraneous-dependencies": "off",
@@ -53,8 +61,11 @@
 		"import/no-unresolved": [
 			"error",
 			{
-				"ignore": [".scss$"]
+				"ignore": [
+					".scss$"
+				]
 			}
-		]
+		],
+		"react/display-name": "off"
 	}
 }

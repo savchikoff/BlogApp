@@ -1,6 +1,6 @@
 'use client';
 
-import { MouseEvent, useEffect, useRef } from 'react';
+import { MouseEvent, useRef } from 'react';
 import { useDisableBodyScroll } from '@/shared/hooks/useDisableBodyScroll';
 import styles from './Modal.module.scss';
 
