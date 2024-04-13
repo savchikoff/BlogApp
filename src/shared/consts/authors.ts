@@ -1,3 +1,5 @@
+import { additionalRoutes } from './routes';
+
 import authorImg1 from '../assets/avatars/author1.webp';
 import authorImg2 from '../assets/avatars/author2.webp';
 import authorImg3 from '../assets/avatars/author3.webp';
@@ -14,7 +16,7 @@ export const authors = [
 		name: 'Floyd Miles',
 		role: 'Content Writer',
 		company: 'Company',
-		link: '/authors/1',
+		link: `${additionalRoutes.Authors}/1`,
 	},
 	{
 		id: 2,
@@ -22,7 +24,7 @@ export const authors = [
 		name: 'Dianne Russell',
 		role: 'Content Writer',
 		company: 'Company',
-		link: '/authors/2',
+		link: `${additionalRoutes.Authors}/2`,
 	},
 	{
 		id: 3,
@@ -30,7 +32,7 @@ export const authors = [
 		name: 'Jenny Wilson',
 		role: 'Content Writer',
 		company: 'Company',
-		link: '/authors/3',
+		link: `${additionalRoutes.Authors}/3`,
 	},
 	{
 		id: 4,
@@ -38,7 +40,7 @@ export const authors = [
 		name: 'Leslie Alexander',
 		role: 'Content Writer',
 		company: 'Company',
-		link: '/authors/4',
+		link: `${additionalRoutes.Authors}/4`,
 	},
 	{
 		id: 5,
@@ -46,7 +48,7 @@ export const authors = [
 		name: 'Guy Hawkins',
 		role: 'Content Writer',
 		company: 'Company',
-		link: '/authors/5',
+		link: `${additionalRoutes.Authors}/5`,
 	},
 	{
 		id: 6,
@@ -54,7 +56,7 @@ export const authors = [
 		name: 'Eleanor Pena',
 		role: 'Content Writer',
 		company: 'Company',
-		link: '/authors/6',
+		link: `${additionalRoutes.Authors}/6`,
 	},
 	{
 		id: 7,
@@ -62,7 +64,7 @@ export const authors = [
 		name: 'Robert Fox',
 		role: 'Content Writer',
 		company: 'Company',
-		link: '/authors/7',
+		link: `${additionalRoutes.Authors}/7`,
 	},
 	{
 		id: 8,
@@ -70,6 +72,6 @@ export const authors = [
 		name: 'Jacob Jones',
 		role: 'Content Writer',
 		company: 'Company',
-		link: '/authors/8',
+		link: `${additionalRoutes.Authors}/8`,
 	},
 ];

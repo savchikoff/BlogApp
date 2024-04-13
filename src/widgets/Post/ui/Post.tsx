@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import Image from 'next/image';
+import { additionalRoutes } from '@/shared/consts/routes';
 import styles from './Post.module.scss';
 import { IPostProps } from './interfaces';
 
@@ -28,12 +29,12 @@ export function Post({
 			</div>
 			<div className={styles.postTextWrapper}>
 				<Link
-					href={`/category/${category.toLowerCase()}`}
+					href={`${additionalRoutes.Category}/${category.toLowerCase()}`}
 					className={styles.postCategory}
 				>
 					{t(category)}
 				</Link>
-				<Link data-cy={dataCy} href={`/posts/${id}`}>
+				<Link data-cy={dataCy} href={`${additionalRoutes.Posts}/${id}`}>
 					<h2 className={styles.postHeading}>{header}</h2>
 				</Link>
 				<p className={styles.postDescription}>{description}</p>

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './FeaturedPost.module.scss';
+import { additionalRoutes } from '@/shared/consts/routes';
 import { Button } from '@/shared';
 import { IFeaturedPostProps } from './interfaces';
 
@@ -32,7 +33,7 @@ function FeaturedPost({
 					<p className={styles.articleDescription}>{text}</p>
 				</div>
 				<Button isPrimary>
-					<Link href={`/posts/${id}`}>Read More &gt;</Link>
+					<Link href={`${additionalRoutes.Posts}/${id}`}>Read More &gt;</Link>
 				</Button>
 			</div>
 		</article>

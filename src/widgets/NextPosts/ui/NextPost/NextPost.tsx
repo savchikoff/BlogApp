@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { additionalRoutes } from '@/shared/consts/routes';
 import styles from './NextPost.module.scss';
 import { INextPostProps } from './interfaces';
 
@@ -18,7 +19,7 @@ function NextPost({ id, img, author, createdAt, title, text }: INextPostProps) {
 				<span className={styles.postInfo}>
 					By <span className={styles.authorName}>{author}</span> l {createdAt}
 				</span>
-				<Link href={`/posts/${id}`}>
+				<Link href={`${additionalRoutes.Posts}/${id}`}>
 					<h2 className={styles.nextPostHeading}>{title}</h2>
 				</Link>
 				<p className={styles.nextPostText}>{text}</p>

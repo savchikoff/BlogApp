@@ -5,7 +5,6 @@ import { useTranslations } from 'next-intl';
 import styles from './Header.module.scss';
 import container from '@/shared/styles/container.module.scss';
 import { Navigation } from '../../Navigation/ui/Navigation';
-import { useDisableBodyScroll } from '@/shared/hooks/useDisableBodyScroll';
 import LocaleSwitcher from './LocaleSwitcher';
 import { Button, Modal, CompanyName } from '@/shared';
 import BurgerMenu from './BurgerMenu/BurgerMenu';
@@ -14,8 +13,6 @@ export function Header() {
 	const t = useTranslations('VideoButton');
 
 	const [isModalOpen, setIsModalOpen] = useState(false);
-
-	useDisableBodyScroll(isModalOpen);
 
 	const handleModalOpen = () => {
 		setIsModalOpen(true);

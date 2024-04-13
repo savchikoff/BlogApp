@@ -1,3 +1,5 @@
+import { additionalRoutes } from './routes';
+
 import business from '../assets/icons/business.svg';
 import startup from '../assets/icons/startup.svg';
 import economy from '../assets/icons/economy.svg';
@@ -6,19 +8,19 @@ import technology from '../assets/icons/technology.svg';
 export const categories = {
 	Business: {
 		img: business,
-		link: '/category/business',
+		link: `${additionalRoutes.Category}/business`,
 	},
 	Startup: {
 		img: startup,
-		link: '/category/startup',
+		link: `${additionalRoutes.Category}/startup`,
 	},
 	Economy: {
 		img: economy,
-		link: '/category/economy',
+		link: `${additionalRoutes.Category}/economy`,
 	},
 	Technology: {
 		img: technology,
-		link: '/category/technology',
+		link: `${additionalRoutes.Category}/technology`,
 	},
 };
 

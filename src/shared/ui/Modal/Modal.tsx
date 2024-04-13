@@ -1,12 +1,15 @@
 'use client';
 
-import { MouseEvent, useRef } from 'react';
+import { MouseEvent, useEffect, useRef } from 'react';
+import { useDisableBodyScroll } from '@/shared/hooks/useDisableBodyScroll';
 import styles from './Modal.module.scss';
 
 import { IModalProps } from './interfaces';
 
 export function Modal({ isOpen, onClose, children }: IModalProps) {
 	const modalRef = useRef<HTMLDivElement>(null);
+
+	useDisableBodyScroll(isOpen);
 
 	const handleOverlayClick = (e: MouseEvent<HTMLDivElement>) => {
 		if (modalRef.current && !modalRef.current.contains(e.target as Node)) {

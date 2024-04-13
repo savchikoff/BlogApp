@@ -7,6 +7,7 @@ import styles from './Hero.module.scss';
 import container from '@/shared/styles/container.module.scss';
 import { Button } from '@/shared';
 import { blogPosts } from '@/shared/consts/blogPosts';
+import { additionalRoutes } from '@/shared/consts/routes';
 
 export function Hero() {
 	const t = useTranslations('FeaturedPost');
@@ -31,7 +32,7 @@ export function Hero() {
 							<p className={styles.description}>{text}</p>
 						</div>
 						<Button isPrimary>
-							<Link href={`/posts/${id}`}>{t('link')} &gt;</Link>
+							<Link href={`${additionalRoutes.Posts}/${id}`}>{t('link')} &gt;</Link>
 						</Button>
 					</div>
 				</Zoom>

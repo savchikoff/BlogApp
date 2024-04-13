@@ -1,11 +1,11 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, memo } from 'react';
 import * as mapboxgl from 'mapbox-gl';
 import styles from './Map.module.scss';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
-export function Map() {
+export const Map = memo(() => {
 	const mapContainer = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
@@ -31,7 +31,7 @@ export function Map() {
 
 			return () => map.remove();
 		}
-		return () => {};
+		return () => { };
 	}, []);
 
 	return (
@@ -41,4 +41,4 @@ export function Map() {
 			style={{ position: 'absolute', top: 0, bottom: 0, width: '100%' }}
 		/>
 	);
-}
+});

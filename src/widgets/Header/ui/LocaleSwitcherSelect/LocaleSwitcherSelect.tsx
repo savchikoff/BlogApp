@@ -4,7 +4,7 @@ import { useParams } from 'next/navigation';
 import { ChangeEvent, useTransition } from 'react';
 import { useRouter, usePathname } from '@/navigation';
 import styles from './LocaleSwitcherSelect.module.scss';
-import { ILocaleSwitcherSelectProps } from './interfaces';
+import { ILocaleSwitcherSelectProps } from './LocaleSwitcherSelect.interfaces';
 
 export default function LocaleSwitcherSelect({
 	children,

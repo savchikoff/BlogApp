@@ -5,3 +5,9 @@ export const routes = {
 	Contacts: '/contacts',
 	Privacy: '/privacy',
 };
+
+export const additionalRoutes = {
+	Posts: '/posts',
+	Category: '/category',
+	Authors: '/authors'
+}
