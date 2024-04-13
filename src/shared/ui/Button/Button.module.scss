@@ -7,6 +7,7 @@
 	border: none;
 	transition: all 0.3s ease;
 	border: countSize(1, 1) solid transparent;
+	height: countSize(28);
 
 	&:disabled {
 		cursor: not-allowed;
