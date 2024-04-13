@@ -13,7 +13,7 @@ import { toast } from 'react-toastify';
 import emailjs from '@emailjs/browser';
 import styles from './NewsLetterForm.module.scss';
 import { Button } from '@/shared';
-import { FormValues } from './interfaces';
+import { FormValues } from './NewsLetterForm.interfaces';
 import { schema } from '@/features/NewsLetterSubscription/consts/schema';
 
 function NewsLetterForm() {
