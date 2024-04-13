@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl';
 import styles from './AuthorPosts.module.scss';
 import { blogPosts } from '@/shared/consts/blogPosts';
-import { IAuthorPostsProps } from './interfaces';
+import { IAuthorPostsProps } from './AuthorPosts.interfaces';
 import { Post } from '@/widgets/Post';
 
 function AuthorPosts({ authorName }: IAuthorPostsProps) {

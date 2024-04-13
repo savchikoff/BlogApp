@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import classNames from 'classnames';
 import styles from './AllTags.module.scss';
 import { tags } from '@/shared/consts/tags';
-import { IAllTagsProps } from './interfaces';
+import { IAllTagsProps } from './AllTags.interfaces';
 
 function AllTags({ selectedTags, setSelectedTags }: IAllTagsProps) {
 	const t = useTranslations('Category.Tags');

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { IAuthorProps } from './interfaces';
+import { IAuthorProps } from './Author.interfaces';
 import styles from './Author.module.scss';
 import { socials } from '@/shared/consts/socials';
 

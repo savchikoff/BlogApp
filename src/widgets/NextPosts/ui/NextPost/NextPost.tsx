@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { additionalRoutes } from '@/shared/consts/routes';
 import styles from './NextPost.module.scss';
-import { INextPostProps } from './interfaces';
+import { INextPostProps } from './NextPost.interfaces';
 
 function NextPost({ id, img, author, createdAt, title, text }: INextPostProps) {
 	return (

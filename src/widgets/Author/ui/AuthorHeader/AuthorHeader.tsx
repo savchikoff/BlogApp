@@ -6,7 +6,7 @@ import Image from 'next/image';
 import classNames from 'classnames';
 import styles from './AuthorHeader.module.scss';
 import container from '@/shared/styles/container.module.scss';
-import { IAuthorHeaderProps } from './interface';
+import { IAuthorHeaderProps } from './AuthorHeader.interface';
 import { socials } from '@/shared/consts/socials';
 
 function AuthorHeader({ img, name }: IAuthorHeaderProps) {

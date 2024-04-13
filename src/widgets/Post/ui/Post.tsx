@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { additionalRoutes } from '@/shared/consts/routes';
 import styles from './Post.module.scss';
-import { IPostProps } from './interfaces';
+import { IPostProps } from './Post.interfaces';
 
 export function Post({
 	id,

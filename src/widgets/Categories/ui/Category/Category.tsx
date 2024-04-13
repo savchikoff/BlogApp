@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Category.module.scss';
-import { ICategoryProps } from './interfaces';
+import { ICategoryProps } from './Category.interfaces';
 
 function Category({ category, img, link = '', dataCy }: ICategoryProps) {
 	return (

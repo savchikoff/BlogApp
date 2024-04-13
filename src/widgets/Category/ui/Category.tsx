@@ -6,7 +6,7 @@ import classNames from 'classnames';
 import styles from './Category.module.scss';
 import container from '@/shared/styles/container.module.scss';
 import CategoryHeader from './CategoryHeader/CategoryHeader';
-import { ICategoryProps } from './interfaces';
+import { ICategoryProps } from './Category.interfaces';
 import CategorySidebar from './CategorySidebar/CategorySidebar';
 import { Post } from '@/widgets/Post';
 import { blogPosts } from '@/shared/consts/blogPosts';
@@ -40,8 +40,8 @@ export function Category({ categoryName }: ICategoryProps) {
 		selectedTags.length === 0
 			? categoryPosts
 			: categoryPosts.filter((post) =>
-					selectedTags.some((selectedTag) => post.tags.includes(selectedTag))
-				);
+				selectedTags.some((selectedTag) => post.tags.includes(selectedTag))
+			);
 
 	return (
 		<section className={styles.categoryContainer}>

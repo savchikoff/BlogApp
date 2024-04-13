@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import styles from './BlogPost.module.scss';
-import { IBlogPostProps } from './interfaces';
+import { IBlogPostProps } from './BlogPost.interfaces';
 import { blogPosts } from '@/shared/consts/blogPosts';
 import { authors } from '@/shared/consts/authors';
 

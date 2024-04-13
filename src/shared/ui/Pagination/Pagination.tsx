@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import classNames from 'classnames';
 import styles from './Pagination.module.scss';
-import { IPaginationProps } from './interfaces';
+import { IPaginationProps } from './Pagination.interfaces';
 
 export function Pagination({
 	postsPerPage,

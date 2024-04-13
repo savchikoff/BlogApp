@@ -1,5 +1,5 @@
 import styles from './Button.module.scss';
-import { IButtonProps } from './interfaces';
+import { IButtonProps } from './Button.interfaces';
 
 export function Button({
 	isPrimary = false,

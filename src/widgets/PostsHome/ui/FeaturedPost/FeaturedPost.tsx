@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from './FeaturedPost.module.scss';
 import { additionalRoutes } from '@/shared/consts/routes';
 import { Button } from '@/shared';
-import { IFeaturedPostProps } from './interfaces';
+import { IFeaturedPostProps } from './FeaturedPost.interfaces';
 
 function FeaturedPost({
 	id,

@@ -6,7 +6,7 @@ import Link from 'next/link';
 import classNames from 'classnames';
 import { routes } from '../../../shared/consts/routes';
 import styles from './Navigation.module.scss';
-import { INavigationProps } from './interfaces';
+import { INavigationProps } from './Navigation.interfaces';
 
 export function Navigation({ isWithPrivacy = false }: INavigationProps) {
 	const t = useTranslations('Navigation');
@@ -16,8 +16,8 @@ export function Navigation({ isWithPrivacy = false }: INavigationProps) {
 	const navigationRoutes = isWithPrivacy
 		? routes
 		: Object.fromEntries(
-				Object.entries(routes).filter((route) => route[0] !== 'Privacy')
-			);
+			Object.entries(routes).filter((route) => route[0] !== 'Privacy')
+		);
 
 	return (
 		<nav data-cy="navigation">

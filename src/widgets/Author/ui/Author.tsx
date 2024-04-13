@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import classNames from 'classnames';
 import container from '@/shared/styles/container.module.scss';
 import styles from './Author.module.scss';
-import { IAuthorProps } from './interfaces';
+import { IAuthorProps } from './Author.interfaces';
 import AuthorHeader from './AuthorHeader/AuthorHeader';
 import AuthorPosts from './AuthorPosts/AuthorPosts';
 import { authors } from '@/shared/consts/authors';

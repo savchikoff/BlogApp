@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import styles from './SearchedPost.module.scss';
-import { ISearchedPostProps } from './interface';
+import { ISearchedPostProps } from './SearchedPost.interface';
 
 function SearchedPost({ id, title, tags }: ISearchedPostProps) {
 	return (
