@@ -1,5 +1,3 @@
-import { additionalRoutes } from './routes';
-
 import authorImg1 from '../assets/avatars/author1.webp';
 import authorImg2 from '../assets/avatars/author2.webp';
 import authorImg3 from '../assets/avatars/author3.webp';
@@ -8,6 +6,8 @@ import authorImg5 from '../assets/avatars/author5.webp';
 import authorImg6 from '../assets/avatars/author6.webp';
 import authorImg7 from '../assets/avatars/author7.webp';
 import authorImg8 from '../assets/avatars/author8.webp';
+
+import { additionalRoutes } from './routes';
 
 export const authors = [
 	{

@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Zoom } from 'react-awesome-reveal';
+
 import styles from './PrivacyHeader.module.scss';
 
 function PrivacyHeader() {

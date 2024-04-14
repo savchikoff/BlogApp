@@ -2,10 +2,13 @@
 
 import { ChangeEvent, useState } from 'react';
 import { useTranslations } from 'next-intl';
-import styles from './Search.module.scss';
+
 import { blogPosts } from '@/shared/consts/blogPosts';
-import SearchedPost from '../SearchedPost/SearchedPost';
 import useDebounce from '@/shared/hooks/useDebounce';
+
+import SearchedPost from '../SearchedPost/SearchedPost';
+
+import styles from './Search.module.scss';
 
 function Search() {
 	const t = useTranslations('Category.SearchInput');

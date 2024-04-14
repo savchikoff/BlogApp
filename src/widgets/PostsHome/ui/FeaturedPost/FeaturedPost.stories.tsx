@@ -1,8 +1,10 @@
+/* eslint-disable simple-import-sort/imports */
 import type { Meta, StoryObj } from '@storybook/react';
-import '@/shared/styles/globals.scss';
+import { blogPosts } from '@/shared/consts/blogPosts';
 
 import FeaturedPost from './FeaturedPost';
-import { blogPosts } from '@/shared/consts/blogPosts';
+
+import '@/shared/styles/globals.scss';
 
 const { id, author, createdAt, title, text, img } = blogPosts[0];
 

@@ -1,12 +1,15 @@
 'use client';
 
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { Slide } from 'react-awesome-reveal';
-import Link from 'next/link';
-import styles from './AllPostsSection.module.scss';
-import SmallPost from '../SmallPost/SmallPost';
+
 import { blogPosts } from '@/shared/consts/blogPosts';
 import { routes } from '@/shared/consts/routes';
+
+import SmallPost from '../SmallPost/SmallPost';
+
+import styles from './AllPostsSection.module.scss';
 
 function AllPostsSection() {
 	const t = useTranslations('Home.PostsHome');

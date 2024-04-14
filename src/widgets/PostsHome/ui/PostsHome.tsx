@@ -1,6 +1,7 @@
-import styles from './PostsHome.module.scss';
-import FeaturedPostSection from './FeaturedPostSection/FeaturedPostSection';
 import AllPostsSection from './AllPostsSection/AllPostsSection';
+import FeaturedPostSection from './FeaturedPostSection/FeaturedPostSection';
+
+import styles from './PostsHome.module.scss';
 
 export function PostsHome() {
 	return (

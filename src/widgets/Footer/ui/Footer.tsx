@@ -1,9 +1,11 @@
+import { NewsLetterSubscription } from '@/features/NewsLetterSubscription';
+import { CompanyName } from '@/shared';
+import { Navigation } from '@/widgets/Navigation/ui/Navigation';
+
+import CompanyInfo from './CompanyInfo/CompanyInfo';
+
 import styles from './Footer.module.scss';
 import container from '@/shared/styles/container.module.scss';
-import { Navigation } from '@/widgets/Navigation/ui/Navigation';
-import { CompanyName } from '@/shared';
-import CompanyInfo from './CompanyInfo/CompanyInfo';
-import { NewsLetterSubscription } from '@/features/NewsLetterSubscription';
 
 export function Footer() {
 	return (

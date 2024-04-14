@@ -1,14 +1,16 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
-import Link from 'next/link';
-import { Zoom } from 'react-awesome-reveal';
 import Image from 'next/image';
-import styles from './BlogHeader.module.scss';
-import container from '@/shared/styles/container.module.scss';
+import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Zoom } from 'react-awesome-reveal';
+
 import { Button } from '@/shared';
 import { blogPosts } from '@/shared/consts/blogPosts';
 import { additionalRoutes } from '@/shared/consts/routes';
+
+import styles from './BlogHeader.module.scss';
+import container from '@/shared/styles/container.module.scss';
 
 function BlogHeader() {
 	const t = useTranslations('FeaturedPost');

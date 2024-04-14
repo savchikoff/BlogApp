@@ -1,8 +1,10 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import styles from './NewsLetterSubscription.module.scss';
+
 import NewsLetterForm from './NewsLetterForm/NewsLetterForm';
+
+import styles from './NewsLetterSubscription.module.scss';
 
 export function NewsLetterSubscription() {
 	const t = useTranslations('Footer');

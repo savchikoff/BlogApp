@@ -1,11 +1,15 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+
 import { blogPosts } from '@/shared/consts/blogPosts';
+
 import { getRandomPosts } from '../utils/getRandomPosts';
-import styles from './NextPosts.module.scss';
+
 import NextPost from './NextPost/NextPost';
 import { INextPostsProps } from './NextPosts.interfaces';
+
+import styles from './NextPosts.module.scss';
 
 function NextPosts({ postId }: INextPostsProps) {
 	const t = useTranslations('BlogPost.NextPosts');

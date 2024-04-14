@@ -2,12 +2,16 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+
+import { Button, CompanyName,Modal } from '@/shared';
+
+import { Navigation } from '../../Navigation/ui/Navigation';
+
+import BurgerMenu from './BurgerMenu/BurgerMenu';
+import LocaleSwitcher from './LocaleSwitcher';
+
 import styles from './Header.module.scss';
 import container from '@/shared/styles/container.module.scss';
-import { Navigation } from '../../Navigation/ui/Navigation';
-import LocaleSwitcher from './LocaleSwitcher';
-import { Button, Modal, CompanyName } from '@/shared';
-import BurgerMenu from './BurgerMenu/BurgerMenu';
 
 export function Header() {
 	const t = useTranslations('VideoButton');

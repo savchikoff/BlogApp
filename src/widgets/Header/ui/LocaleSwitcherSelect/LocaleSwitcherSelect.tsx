@@ -1,10 +1,13 @@
 'use client';
 
-import { useParams } from 'next/navigation';
 import { ChangeEvent, useTransition } from 'react';
-import { useRouter, usePathname } from '@/navigation';
-import styles from './LocaleSwitcherSelect.module.scss';
+import { useParams } from 'next/navigation';
+
+import { usePathname,useRouter } from '@/navigation';
+
 import { ILocaleSwitcherSelectProps } from './LocaleSwitcherSelect.interfaces';
+
+import styles from './LocaleSwitcherSelect.module.scss';
 
 export default function LocaleSwitcherSelect({
 	children,

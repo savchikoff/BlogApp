@@ -1,6 +1,7 @@
 'use client';
 
 import { Slide } from 'react-awesome-reveal';
+
 import styles from './PrivacyContent.module.scss';
 
 function PrivacyContent() {

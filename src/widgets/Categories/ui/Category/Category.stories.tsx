@@ -1,8 +1,10 @@
+/* eslint-disable simple-import-sort/imports */
 import type { Meta, StoryObj } from '@storybook/react';
-import '@/shared/styles/globals.scss';
+import { categories } from '@/shared/consts/categories';
 
 import Category from './Category';
-import { categories } from '@/shared/consts/categories';
+
+import '@/shared/styles/globals.scss';
 
 const category = categories.Business;
 

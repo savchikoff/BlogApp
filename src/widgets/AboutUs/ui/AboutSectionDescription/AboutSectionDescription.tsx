@@ -1,6 +1,8 @@
 import React from 'react';
-import styles from './AboutSectionDescription.module.scss';
+
 import { IAboutSectionDescriptionProps } from './AboutSectionDescription.interfaces';
+
+import styles from './AboutSectionDescription.module.scss';
 
 function AboutSectionDescription({
 	header,

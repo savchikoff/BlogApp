@@ -1,11 +1,14 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import { Slide } from 'react-awesome-reveal';
-import styles from './StorySection.module.scss';
+
 import { Button } from '@/shared';
+
 import storyImg from '../assets/storyImg.webp';
+
+import styles from './StorySection.module.scss';
 
 export function StorySection() {
 	const t = useTranslations('Home.Why');

@@ -1,8 +1,10 @@
+/* eslint-disable simple-import-sort/imports */
 import type { Meta, StoryObj } from '@storybook/react';
-import '@/shared/styles/globals.scss';
+import { authors } from '@/shared/consts/authors';
 
 import Author from './Author';
-import { authors } from '@/shared/consts/authors';
+
+import '@/shared/styles/globals.scss';
 
 const { name, role, img, link } = authors[0];
 

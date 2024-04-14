@@ -1,10 +1,12 @@
 'use client';
 
 import { MouseEvent, useRef } from 'react';
+
 import { useDisableBodyScroll } from '@/shared/hooks/useDisableBodyScroll';
-import styles from './Modal.module.scss';
 
 import { IModalProps } from './Modal.interfaces';
+
+import styles from './Modal.module.scss';
 
 export function Modal({ isOpen, onClose, children }: IModalProps) {
 	const modalRef = useRef<HTMLDivElement>(null);

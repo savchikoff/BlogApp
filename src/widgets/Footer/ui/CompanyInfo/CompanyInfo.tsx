@@ -1,7 +1,9 @@
-import Link from 'next/link';
 import Image from 'next/image';
-import styles from './CompanyInfo.module.scss';
+import Link from 'next/link';
+
 import { socials } from '@/shared/consts/socials';
+
+import styles from './CompanyInfo.module.scss';
 
 function CompanyInfo() {
 	return (

@@ -1,9 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from './FeaturedPost.module.scss';
-import { additionalRoutes } from '@/shared/consts/routes';
+
 import { Button } from '@/shared';
+import { additionalRoutes } from '@/shared/consts/routes';
+
 import { IFeaturedPostProps } from './FeaturedPost.interfaces';
+
+import styles from './FeaturedPost.module.scss';
 
 function FeaturedPost({
 	id,

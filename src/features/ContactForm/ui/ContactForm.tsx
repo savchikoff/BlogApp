@@ -3,18 +3,23 @@
 import { useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import {
-	Formik,
-	Field,
 	ErrorMessage,
-	FormikValues,
+	Field,
+	Formik,
 	FormikHelpers,
+	FormikValues,
 } from 'formik';
-import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
-import styles from './ContactForm.module.scss';
-import { FormValues } from './ContactForm.interfaces';
-import { schema } from '../consts/schema';
+
 import { Button } from '@/shared';
+// eslint-disable-next-line import/order
+import emailjs from '@emailjs/browser';
+
+import { schema } from '../consts/schema';
+
+import { FormValues } from './ContactForm.interfaces';
+
+import styles from './ContactForm.module.scss';
 
 export function ContactForm() {
 	const t = useTranslations('ContactUs.ContactForm');

@@ -1,9 +1,9 @@
-import { additionalRoutes } from './routes';
-
 import business from '../assets/icons/business.svg';
-import startup from '../assets/icons/startup.svg';
 import economy from '../assets/icons/economy.svg';
+import startup from '../assets/icons/startup.svg';
 import technology from '../assets/icons/technology.svg';
+
+import { additionalRoutes } from './routes';
 
 export const categories = {
 	Business: {

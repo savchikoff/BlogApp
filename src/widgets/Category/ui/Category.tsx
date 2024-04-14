@@ -3,14 +3,17 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import classNames from 'classnames';
-import styles from './Category.module.scss';
-import container from '@/shared/styles/container.module.scss';
-import CategoryHeader from './CategoryHeader/CategoryHeader';
-import { ICategoryProps } from './Category.interfaces';
-import CategorySidebar from './CategorySidebar/CategorySidebar';
-import { Post } from '@/widgets/Post';
+
 import { blogPosts } from '@/shared/consts/blogPosts';
 import { categories } from '@/shared/consts/categories';
+import { Post } from '@/widgets/Post';
+
+import CategoryHeader from './CategoryHeader/CategoryHeader';
+import CategorySidebar from './CategorySidebar/CategorySidebar';
+import { ICategoryProps } from './Category.interfaces';
+
+import styles from './Category.module.scss';
+import container from '@/shared/styles/container.module.scss';
 
 export function Category({ categoryName }: ICategoryProps) {
 	const t = useTranslations('Category.Posts');

@@ -1,11 +1,14 @@
 'use client';
 
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Slide } from 'react-awesome-reveal';
-import Image from 'next/image';
-import styles from './OurTeam.module.scss';
-import AboutSectionDescription from '../AboutSectionDescription/AboutSectionDescription';
+
 import handShake from '@/widgets/AboutUs/assets/handshake.webp';
+
+import AboutSectionDescription from '../AboutSectionDescription/AboutSectionDescription';
+
+import styles from './OurTeam.module.scss';
 
 function OurTeam() {
 	const t = useTranslations('AboutUs.OurTeam');

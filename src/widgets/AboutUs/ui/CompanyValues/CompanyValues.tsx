@@ -1,10 +1,12 @@
 'use client';
 
-import { Slide, Zoom } from 'react-awesome-reveal';
-import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import styles from './CompanyValues.module.scss';
+import { useTranslations } from 'next-intl';
+import { Slide, Zoom } from 'react-awesome-reveal';
+
 import overview from '@/widgets/AboutUs/assets/overview.webp';
+
+import styles from './CompanyValues.module.scss';
 
 function CompanyValues() {
 	const t = useTranslations('AboutUs.CompanyValues');

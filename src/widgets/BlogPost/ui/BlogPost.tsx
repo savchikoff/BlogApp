@@ -1,11 +1,14 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import styles from './BlogPost.module.scss';
-import { IBlogPostProps } from './BlogPost.interfaces';
-import { blogPosts } from '@/shared/consts/blogPosts';
+import { useTranslations } from 'next-intl';
+
 import { authors } from '@/shared/consts/authors';
+import { blogPosts } from '@/shared/consts/blogPosts';
+
+import { IBlogPostProps } from './BlogPost.interfaces';
+
+import styles from './BlogPost.module.scss';
 
 export function BlogPost({ postId }: IBlogPostProps) {
 	const t = useTranslations('Categories');

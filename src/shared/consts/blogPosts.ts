@@ -1,5 +1,4 @@
 import rocketIcon from '../assets/icons/rocketIcon.svg';
-
 import post1 from '../assets/posts/post1.webp';
 import post2 from '../assets/posts/post2.webp';
 import post3 from '../assets/posts/post3.webp';
@@ -8,8 +7,8 @@ import post5 from '../assets/posts/post5.webp';
 import post6 from '../assets/posts/post6.webp';
 import post7 from '../assets/posts/post7.webp';
 
-import { Tags } from './tags';
 import { Categories } from './categories';
+import { Tags } from './tags';
 
 export const blogPosts = [
 	{

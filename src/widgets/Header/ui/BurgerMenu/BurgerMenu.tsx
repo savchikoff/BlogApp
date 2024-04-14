@@ -2,9 +2,12 @@
 
 import { useEffect, useState } from 'react';
 import classNames from 'classnames';
+
 import { useDisableBodyScroll } from '@/shared/hooks/useDisableBodyScroll';
-import styles from './BurgerMenu.module.scss';
+
 import { IBurgerMenuProps } from './BurgerMenu.interfaces';
+
+import styles from './BurgerMenu.module.scss';
 
 function BurgerMenu({ children, isModalOpen }: IBurgerMenuProps) {
 	const [isOpen, setIsOpen] = useState(false);

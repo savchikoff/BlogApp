@@ -3,8 +3,10 @@
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { Slide, Zoom } from 'react-awesome-reveal';
-import styles from './AboutSection.module.scss';
+
 import { routes } from '@/shared/consts/routes';
+
+import styles from './AboutSection.module.scss';
 
 export function AboutSection() {
     const t = useTranslations('Home.About');

@@ -1,11 +1,14 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 import Link from 'next/link';
-import container from '@/shared/styles/container.module.scss';
-import styles from './CategoryHeader.module.scss';
-import { ICategoryHeaderProps } from './CategoryHeader.interfaces';
+import { useTranslations } from 'next-intl';
+
 import { routes } from '@/shared/consts/routes';
+
+import { ICategoryHeaderProps } from './CategoryHeader.interfaces';
+
+import styles from './CategoryHeader.module.scss';
+import container from '@/shared/styles/container.module.scss';
 
 function CategoryHeader({ categoryName }: ICategoryHeaderProps) {
 	const t = useTranslations('Categories');

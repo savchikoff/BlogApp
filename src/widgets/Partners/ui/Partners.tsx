@@ -1,11 +1,13 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { Slide } from 'react-awesome-reveal';
-import Image from 'next/image';
-import styles from './Partners.module.scss';
+
 import { partners } from '../consts/partners';
+
+import styles from './Partners.module.scss';
 
 export function Partners() {
 	const t = useTranslations('Home.Partners');

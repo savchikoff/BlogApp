@@ -1,13 +1,15 @@
 'use client';
 
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { Zoom } from 'react-awesome-reveal';
-import Link from 'next/link';
-import styles from './Hero.module.scss';
-import container from '@/shared/styles/container.module.scss';
+
 import { Button } from '@/shared';
 import { blogPosts } from '@/shared/consts/blogPosts';
 import { additionalRoutes } from '@/shared/consts/routes';
+
+import styles from './Hero.module.scss';
+import container from '@/shared/styles/container.module.scss';
 
 export function Hero() {
 	const t = useTranslations('FeaturedPost');

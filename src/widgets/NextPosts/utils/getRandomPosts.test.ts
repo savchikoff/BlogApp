@@ -1,6 +1,8 @@
+/* eslint-disable simple-import-sort/imports */
 import { expect } from '@jest/globals';
-import { getRandomPosts } from './getRandomPosts';
 import { blogPosts } from '@/shared/consts/blogPosts';
+
+import { getRandomPosts } from './getRandomPosts';
 
 describe('getRandomPosts function', () => {
 	it('should return 3 posts after the specified postId', () => {

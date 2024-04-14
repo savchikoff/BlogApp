@@ -3,18 +3,22 @@
 import { useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import {
-	Formik,
-	Field,
 	ErrorMessage,
-	FormikValues,
+	Field,
+	Formik,
 	FormikHelpers,
+	FormikValues,
 } from 'formik';
 import { toast } from 'react-toastify';
-import emailjs from '@emailjs/browser';
-import styles from './NewsLetterForm.module.scss';
-import { Button } from '@/shared';
-import { FormValues } from './NewsLetterForm.interfaces';
+
 import { schema } from '@/features/NewsLetterSubscription/consts/schema';
+import { Button } from '@/shared';
+// eslint-disable-next-line import/order
+import emailjs from '@emailjs/browser';
+
+import { FormValues } from './NewsLetterForm.interfaces';
+
+import styles from './NewsLetterForm.module.scss';
 
 function NewsLetterForm() {
 	const t = useTranslations('Footer');

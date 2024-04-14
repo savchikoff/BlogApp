@@ -1,9 +1,11 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { Hero } from '@/widgets/Hero';
-import container from '@/shared/styles/container.module.scss';
+
 import { componentsToRender } from '@/shared/consts/componentsToRender';
+import { Hero } from '@/widgets/Hero';
+
+import container from '@/shared/styles/container.module.scss';
 
 export default function Home() {
 	const [showItems, setShowItems] = useState(1);

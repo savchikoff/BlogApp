@@ -2,8 +2,10 @@
 
 import { useState } from 'react';
 import classNames from 'classnames';
-import styles from './Pagination.module.scss';
+
 import { IPaginationProps } from './Pagination.interfaces';
+
+import styles from './Pagination.module.scss';
 
 export function Pagination({
 	postsPerPage,

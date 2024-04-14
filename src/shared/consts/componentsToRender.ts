@@ -1,10 +1,10 @@
-import { PostsHome } from '@/widgets/PostsHome';
 import { AboutSection } from '@/widgets/AboutSection';
-import { Categories } from '@/widgets/Categories';
 import { Authors } from '@/widgets/Authors';
-import { StorySection } from '@/widgets/StorySection';
+import { Categories } from '@/widgets/Categories';
 import { JoinTeam } from '@/widgets/JoinTeam';
 import { Partners } from '@/widgets/Partners';
+import { PostsHome } from '@/widgets/PostsHome';
+import { StorySection } from '@/widgets/StorySection';
 import { Testimonials } from '@/widgets/Testimonials';
 
 export const componentsToRender = [

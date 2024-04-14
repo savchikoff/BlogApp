@@ -1,7 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import '@/shared/styles/globals.scss';
 
 import { Pagination } from './Pagination';
+
+import '@/shared/styles/globals.scss';
 
 const meta: Meta<typeof Pagination> = {
 	title: "UI/Pagination",

@@ -1,10 +1,13 @@
 'use client';
 
 import { Slide } from 'react-awesome-reveal';
-import styles from './ContactUs.module.scss';
+
 import { ContactForm } from '@/features/ContactForm';
-import ContactUsHeader from './ContactUsHeader/ContactUsHeader';
+
 import ContactInfo from './ContactInfo/ContactInfo';
+import ContactUsHeader from './ContactUsHeader/ContactUsHeader';
+
+import styles from './ContactUs.module.scss';
 
 export function ContactUs() {
 	return (

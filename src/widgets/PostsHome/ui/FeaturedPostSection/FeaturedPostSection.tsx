@@ -2,9 +2,12 @@
 
 import { useTranslations } from 'next-intl';
 import { Slide } from 'react-awesome-reveal';
-import FeaturedPost from '../FeaturedPost/FeaturedPost';
-import styles from './FeaturedPostSection.module.scss';
+
 import { blogPosts } from '@/shared/consts/blogPosts';
+
+import FeaturedPost from '../FeaturedPost/FeaturedPost';
+
+import styles from './FeaturedPostSection.module.scss';
 
 function FeaturedPostSection() {
 	const t = useTranslations('Home.PostsHome');

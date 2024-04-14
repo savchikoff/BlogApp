@@ -1,8 +1,10 @@
 import AllTags from '../AllTags/AllTags';
 import Categories from '../Categories/Categories';
 import Search from '../Search/Search';
-import styles from './CategorySidebar.module.scss';
+
 import { ICategorySidebarProps } from './CategorySidebar.interfaces';
+
+import styles from './CategorySidebar.module.scss';
 
 function CategorySidebar({
 	selectedTags,

@@ -1,11 +1,14 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+
 import { additionalRoutes } from '@/shared/consts/routes';
-import styles from './Post.module.scss';
+
 import { IPostProps } from './Post.interfaces';
+
+import styles from './Post.module.scss';
 
 export function Post({
 	id,

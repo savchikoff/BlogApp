@@ -1,10 +1,13 @@
 'use client';
 
-import { Zoom } from 'react-awesome-reveal';
 import { useTranslations } from 'next-intl';
-import styles from './Categories.module.scss';
-import Category from './Category/Category';
+import { Zoom } from 'react-awesome-reveal';
+
 import { categories } from '@/shared/consts/categories';
+
+import Category from './Category/Category';
+
+import styles from './Categories.module.scss';
 
 export function Categories() {
 	const t = useTranslations('Categories');

@@ -1,8 +1,10 @@
-import container from '@/shared/styles/container.module.scss';
-import { IPostPageProps } from './interfaces';
 import { BlogPost } from '@/widgets/BlogPost';
 import { JoinTeam } from '@/widgets/JoinTeam';
 import NextPosts from '@/widgets/NextPosts/ui/NextPosts';
+
+import { IPostPageProps } from './interfaces';
+
+import container from '@/shared/styles/container.module.scss';
 
 function PostPage({ params: { id } }: IPostPageProps) {
 	return (

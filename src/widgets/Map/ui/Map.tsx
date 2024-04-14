@@ -1,9 +1,10 @@
 'use client';
 
-import { useEffect, useRef, memo } from 'react';
+import { memo,useEffect, useRef } from 'react';
 import * as mapboxgl from 'mapbox-gl';
-import styles from './Map.module.scss';
+
 import 'mapbox-gl/dist/mapbox-gl.css';
+import styles from './Map.module.scss';
 
 export const Map = memo(() => {
 	const mapContainer = useRef<HTMLDivElement>(null);

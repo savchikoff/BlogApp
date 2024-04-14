@@ -1,13 +1,16 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import classNames from 'classnames';
+
+import { socials } from '@/shared/consts/socials';
+
+import { IAuthorHeaderProps } from './AuthorHeader.interface';
+
 import styles from './AuthorHeader.module.scss';
 import container from '@/shared/styles/container.module.scss';
-import { IAuthorHeaderProps } from './AuthorHeader.interface';
-import { socials } from '@/shared/consts/socials';
 
 function AuthorHeader({ img, name }: IAuthorHeaderProps) {
 	const t = useTranslations('AuthorPage');

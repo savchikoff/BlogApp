@@ -1,11 +1,14 @@
 'use client';
 
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Slide } from 'react-awesome-reveal';
-import Image from 'next/image';
-import AboutSectionDescription from '../AboutSectionDescription/AboutSectionDescription';
-import styles from './WhyWeStarted.module.scss';
+
 import people from '@/widgets/AboutUs/assets/people.webp';
+
+import AboutSectionDescription from '../AboutSectionDescription/AboutSectionDescription';
+
+import styles from './WhyWeStarted.module.scss';
 
 function WhyWeStarted() {
 	const t = useTranslations('AboutUs.WhyWeStarted');

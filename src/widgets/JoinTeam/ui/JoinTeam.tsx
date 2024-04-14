@@ -1,11 +1,13 @@
 'use client';
 
-import { Slide } from 'react-awesome-reveal';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import { Slide } from 'react-awesome-reveal';
+
 import { Button } from '@/shared';
-import styles from './JoinTeam.module.scss';
 import { routes } from '@/shared/consts/routes';
+
+import styles from './JoinTeam.module.scss';
 
 export function JoinTeam() {
 	const t = useTranslations('JoinUs');

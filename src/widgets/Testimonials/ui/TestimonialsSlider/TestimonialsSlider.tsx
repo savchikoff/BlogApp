@@ -5,9 +5,9 @@ import Image from 'next/image';
 import classNames from 'classnames';
 
 import { testimonials } from '@/shared/consts/testimonials';
-
 import leftArrow from '@/widgets/Testimonials/assets/icons/leftArrow.svg';
 import rightArrow from '@/widgets/Testimonials/assets/icons/rightArrow.svg';
+
 import styles from './TestimonialsSlider.module.scss';
 
 export function TestimonialsSlider() {

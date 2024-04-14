@@ -1,12 +1,15 @@
 'use client';
 
+import Link from 'next/link';
 import { useSelectedLayoutSegment } from 'next/navigation';
 import { useTranslations } from 'next-intl';
-import Link from 'next/link';
 import classNames from 'classnames';
+
 import { routes } from '../../../shared/consts/routes';
-import styles from './Navigation.module.scss';
+
 import { INavigationProps } from './Navigation.interfaces';
+
+import styles from './Navigation.module.scss';
 
 export function Navigation({ isWithPrivacy = false }: INavigationProps) {
 	const t = useTranslations('Navigation');

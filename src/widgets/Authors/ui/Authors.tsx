@@ -2,9 +2,12 @@
 
 import { useTranslations } from 'next-intl';
 import { Zoom } from 'react-awesome-reveal';
-import styles from './Authors.module.scss';
+
 import { authors } from '@/shared/consts/authors';
+
 import Author from './Author/Author';
+
+import styles from './Authors.module.scss';
 
 export function Authors() {
 	const t = useTranslations('Author');

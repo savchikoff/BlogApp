@@ -1,7 +1,8 @@
-import { JoinTeam } from '@/widgets/JoinTeam';
 import { AboutUs } from '@/widgets/AboutUs';
-import container from '@/shared/styles/container.module.scss';
 import { Authors } from '@/widgets/Authors';
+import { JoinTeam } from '@/widgets/JoinTeam';
+
+import container from '@/shared/styles/container.module.scss';
 
 export default function AboutUsPage() {
 	return (

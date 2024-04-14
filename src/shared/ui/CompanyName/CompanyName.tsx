@@ -1,6 +1,8 @@
 import Link from 'next/link';
-import styles from './CompanyName.module.scss';
+
 import { routes } from '@/shared/consts/routes';
+
+import styles from './CompanyName.module.scss';
 
 export function CompanyName() {
 	return (
