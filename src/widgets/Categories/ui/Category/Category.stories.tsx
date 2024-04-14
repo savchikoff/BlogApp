@@ -4,7 +4,7 @@ import '@/shared/styles/globals.scss';
 import Category from './Category';
 import { categories } from '@/shared/consts/categories';
 
-const category = categories["Business"];
+const category = categories.Business;
 
 const meta: Meta<typeof Category> = {
     title: "UI/Category",

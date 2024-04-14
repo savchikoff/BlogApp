@@ -23,11 +23,11 @@ type Story = StoryObj<typeof FeaturedPost>;
 
 export const Primary: Story = {
     args: {
-        id: id,
+        id,
         authorName: author,
-        createdAt: createdAt,
-        title: title,
-        text: text,
-        img: img
+        createdAt,
+        title,
+        text,
+        img
     },
 };

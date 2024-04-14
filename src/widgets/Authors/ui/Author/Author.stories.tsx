@@ -4,9 +4,10 @@ import '@/shared/styles/globals.scss';
 import Author from './Author';
 import { authors } from '@/shared/consts/authors';
 
-const { name, role, company, img, link } = authors[0];
+const { name, role, img, link } = authors[0];
 
 const meta: Meta<typeof Author> = {
+    title: 'UI/Author',
     component: Author,
     argTypes: {
         authorName: { control: 'text' },
@@ -14,10 +15,7 @@ const meta: Meta<typeof Author> = {
     },
 };
 
-export default {
-    title: 'UI/Author',
-    component: Author
-};
+export default meta;
 
 type Story = StoryObj<typeof Author>;
 
@@ -25,7 +23,7 @@ export const Primary: Story = {
     args: {
         authorName: name,
         position: role,
-        img: img,
-        link: link,
+        img,
+        link
     },
 };
