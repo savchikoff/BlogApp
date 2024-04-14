@@ -4,6 +4,7 @@ import '@/shared/styles/globals.scss';
 import { Modal } from './Modal';
 
 const meta: Meta<typeof Modal> = {
+	title: "UI/Modal",
 	component: Modal,
 	argTypes: {
 		isOpen: { control: 'boolean' },

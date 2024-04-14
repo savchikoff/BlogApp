@@ -4,6 +4,7 @@ import '@/shared/styles/globals.scss';
 import { Pagination } from './Pagination';
 
 const meta: Meta<typeof Pagination> = {
+	title: "UI/Pagination",
 	component: Pagination,
 	argTypes: {
 		postsPerPage: { control: 'number' },

@@ -9,12 +9,12 @@ import styles from './AllPosts.module.scss';
 import container from '@/shared/styles/container.module.scss';
 import { Pagination } from '@/shared';
 import { blogPosts } from '@/shared/consts/blogPosts';
+import { postsPerPage } from '@/shared/consts/pagination';
 
 function AllPosts() {
 	const t = useTranslations('Blog');
 
 	const [currentPage, setCurrentPage] = useState(1);
-	const postsPerPage = 5;
 
 	if (blogPosts.length === 0) {
 		return (

@@ -4,6 +4,7 @@ import '@/shared/styles/globals.scss';
 import { Button } from './Button';
 
 const meta: Meta<typeof Button> = {
+	title: "UI/Button",
 	component: Button,
 	argTypes: {
 		isPrimary: { control: 'boolean' },
