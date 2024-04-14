@@ -1,6 +1,6 @@
 import { useLocale, useTranslations } from 'next-intl';
 
-import { locales } from '@/config';
+import { locales } from '@/shared/config/config';
 import LocaleSwitcherSelect from '@/widgets/Header/ui/LocaleSwitcherSelect/LocaleSwitcherSelect';
 
 function LocaleSwitcher() {

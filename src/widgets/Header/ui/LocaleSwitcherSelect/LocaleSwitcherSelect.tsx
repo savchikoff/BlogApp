@@ -3,7 +3,7 @@
 import { ChangeEvent, useTransition } from 'react';
 import { useParams } from 'next/navigation';
 
-import { usePathname,useRouter } from '@/navigation';
+import { usePathname, useRouter } from '@/shared/hooks/useNavigation';
 
 import { ILocaleSwitcherSelectProps } from './LocaleSwitcherSelect.interfaces';
 
