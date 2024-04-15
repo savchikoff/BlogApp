@@ -1,6 +1,6 @@
-import author1 from '../assets/avatars/author1.webp';
-import author2 from '../assets/avatars/author2.webp';
-import author3 from '../assets/avatars/author3.webp';
+import author1 from 'public/avatars/author1.webp';
+import author2 from 'public/avatars/author2.webp';
+import author3 from 'public/avatars/author3.webp';
 
 export const testimonials = [
 	{

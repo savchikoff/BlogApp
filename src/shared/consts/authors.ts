@@ -1,11 +1,11 @@
-import authorImg1 from '../assets/avatars/author1.webp';
-import authorImg2 from '../assets/avatars/author2.webp';
-import authorImg3 from '../assets/avatars/author3.webp';
-import authorImg4 from '../assets/avatars/author4.webp';
-import authorImg5 from '../assets/avatars/author5.webp';
-import authorImg6 from '../assets/avatars/author6.webp';
-import authorImg7 from '../assets/avatars/author7.webp';
-import authorImg8 from '../assets/avatars/author8.webp';
+import authorImg1 from 'public/avatars/author1.webp';
+import authorImg2 from 'public/avatars/author2.webp';
+import authorImg3 from 'public/avatars/author3.webp';
+import authorImg4 from 'public/avatars/author4.webp';
+import authorImg5 from 'public/avatars/author5.webp';
+import authorImg6 from 'public/avatars/author6.webp';
+import authorImg7 from 'public/avatars/author7.webp';
+import authorImg8 from 'public/avatars/author8.webp';
 
 import { additionalRoutes } from './routes';
 

@@ -1,11 +1,11 @@
-import rocketIcon from '../assets/icons/rocketIcon.svg';
-import post1 from '../assets/posts/post1.webp';
-import post2 from '../assets/posts/post2.webp';
-import post3 from '../assets/posts/post3.webp';
-import post4 from '../assets/posts/post4.webp';
-import post5 from '../assets/posts/post5.webp';
-import post6 from '../assets/posts/post6.webp';
-import post7 from '../assets/posts/post7.webp';
+import rocketIcon from 'public/icons/rocketIcon.svg';
+import post1 from 'public/posts/post1.webp';
+import post2 from 'public/posts/post2.webp';
+import post3 from 'public/posts/post3.webp';
+import post4 from 'public/posts/post4.webp';
+import post5 from 'public/posts/post5.webp';
+import post6 from 'public/posts/post6.webp';
+import post7 from 'public/posts/post7.webp';
 
 import { Categories } from './categories';
 import { Tags } from './tags';

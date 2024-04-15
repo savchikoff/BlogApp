@@ -1,1 +1,1 @@
-export { Privacy } from './ui/Privacy';
+export { Privacy } from './ui/Privacy/Privacy';

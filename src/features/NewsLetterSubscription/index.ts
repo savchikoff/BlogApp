@@ -1,1 +1,1 @@
-export { NewsLetterSubscription } from './ui/NewsLetterSubscription';
+export { NewsLetterSubscription } from './ui/NewsLetterSubscription/NewsLetterSubscription';

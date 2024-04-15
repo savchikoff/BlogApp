@@ -2,9 +2,8 @@
 
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import people from 'public/images/people.webp';
 import { Slide } from 'react-awesome-reveal';
-
-import people from '@/widgets/AboutUs/assets/people.webp';
 
 import AboutSectionDescription from '../AboutSectionDescription/AboutSectionDescription';
 

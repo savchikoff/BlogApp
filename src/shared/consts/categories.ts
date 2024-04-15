@@ -1,7 +1,7 @@
-import business from '../assets/icons/business.svg';
-import economy from '../assets/icons/economy.svg';
-import startup from '../assets/icons/startup.svg';
-import technology from '../assets/icons/technology.svg';
+import business from 'public/icons/business.svg';
+import economy from 'public/icons/economy.svg';
+import startup from 'public/icons/startup.svg';
+import technology from 'public/icons/technology.svg';
 
 import { additionalRoutes } from './routes';
 

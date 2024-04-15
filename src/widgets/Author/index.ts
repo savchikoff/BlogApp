@@ -1,1 +1,1 @@
-export { Author } from './ui/Author';
+export { Author } from './ui/Author/Author';

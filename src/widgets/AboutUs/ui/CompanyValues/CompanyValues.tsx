@@ -2,9 +2,8 @@
 
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import overview from 'public/images/overview.webp';
 import { Slide, Zoom } from 'react-awesome-reveal';
-
-import overview from '@/widgets/AboutUs/assets/overview.webp';
 
 import styles from './CompanyValues.module.scss';
 

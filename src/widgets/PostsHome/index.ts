@@ -1,1 +1,1 @@
-export { PostsHome } from './ui/PostsHome';
+export { PostsHome } from './ui/PostsHome/PostsHome';

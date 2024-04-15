@@ -1,6 +1,6 @@
 import { BlogPost } from '@/widgets/BlogPost';
 import { JoinTeam } from '@/widgets/JoinTeam';
-import NextPosts from '@/widgets/NextPosts/ui/NextPosts';
+import NextPosts from '@/widgets/NextPosts/ui/NextPosts/NextPosts';
 
 import { IPostPageProps } from './interfaces';
 

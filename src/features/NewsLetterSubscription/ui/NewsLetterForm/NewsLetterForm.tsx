@@ -9,12 +9,11 @@ import {
 	FormikHelpers,
 	FormikValues,
 } from 'formik';
+import emailjs from 'node_modules/@emailjs/browser';
 import { toast } from 'react-toastify';
 
-import { schema } from '@/features/NewsLetterSubscription/consts/schema';
+import { schema } from '@/features/NewsLetterSubscription/model/consts/schema';
 import { Button } from '@/shared';
-// eslint-disable-next-line import/order
-import emailjs from '@emailjs/browser';
 
 import { FormValues } from './NewsLetterForm.interfaces';
 

@@ -3,10 +3,10 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import classNames from 'classnames';
+import leftArrow from 'public/icons/leftArrow.svg';
+import rightArrow from 'public/icons/rightArrow.svg';
 
 import { testimonials } from '@/shared/consts/testimonials';
-import leftArrow from '@/widgets/Testimonials/assets/icons/leftArrow.svg';
-import rightArrow from '@/widgets/Testimonials/assets/icons/rightArrow.svg';
 
 import styles from './TestimonialsSlider.module.scss';
 

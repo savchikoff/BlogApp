@@ -1,7 +1,7 @@
-import facebook from '../assets/icons/facebook.svg';
-import instagram from '../assets/icons/instagram.svg';
-import linkedin from '../assets/icons/linkedin.svg';
-import twitter from '../assets/icons/twitter.svg';
+import facebook from 'public/icons/facebook.svg';
+import instagram from 'public/icons/instagram.svg';
+import linkedin from 'public/icons/linkedin.svg';
+import twitter from 'public/icons/twitter.svg';
 
 export const socials = [
 	{

@@ -2,9 +2,8 @@
 
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import handShake from 'public/images/handshake.webp';
 import { Slide } from 'react-awesome-reveal';
-
-import handShake from '@/widgets/AboutUs/assets/handshake.webp';
 
 import AboutSectionDescription from '../AboutSectionDescription/AboutSectionDescription';
 

@@ -1,1 +1,1 @@
-export { StorySection } from './ui/StorySection';
+export { StorySection } from './ui/StorySection/StorySection';

@@ -106,9 +106,9 @@ const config: Config = {
 	// A preset that is used as a base for Jest's configuration
 	preset: 'ts-jest',
 	transform: {
-		'^.+\\.(js|jsx)$': 'ts-jest',
+		'^.+\\.(ts|tsx|js|jsx)$': 'ts-jest',
 		'\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
-			'<rootDir>/src/imgMock.js',
+			'<rootDir>/src/imgMock.js'
 	},
 
 	// Run tests from one or more projects
